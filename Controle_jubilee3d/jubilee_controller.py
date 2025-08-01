@@ -145,9 +145,9 @@ class JubileeMotionController(Inpromptu):
         self.axes_homed = [True, True, True, True] # X, Y, Z, U
 
 
-    def home_all(self):
+    def home_all(self,mesh_mode_z=True):
         self.home_xy()
-        self.home_z()
+        self.home_z(mesh_mode_z)
         self.home_u()
 
 
@@ -169,13 +169,18 @@ class JubileeMotionController(Inpromptu):
 
 
     ##@cli_method
-    def home_z(self):
+    def home_z(self,mesh_mode = True):
         """Home the Z axis.
         Note that the Deck must be clear first.
         """
+        
         response = input("Is the Deck free of obstacles? [y/n]")
         if response.lower() in ["y", "yes"]:
-            self.gcode('M98 P"/sys/homez.g"')
+            if mesh_mode:
+                self.gcode('M98 P"/sys/homez.g"')
+            if not mesh_mode:
+                self.gcode('M98 P"/sys/homez_NM.g"')
+
 
         self.axes_homed[2] = True
         self.axes_homed[3] = True
