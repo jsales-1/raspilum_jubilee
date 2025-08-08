@@ -41,6 +41,6 @@ for i in range(n):
             
 
     df = pd.DataFrame(dados)
-    df.to_excel("analise.xlsx")
+    df.to_excel("analise2.xlsx")
     
     time.sleep(1830)
