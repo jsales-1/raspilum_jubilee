@@ -16,10 +16,26 @@ A science-jubilee adapta essa infraestrutura para aplicações científicas, per
 
 ## Jubilee RaspIlum
 
+O Jubilee RaspIlum é uma plataforma multifuncional para automação de experimentos na Ilum. 
+
+![Raspilum](./Imagens%20Readme/Raspilum.jpg)
+
+### Estrutura
+### Componenetes eletrônicos 
+A Jubilee RaspIlum se movimenta por meio de 5 motores de passo, sendo 2 para XY e 3 para Z. Os motores são controlados através de placas Duet 3D, as quais são tipicamente utilizada para controle de máquinas CNC e impressoras 3D, recebendo G-Code e realizando as operações.  
+
+Para criar um interface mais simplificada e acessível, uma placa Raspberry Pi 5 é utilizada como Single Board Computer, o que também permite que o sistema seja controlado por um servidor local ou por linguagem python. O Raspberry possui gravada uma imagem de sistema operacional linux específica para o controle e comunicação com a placa Duet. 
 
 
+## Uso o Jubilee Raspilum
 
-### Referências
+### 1. Ligando o sistema
+
+
+### Controlando por python
+
+
+## Referências
 
 [1] Jubilee 3D. Jubilee wiki [Internet]. Disponível em: https://jubilee3d.com/index.php?title=Main_Page  
 [2] Science Jubilee. Documentation [Internet]. Disponível em: https://science-jubilee.readthedocs.io/en/latest/index.html  

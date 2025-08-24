@@ -56,6 +56,7 @@ class JubileeMotionController(Inpromptu):
             self.reset() # also does a reconnect.
         self._set_absolute_moves(force=True)
 
+        self.gcode('M98 P"/sys/config.g"')
 
     def connect(self):
         """Connect to Jubilee over http."""
@@ -202,6 +203,13 @@ class JubileeMotionController(Inpromptu):
             if axis.upper() not in ['X', 'Y', 'Z', 'U']:
                 raise TypeError(f"Error: cannot home unknown axis: {axis}.")
             self.gcode(f"G92 {axis.upper()}0")
+
+    
+    def turn_off_drivers(self):
+        """Turn off all drivers.
+        """
+        self.gcode('M18')
+
 
 
     @machine_is_homed
