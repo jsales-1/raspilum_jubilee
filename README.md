@@ -1,17 +1,8 @@
-<style>
-  p {
-    text-align: justify;
-  }
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-</style>
 
 ## Science Jubilee
 
-Science Jubilee é uma plataforma de automação laboratorial de código aberto, baseada no sistema Jubilee, uma plataforma de movimento multiferramenta extensível, originalmente projetada como uma impressora 3D com troca automática de cabeças de ferramenta [**[1]**](https://jubilee3d.com/index.php?title=Main_Page). 
+ <p align="justify">
+Science Jubilee é uma plataforma de automação laboratorial de código aberto, baseada no sistema Jubilee, uma plataforma de movimento multiferramenta extensível, originalmente projetada como uma impressora 3D com troca automática de cabeças de ferramenta [**[1]**](https://jubilee3d.com/index.php?title=Main_Page). </p>
 
 <img src="./Imagens%20Readme/550px-Jubilee_v2.1.2.png" class="center" width="500">
 
@@ -47,7 +38,7 @@ A Jubilee RaspIlum se movimenta por meio de 5 motores de passo, sendo 2 para XY 
 
 ### Software
 
-Para criar um interface mais simplificada e acessível, uma placa Raspberry Pi 5 é utilizada como Single Board Computer, o que permite que o sistema seja controlado por um servidor local ou por linguagem python. O Raspberry possui gravada uma imagem de sistema operacional linux específica para o controle e comunicação com a placa Duet. A instalação foi feita seguido o protocolo dispnível no site da Duet 3D [**[7]**].(https://docs.duet3d.com/User_manual/Machine_configuration/SBC_setup)
+ Para criar um interface mais simplificada e acessível, uma placa Raspberry Pi 5 é utilizada como Single Board Computer, o que permite que o sistema seja controlado por um servidor local ou por linguagem python. O Raspberry possui gravada uma imagem de sistema operacional linux específica para o controle e comunicação com a placa Duet. A instalação foi feita seguido o protocolo dispnível no site da Duet 3D [**[7]**].(https://docs.duet3d.com/User_manual/Machine_configuration/SBC_setup)
 Para utilizar o python nesse subsistema linux, foi necessário uma versão do Anaconda específica pra Raspberry pi, a qual foi instalada por meio do github Miniforge [**[8]**](https://github.com/conda-forge/miniforge).
 
 
@@ -61,13 +52,14 @@ Para utilizar o python nesse subsistema linux, foi necessário uma versão do An
 
 ## Referências
 
-[1] Jubilee 3D. Jubilee wiki. Disponível em: https://jubilee3d.com/index.php?title=Main_Page  
-[2] Science Jubilee. Documentation. Disponível em: https://science-jubilee.readthedocs.io/en/latest/index.html  
-[3] Telford J, Newton G, Shields R, Mohr S, Handley J, Thielbeer F, et al. A sonochemical materials acceleration platform for the synthesis of CdSe nanocrystals. Digital Discovery. 2023;2(3):856-865.  
-[4] Babl L, Holten V, Reuter M, Schoof H. Duckbot: a modular open-source platform for automated experiments with duckweed. PLoS One. 2024;19(2):e0296717.  
-[5] Jubilee 3D. Assembly Instructions. Disponível em: https://www.jubilee3d.com/index.php?title=Assembly_Instructions  
-[6] DUET3D. Duet 3 Mini 5+ Hardware Overview. 2025. Disponível em: <https://docs.duet3d.com/Duet3D_hardware/Duet_3_family/Duet_3_Mini_5%2B_Hardware_Overview>. 
+<p align="justify">
+[1] Jubilee 3D. Jubilee wiki. Disponível em: https://jubilee3d.com/index.php?title=Main_Page  <br>
+[2] Science Jubilee. Documentation. Disponível em: https://science-jubilee.readthedocs.io/en/latest/index.html   <br>
+[3] Telford J, Newton G, Shields R, Mohr S, Handley J, Thielbeer F, et al. A sonochemical materials acceleration platform for the synthesis of CdSe nanocrystals. Digital Discovery. 2023;2(3):856-865.   <br>
+[4] Babl L, Holten V, Reuter M, Schoof H. Duckbot: a modular open-source platform for automated experiments with duckweed. PLoS One. 2024;19(2):e0296717.   <br>
+[5] Jubilee 3D. Assembly Instructions. Disponível em: https://www.jubilee3d.com/index.php?title=Assembly_Instructions   <br>
+[6] DUET3D. Duet 3 Mini 5+ Hardware Overview. 2025. Disponível em: https://docs.duet3d.com/Duet3D_hardware/Duet_3_family/Duet_3_Mini_5%2B_Hardware_Overview.  <br>
 [7] Duet 3D. SBC Setup. Disponível em: https://docs.duet3d.com/User_manual/Machine_configuration/SBC_setup
-[8] conda-forge/miniforge. Disponível em: <https://github.com/conda-forge/miniforge>.
+[8] conda-forge/miniforge. Disponível em: https://github.com/conda-forge/miniforge.
 
-‌
+‌</p>

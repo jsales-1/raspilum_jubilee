@@ -52,8 +52,8 @@ class JubileeMotionController(Inpromptu):
         self._active_tool_index = None # Cached value under the @property.
         self._tool_z_offsets = None # Cached value under the @property.
         self._axis_limits = None # Cached value under the @property.
-        self.axes_homed = [False]*4 # Starter value before connecting.
         self.connect()
+        self.axes_homed = [False]*4 # Starter value before connecting.
         if reset:
             self.reset() # also does a reconnect.
         self._set_absolute_moves(force=True)
@@ -131,6 +131,7 @@ class JubileeMotionController(Inpromptu):
             time.sleep(1)
             try:
                 self.connect()
+                self.axes_homed = [False]*4
                 return
             except MachineStateError as e:
                 pass
