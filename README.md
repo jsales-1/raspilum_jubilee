@@ -1,8 +1,8 @@
 
 ## Science Jubilee
 
- <p align="justify">
-Science Jubilee é uma plataforma de automação laboratorial de código aberto, baseada no sistema Jubilee, uma plataforma de movimento multiferramenta extensível, originalmente projetada como uma impressora 3D com troca automática de cabeças de ferramenta [**[1]**](https://jubilee3d.com/index.php?title=Main_Page). </p>
+
+Science Jubilee é uma plataforma de automação laboratorial de código aberto, baseada no sistema Jubilee, uma plataforma de movimento multiferramenta extensível, originalmente projetada como uma impressora 3D com troca automática de cabeças de ferramenta [**[1]**](https://jubilee3d.com/index.php?title=Main_Page).
 
 <img src="./Imagens%20Readme/550px-Jubilee_v2.1.2.png" class="center" width="500">
 
