@@ -8,6 +8,8 @@ import curses
 import pprint
 from inpromptu import Inpromptu#, cli_method
 from functools import wraps
+from pynput import keyboard
+
 
 
 #TODO: Figure out how to print error messages from the Duet.
@@ -184,7 +186,6 @@ class JubileeMotionController(Inpromptu):
 
 
         self.axes_homed[2] = True
-        self.axes_homed[3] = True
     
     def home_u(self):
         """Home the U axis.
@@ -360,69 +361,75 @@ class JubileeMotionController(Inpromptu):
 
     #@cli_method
     @machine_is_homed
-    def keyboard_control(self, prompt: str = "=== Manual Control ==="):
-        """Use keyboard input to move the machine in steps.
-        ↑ = forwards (-Y)
-        ← = left (+X)
-        → = right (-X)
-        ↓ = backwards (+Y)
-        w = tool tip up (+Z)
-        s = tool tip down (-Z)
-        [ = decrease movement step size
-        ] = increase movement step size
-        """
-        min_step_size = 0.015625
-        max_step_size = 8.0
-        step_size = 1
+    def controlar_jubilee(self):
+        step = 10
+        pressed_keys = set()
+        running = True
 
-        stdscr = curses.initscr()
-        curses.cbreak()
-        curses.noecho()
-        stdscr.keypad(True)
+        def on_press(key):
+            nonlocal running, step
+            try:
+                if key.char in ['+', '-']:
+                    pressed_keys.add(key.char)
+            except AttributeError:
 
-        stdscr.addstr(0,0, prompt)
-        stdscr.addstr(2,0,"Press 'q' to quit.")
-        stdscr.addstr(3,0,"Commands:")
-        stdscr.addstr(4,0,"  Arrow keys for XY; '[' and ']' to increase movement step size")
-        stdscr.addstr(5,0,"  '[' and ']' to decrease/increase movement step size")
-        stdscr.addstr(6,0,"  's' and 'w' to lower/raise z")
-        stdscr.addstr(7,0,f"Step Size: {step_size:<8}")
-        stdscr.refresh()
+                if key in [
+                    keyboard.Key.up,
+                    keyboard.Key.down,
+                    keyboard.Key.left,
+                    keyboard.Key.right,
+                    keyboard.Key.page_up,
+                    keyboard.Key.page_down
+                ]:
+                    pressed_keys.add(key)
+                elif key == keyboard.Key.esc:
+                    running = False
 
-        key = ''
+        def on_release(key):
+            try:
+                if key in pressed_keys:
+                    pressed_keys.remove(key)
+                elif hasattr(key, "char") and key.char in pressed_keys:
+                    pressed_keys.remove(key.char)
+            except AttributeError:
+                pass
+
+        listener = keyboard.Listener(on_press=on_press, on_release=on_release)
+        listener.start()
+
         try:
-            while key != ord('q'):
-                key = stdscr.getch()
-                stdscr.refresh()
-                if key == curses.KEY_UP:
-                    self.move_xyz_relative(y=-step_size)
-                elif key == curses.KEY_DOWN:
-                    self.move_xyz_relative(y=step_size)
-                elif key == curses.KEY_LEFT:
-                    self.move_xyz_relative(x=step_size)
-                elif key == curses.KEY_RIGHT:
-                    self.move_xyz_relative(x=-step_size)
-                elif key == ord('w'):
-                    self.move_xyz_relative(z=step_size)
-                elif key == ord('s'):
-                    self.move_xyz_relative(z=-step_size)
-                elif key == ord('['):
-                    step_size = step_size/2.0
-                    if step_size < min_step_size:
-                        step_size = min_step_size
-                    stdscr.addstr(7,0,f"Step Size: {step_size:<8}")
-                elif key == ord(']'):
-                    step_size = step_size*2.0
-                    if step_size > max_step_size:
-                        step_size = max_step_size
-                    stdscr.addstr(7,0,f"Step Size: {step_size:<8}")
-            self.move_xyz_relative(wait=True) # Wait for last move to finish.
-        finally:
-            curses.nocbreak()
-            stdscr.keypad(False)
-            curses.echo()
-            curses.endwin()
-            self._set_absolute_moves(force=True)
+            while running:
+                if keyboard.Key.up in pressed_keys:
+                    self.move_xyz_relative(0, step, 0)      # Y+
+                elif keyboard.Key.down in pressed_keys:
+                    self.move_xyz_relative(0, -step, 0)     # Y-
+                elif keyboard.Key.left in pressed_keys:
+                    self.move_xyz_relative(-step, 0, 0)     # X-
+                elif keyboard.Key.right in pressed_keys:
+                    self.move_xyz_relative(step, 0, 0)      # X+
+                elif keyboard.Key.page_up in pressed_keys:
+                    self.move_xyz_relative(0, 0, -step)      # Z+
+                elif keyboard.Key.page_down in pressed_keys:
+                    self.move_xyz_relative(0, 0, step)     # Z-
+                elif '+' in pressed_keys:
+                    step += 1
+                elif '-' in pressed_keys:
+                    step -= 1
+                    if step < 1:
+                        step = 1
+
+                time.sleep(0.005)
+                print(
+                    f"X: {self.position[0]:>7.2f} | "
+                    f"Y: {self.position[1]:>7.2f} | "
+                    f"Z: {self.position[2]:>7.2f} || "
+                    f"Passo: {step:<3} mm",
+                    end="\r"
+                )
+        except KeyboardInterrupt:
+            print("\n Interrompido")
+
+        listener.stop()
 
 
     def disconnect(self):
