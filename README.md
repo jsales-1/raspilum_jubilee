@@ -38,7 +38,7 @@ A Jubilee RaspIlum se movimenta por meio de 5 motores de passo, sendo 2 para XY 
 
 ### Software
 
- Para criar um interface mais simplificada e acessível, uma placa Raspberry Pi 5 é utilizada como Single Board Computer, o que permite que o sistema seja controlado por um servidor local ou por linguagem python. O Raspberry possui gravada uma imagem de sistema operacional linux específica para o controle e comunicação com a placa Duet. A instalação foi feita seguido o protocolo dispnível no site da Duet 3D [**[7]**].(https://docs.duet3d.com/User_manual/Machine_configuration/SBC_setup)
+ Para criar um interface mais simplificada e acessível, uma placa Raspberry Pi 5 é utilizada como Single Board Computer, o que permite que o sistema seja controlado por um servidor local ou por linguagem python. O Raspberry possui gravada uma imagem de sistema operacional linux específica para o controle e comunicação com a placa Duet. A instalação foi feita seguido o protocolo dispnível no site da Duet 3D [**[7]**](https://docs.duet3d.com/User_manual/Machine_configuration/SBC_setup).
 Para utilizar o python nesse subsistema linux, foi necessário uma versão do Anaconda específica pra Raspberry pi, a qual foi instalada por meio do github Miniforge [**[8]**](https://github.com/conda-forge/miniforge).
 
 
