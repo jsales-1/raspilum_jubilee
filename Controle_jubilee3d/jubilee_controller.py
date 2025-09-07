@@ -119,7 +119,6 @@ class JubileeMotionController(Inpromptu):
         return file_contents
 
 
-    ##@cli_method
     def reset(self):
         """Issue a software reset."""
         # End the subscribe thread first.
@@ -138,7 +137,6 @@ class JubileeMotionController(Inpromptu):
         raise MachineStateError("Reconnecting failed.")
 
 
-    ##@cli_method
     def home_all_forced(self):
         # Having a tool is only possible if the machine was already homed.
         #if self.active_tool_index != -1:
@@ -160,19 +158,13 @@ class JubileeMotionController(Inpromptu):
         """Home the XY axes.
         Home Y before X to prevent possibility of crashing into the tool rack.
         """
-        #self.gcode("G28 Y")
-        #self.gcode("G28 X")
-        #self.gcode("G28 U")
-        #self._set_absolute_moves(force=True)
-        # Update homing state. Pull Z from the object model which will not create a race condition.
-        z_home_status = json.loads(self.gcode("M409 K\"move.axes[].homed\""))["result"][2]
+
         self.gcode('M98 P"/sys/homey.g"')
         self.gcode('M98 P"/sys/homex.g"')
         self.axes_homed[0] = True
         self.axes_homed[1] = True
 
 
-    ##@cli_method
     def home_z(self,mesh_mode = True):
         """Home the Z axis.
         Note that the Deck must be clear first.
@@ -197,7 +189,7 @@ class JubileeMotionController(Inpromptu):
 
         self.axes_homed[3] = True
 
- #
+
     ##@cli_method
     def home_in_place(self, *args: str):
         """Set the current location of a machine axis or axes to 0."""
@@ -360,9 +352,8 @@ class JubileeMotionController(Inpromptu):
         # Return the cached value.
         return self._axis_limits
 
-    #@cli_method
     @machine_is_homed
-    def controlar_jubilee(self):
+    def keyboard_controll(self):
         step = 10
         pressed_keys = set()
         running = True
@@ -435,7 +426,6 @@ class JubileeMotionController(Inpromptu):
 
     def disconnect(self):
         """Close the connection."""
-        # Nothing to do?
         pass
 
 
@@ -445,9 +435,5 @@ class JubileeMotionController(Inpromptu):
     def __exit__(self, *args):
         self.disconnect()
 
-
-#if __name__ == "__main__":
-#    with JubileeMotionController(simulated=False, debug=False) as jubilee:
-#        jubilee.cmdloop()
 
 
