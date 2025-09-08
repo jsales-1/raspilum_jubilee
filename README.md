@@ -53,13 +53,20 @@ O sistema é constituído por perfis de alumínio anodizado, polias, correias, m
 ### Componentes eletrônicos
 
 <p align="justify">
-A Jubilee RaspIlum se movimenta por meio de 5 motores de passo, sendo 2 para XY e 3 para Z. Há também um sexto motor para o trocador de ferramentas. Os motores são controlados através de uma Duet Mini e sua placa de extensão, as quais são tipicamente utilizadas para controle de máquinas CNC e impressoras 3D, recebendo G-Code e realizando as operações <a href="https://www.jubilee3d.com/index.php?title=Assembly_Instructions">[5]</a> <a href="https://docs.duet3d.com/Duet3D_hardware/Duet_3_family/Duet_3_Mini_5+_Hardware_Overview">[6]</a>. Com essas duas placas, temos 8 drivers para controle de motores de passo, havendo atualmente 6 ocupados. Diferentemente do planejado para impressoras 3D, não utilizamos sistema de aquecimento de superfície na Jubilee RaspIlum.
-No esquemático a seguir, é possível conferir a conexão dos sensores de fim de curso e motores nos drivers e pinos I/O das placas Duet Mini com sua placa de extensão.
+A Jubilee RaspIlum se movimenta por meio de 5 motores de passo, sendo 2 para XY e 3 para Z. Há também um sexto motor para o trocador de ferramentas, denominado eixo U. Os motores são controlados através de uma Duet Mini e sua placa de extensão, as quais são tipicamente utilizadas para controle de máquinas CNC e impressoras 3D, recebendo G-Code e realizando as operações <a href="https://www.jubilee3d.com/index.php?title=Assembly_Instructions">[5]</a> <a href="https://docs.duet3d.com/Duet3D_hardware/Duet_3_family/Duet_3_Mini_5+_Hardware_Overview">[6]</a>. Com essas duas placas, temos 8 drivers para controle de motores de passo, havendo atualmente 6 ocupados. Diferentemente do planejado para impressoras 3D, não utilizamos sistema de aquecimento de superfície na Jubilee RaspIlum.
+Na imagem a seguir, é possível conferir o painel de controle do Jubilee RaspIlum.</p>
+
+<p align="center">
+  <img src="./Imagens%20Readme/painel_raspilum.jpg" width="400"><br>
+  <em>Figura 5 – Painel de controle do Jubilee 3D</em>
+</p>
+
+<p align = 'justify'>Esse painel é exposto para que seja possível mudar conexões e implementar novas funcionalidades com maior facilidade. Pode-se observar a fonte de alimentação, as duas placas de controle dos motores, a placa Raspberry, conectada à placa principal por um cabo flat de 26 vias, e motores XY e U, É importante ressaltar que os motores XY operam em conjunto, a definição do eixo que está sendo seguido depende do sentido de rotação desses motores. Se ambos, por exemplo, estiverem rotacionando em sentido horário, o carregador de ferramentas se move apenas no eixo X. As conexões entre com as placas de controle não abragem apenas os motores, mas também os sensores de fim de curso, os quais servem para fazer a calibração do sistema. No esquemático a seguir, é possível conferir em mais detalhes a conexão dos sensores de fim de curso e motores nos drivers e pinos I/O das placas Duet Mini com sua placa de extensão.
 </p>
 
 <p align="center">
   <img src="./Imagens%20Readme/duet3_mini_frame_wiring.png" width="400"><br>
-  <em>Figura 5 – Esquemático de conexões da Duet Mini</em>
+  <em>Figura 6 – Esquemático de conexões da Duet Mini</em>
 </p>
 
 
@@ -73,10 +80,22 @@ Para criar uma interface mais simplificada e acessível, uma placa Raspberry Pi 
 ## Uso do Jubilee RaspIlum
 
 ### 1. Ligando o sistema
+Para ligar o sistema, é necessário ligar primeiro o raspberry, pressionando o botão presente nele. Em seguida, é preciso ligar as placas Duet, acionando o chave que ativa a fonte de alimentação. A Figura 8 mostra o a posição do botão para ligar o Raspberry, na esquerda, e a chave para ligar o Duet, na direita.  
+<p align="center">
+  <img src="./Imagens%20Readme/ativar_placas" width="400"><br>
+  <em>Figura 8 - Locais para ativação das placas de controle.</em>
+</p>    
+
 
 ### 2. Controlando por Python
 
-## Referências
+## Ferramentas implementadas e experimentos realizados
+
+### Câmera
+
+### Gripper
+
+## Referências      
 
 <p align="justify">
 [1] Jubilee 3D. Jubilee wiki. Disponível em: https://jubilee3d.com/index.php?title=Main_Page <br>
