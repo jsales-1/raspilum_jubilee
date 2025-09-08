@@ -61,8 +61,10 @@ Na imagem a seguir, é possível conferir o painel de controle do Jubilee RaspIl
   <em>Figura 5 – Painel de controle do Jubilee 3D</em>
 </p>
 
-<p align = 'justify'>Esse painel é exposto para que seja possível mudar conexões e implementar novas funcionalidades com maior facilidade. Pode-se observar a fonte de alimentação, as duas placas de controle dos motores, a placa Raspberry, conectada à placa principal por um cabo flat de 26 vias, e motores XY e U, É importante ressaltar que os motores XY operam em conjunto, a definição do eixo que está sendo seguido depende do sentido de rotação desses motores. Se ambos, por exemplo, estiverem rotacionando em sentido horário, o carregador de ferramentas se move apenas no eixo X. As conexões entre com as placas de controle não abragem apenas os motores, mas também os sensores de fim de curso, os quais servem para fazer a calibração do sistema. No esquemático a seguir, é possível conferir em mais detalhes a conexão dos sensores de fim de curso e motores nos drivers e pinos I/O das placas Duet Mini com sua placa de extensão.
+<p align='justify'>
+Esse painel é exposto para que seja possível mudar conexões e implementar novas funcionalidades com maior facilidade. Pode-se observar a fonte de alimentação, as duas placas de controle dos motores, a placa Raspberry conectada à placa principal por um cabo flat de 26 vias, e os motores XY e U. É importante ressaltar que os motores XY operam em conjunto: a definição do eixo que está sendo seguido depende do sentido de rotação desses motores. Se ambos, por exemplo, estiverem rotacionando em sentido horário, o carregador de ferramentas se move apenas no eixo X. As conexões com as placas de controle não abrangem apenas os motores, mas também os sensores de fim de curso, que servem para fazer a calibração do sistema. No esquemático a seguir é possível conferir, em mais detalhes, a conexão dos sensores de fim de curso e dos motores nos drivers e pinos I/O das placas Duet Mini com sua placa de extensão.
 </p>
+
 
 <p align="center">
   <img src="./Imagens%20Readme/duet3_mini_frame_wiring.png" width="400"><br>
@@ -80,11 +82,12 @@ Para criar uma interface mais simplificada e acessível, uma placa Raspberry Pi 
 ## Uso do Jubilee RaspIlum
 
 ### 1. Ligando o sistema
-Para ligar o sistema, é necessário ligar primeiro o raspberry, pressionando o botão presente nele. Em seguida, é preciso ligar as placas Duet, acionando o chave que ativa a fonte de alimentação. A Figura 8 mostra o a posição do botão para ligar o Raspberry, na esquerda, e a chave para ligar o Duet, na direita.  
+<p align = 'justify'> Para ligar o sistema, é necessário ligar primeiro o Raspberry, pressionando o botão presente nele, e em seguida ligar as placas Duet, acionando o chave que ativa a fonte de alimentação. A Figura 8 mostra o a posição do botão para ligar o Raspberry, na esquerda, e a chave para ligar o Duet, na direita.  </p>
 <p align="center">
-  <img src="./Imagens%20Readme/ativar_placas" width="400"><br>
+  <img src="./Imagens%20Readme/ativar_placas.jpg" width="400"><br>
   <em>Figura 8 - Locais para ativação das placas de controle.</em>
 </p>    
+<p align = 'justify'> Ao ligar o Raspberry, ele funcionará como um desktop normal, exibindo sua interface no monitor e podendo ser controlado por mouse/teclado. Apesar de ser uma imagem baseada em Linux, o sistema é bem amigável e intuitivo. </p>
 
 
 ### 2. Controlando por Python
