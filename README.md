@@ -46,13 +46,13 @@ O Jubilee RaspIlum é uma plataforma multifuncional para automação de experime
 
 ### Estrutura
 
-<p align="justify"> O Jubilee é construído com perfis de alumínio anodizado que formam a estrutura principal. Os eixos de movimento utilizam guias lineares, polias e correias dentadas para deslocamento em três dimensões. O volume útil de movimentação é de aproximadamente 330 mm × 350 mm × 300 mm. A base é sustentada por três fusos acionados por motores de passo independentes, que realizam o nivelamento automático e a correção de inclinações da mesa. O peso total do sistema é de cerca de 20 kg. É possível conferir as etapas de montagem do sistema pelo manual oferecido no site do Jubilee 3D <a href="https://www.jubilee3d.com/index.php?title=Assembly_Instructions">[5]</a>. O Github do Science Jubilee também disponibiliza modelos 3D de ferramentas e componentes da estrutura do Jubilee, o que facilita a manutenção da máquina e criação de novas funcionalidades.
+<p align="justify"> O Jubilee é construído com perfis de alumínio anodizado que formam a estrutura principal. Os eixos de movimento utilizam guias lineares, polias e correias dentadas para deslocamento em três dimensões. O volume útil de movimentação é de aproximadamente 330 mm × 350 mm × 300 mm. A base é sustentada por três fusos acionados por motores de passo independentes, que realizam o nivelamento automático e a correção de inclinações da mesa. O peso total do sistema é de cerca de 20 kg. É possível conferir as etapas de montagem do sistema pelo manual oferecido no site do Jubilee 3D <a href="https://www.jubilee3d.com/index.php?title=Assembly_Instructions">[5]</a>. O Github do Science Jubilee também disponibiliza modelos 3D de ferramentas e componentes da estrutura do Jubilee, o que facilita a manutenção da máquina e criação de novas funcionalidades. <a href = https://github.com/machineagency/science-jubilee/tree/main>[6]</a>.
 </p>
   
 ### Componentes eletromecânicos
 
 <p align="justify">
-A Jubilee RaspIlum se movimenta por meio de 5 motores de passo, sendo 2 para XY e 3 para Z. Há também um sexto motor para o trocador de ferramentas, denominado eixo U. Os motores são controlados através de uma Duet Mini e sua placa de extensão, as quais são tipicamente utilizadas para controle de máquinas CNC e impressoras 3D, recebendo G-Code e realizando as operações <a href="https://www.jubilee3d.com/index.php?title=Assembly_Instructions">[5]</a> <a href="https://docs.duet3d.com/Duet3D_hardware/Duet_3_family/Duet_3_Mini_5+_Hardware_Overview">[6]</a>. Com essas duas placas, temos 8 drivers para controle de motores de passo, havendo atualmente 6 ocupados. Diferentemente do planejado para impressoras 3D, não utilizamos sistema de aquecimento de superfície na Jubilee RaspIlum.
+A Jubilee RaspIlum se movimenta por meio de 5 motores de passo, sendo 2 para XY e 3 para Z. Há também um sexto motor para o trocador de ferramentas, denominado eixo U. Os motores são controlados através de uma Duet Mini e sua placa de extensão, as quais são tipicamente utilizadas para controle de máquinas CNC e impressoras 3D, recebendo G-Code e realizando as operações <a href="https://www.jubilee3d.com/index.php?title=Assembly_Instructions">[5]</a> <a href="https://docs.duet3d.com/Duet3D_hardware/Duet_3_family/Duet_3_Mini_5+_Hardware_Overview">[7]</a>. Com essas duas placas, temos 8 drivers para controle de motores de passo, havendo atualmente 6 ocupados. Diferentemente do planejado para impressoras 3D, não utilizamos sistema de aquecimento de superfície na Jubilee RaspIlum.
 Na imagem a seguir, é possível conferir o painel de controle do Jubilee RaspIlum.</p>
 
 <p align="center">
@@ -75,7 +75,7 @@ Esse painel é exposto para que seja possível mudar conexões e implementar nov
 ### Software
 
 <p align="justify">
-Para criar uma interface mais simplificada e acessível, uma placa Raspberry Pi 5 é utilizada como Single Board Computer, o que permite que o sistema seja controlado por um servidor local ou por linguagem Python. O Raspberry possui gravada uma imagem de sistema operacional Linux específica para o controle e comunicação com a placa Duet. A instalação foi feita seguindo o protocolo disponível no site da Duet 3D <a href="https://docs.duet3d.com/User_manual/Machine_configuration/SBC_setup">[7]</a>. Para utilizar o Python nesse subsistema Linux, foi necessário uma versão do Anaconda específica para Raspberry Pi, a qual foi instalada por meio do GitHub Miniforge <a href="https://github.com/conda-forge/miniforge">[8]</a>.
+Para criar uma interface mais simplificada e acessível, uma placa Raspberry Pi 5 é utilizada como Single Board Computer, o que permite que o sistema seja controlado por um servidor local ou por linguagem Python. O Raspberry possui gravada uma imagem de sistema operacional Linux específica para o controle e comunicação com a placa Duet. A instalação foi feita seguindo o protocolo disponível no site da Duet 3D <a href="https://docs.duet3d.com/User_manual/Machine_configuration/SBC_setup">[8]</a>. Para utilizar o Python nesse subsistema Linux, foi necessário uma versão do Anaconda específica para Raspberry Pi, a qual foi instalada por meio do GitHub Miniforge <a href="https://github.com/conda-forge/miniforge">[9]</a>.
 </p>
 
 ## Uso do Jubilee RaspIlum
@@ -94,7 +94,11 @@ Para criar uma interface mais simplificada e acessível, uma placa Raspberry Pi 
 <p align="justify">
 Entre no VSCode e abra a pasta <code>Documentos/IC/raspilum_jubilee</code>. Esse caminho é referente ao repositório que você está acessando agora. Dentro dela, acesse a pasta <code>Controle_jubilee3d</code> e confira os scripts Python que realizam o controle da máquina e das ferramentas, assim como as pastas com testes e experimentos.  
 
-Para fazer um <i>Quick Start</i>, abra o notebook jupyter <code>Exemplo de uso/Operando Jubilee.ipynb</code>, esse arquivo contém exemplos de código para controle da plataforma e ferramenta. A seguir, você pode ver a árvore de diretórios desse projeto.
+Para fazer um <i>Quick Start</i>, abra o notebook jupyter <code>Exemplo de uso/Operando Jubilee.ipynb</code>, esse arquivo contém exemplos de código para controle da plataforma e ferramenta. 
+
+O arquivo <code>jubilee_controller.py</code> é completamente baseado no arquivo de mesmo nome presente no repositório do Science Jubilee. Esse arquivo é o mais importante para o projeto, pois é responsável por gerar a interface python/G-Code. De forma resumida, o objeto que representa a máquina é criada nesse arquivo e, utilizando de uma comunicação com o servidor local, é possível enviar os comandos G-Code ativando métodos específicos do objeto JubileeController. 
+
+A seguir, você pode ver a árvore de diretórios desse diretório.
 </p>
 
 <pre>
@@ -121,7 +125,6 @@ raspilum_jubilee/
 <h3>2.1. Controlando por interface do servidor local</h3>
 
 
-
 ## Ferramentas implementadas e experimentos realizados
 
 ### Câmera
@@ -136,7 +139,8 @@ raspilum_jubilee/
 [3] Telford J, Newton G, Shields R, Mohr S, Handley J, Thielbeer F, et al. A sonochemical materials acceleration platform for the synthesis of CdSe nanocrystals. Digital Discovery. 2023;2(3):856-865. <br>
 [4] Babl L, Holten V, Reuter M, Schoof H. Duckbot: a modular open-source platform for automated experiments with duckweed. PLoS One. 2024;19(2):e0296717. <br>
 [5] Jubilee 3D. Assembly Instructions. Disponível em: https://www.jubilee3d.com/index.php?title=Assembly_Instructions <br>
-[6] DUET3D. Duet 3 Mini 5+ Hardware Overview. 2025. Disponível em: https://docs.duet3d.com/Duet3D_hardware/Duet_3_family/Duet_3_Mini_5%2B_Hardware_Overview <br>
-[7] Duet 3D. SBC Setup. Disponível em: https://docs.duet3d.com/User_manual/Machine_configuration/SBC_setup <br>
-[8] conda-forge/miniforge. Disponível em: https://github.com/conda-forge/miniforge
+[6] MACHINEAGENCY. GitHub - machineagency/science-jubilee: Controlling Jubilees for Science! Disponível em: <https://github.com/machineagency/science-jubilee/tree/main>. <br>
+[7] DUET3D. Duet 3 Mini 5+ Hardware Overview. 2025. Disponível em: https://docs.duet3d.com/Duet3D_hardware/Duet_3_family/Duet_3_Mini_5%2B_Hardware_Overview <br>
+[8] Duet 3D. SBC Setup. Disponível em: https://docs.duet3d.com/User_manual/Machine_configuration/SBC_setup <br>
+[9] conda-forge/miniforge. Disponível em: https://github.com/conda-forge/miniforge
 </p>
