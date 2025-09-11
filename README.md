@@ -71,6 +71,12 @@ Esse painel é exposto para que seja possível mudar conexões e implementar nov
 </p>
 
 
+### Sistema de troca de ferramentas
+<p align="justify">
+O Jubilee 3D possui um sistema para acoplar e desacoplar ferramentas. Esse sistema consiste em um eixo feito para entrar dentro de uma peça chamada "<i>wegde plate</i> e rotacionar, o que impede que ele possa sair. A rotação desse eixo é controlada pelo motor U.
+Todas as ferramentas planejadas para o sistema devem possuir "<i>wegde plate</i> para que seja possível a acoplar e desacoplar no carregador de ferramentas.
+</p>
+
 
 ### Software
 
