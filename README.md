@@ -36,7 +36,7 @@ A science-jubilee adapta essa infraestrutura para aplicações científicas, per
 ## Jubilee RaspIlum
 
 <p align="justify">
-O Jubilee RaspIlum é uma plataforma multifuncional para automação de experimentos na Ilum.
+O Jubilee RaspIlum é uma plataforma multifuncional para automação de experimentos na Ilum, montada como projeto de iniciação científica pelo aluno <a href="https://github.com/jsales-1)">José Sales</a>, da turma 23, sob a orientação do professor <a href="https://scholar.google.com.br/citations?user=yKskV5cAAAAJ&hl=pt-BR)">Dr. Amauri Jardim de Paula</a>. O projeto desenvolvido faz parte do INCT - Materials Informatics. 
 </p>
 
 <p align="center">
@@ -46,11 +46,10 @@ O Jubilee RaspIlum é uma plataforma multifuncional para automação de experime
 
 ### Estrutura
 
-<p align="justify">
-O sistema é constituído por perfis de alumínio anodizado, polias, correias, motores de passo, hastes metálicas, componentes impressos em PLA e outros componentes para conexão das peças. É possível conferir as etapas de montagem do sistema no manual oferecido no site do Jubilee 3D <a href="https://www.jubilee3d.com/index.php?title=Assembly_Instructions">[5]</a>. O Github do Science Jubilee também disponibiliza modelos 3D de ferramentas e componentes da estrutura do Jubilee.
+<p align="justify"> O Jubilee é construído com perfis de alumínio anodizado que formam a estrutura principal. Os eixos de movimento utilizam guias lineares, polias e correias dentadas para deslocamento em três dimensões. O volume útil de movimentação é de aproximadamente 330 mm × 350 mm × 300 mm. A base é sustentada por três fusos acionados por motores de passo independentes, que realizam o nivelamento automático e a correção de inclinações da mesa. O peso total do sistema é de cerca de 20 kg. É possível conferir as etapas de montagem do sistema pelo manual oferecido no site do Jubilee 3D <a href="https://www.jubilee3d.com/index.php?title=Assembly_Instructions">[5]</a>. O Github do Science Jubilee também disponibiliza modelos 3D de ferramentas e componentes da estrutura do Jubilee, o que facilita a manutenção da máquina e criação de novas funcionalidades.
 </p>
-
-### Componentes eletrônicos
+  
+### Componentes eletromecânicos
 
 <p align="justify">
 A Jubilee RaspIlum se movimenta por meio de 5 motores de passo, sendo 2 para XY e 3 para Z. Há também um sexto motor para o trocador de ferramentas, denominado eixo U. Os motores são controlados através de uma Duet Mini e sua placa de extensão, as quais são tipicamente utilizadas para controle de máquinas CNC e impressoras 3D, recebendo G-Code e realizando as operações <a href="https://www.jubilee3d.com/index.php?title=Assembly_Instructions">[5]</a> <a href="https://docs.duet3d.com/Duet3D_hardware/Duet_3_family/Duet_3_Mini_5+_Hardware_Overview">[6]</a>. Com essas duas placas, temos 8 drivers para controle de motores de passo, havendo atualmente 6 ocupados. Diferentemente do planejado para impressoras 3D, não utilizamos sistema de aquecimento de superfície na Jubilee RaspIlum.
@@ -87,10 +86,41 @@ Para criar uma interface mais simplificada e acessível, uma placa Raspberry Pi 
   <img src="./Imagens%20Readme/ativar_placas.jpg" width="400"><br>
   <em>Figura 8 - Locais para ativação das placas de controle.</em>
 </p>    
-<p align = 'justify'> Ao ligar o Raspberry, ele funcionará como um desktop normal, exibindo sua interface no monitor e podendo ser controlado por mouse/teclado. Apesar de ser uma imagem baseada em Linux, o sistema é bem amigável e intuitivo. </p>
+<p align = 'justify'> Ao ligar o Raspberry, ele funcionará como um desktop normal, exibindo sua interface no monitor e podendo ser controlado por mouse/teclado. Apesar de ser uma imagem baseada em Linux, o sistema é bem amigável e intuitivo. A depender a forma com que o Raspberry foi desligado anteriormente, ele também pode pedir uma senha de usuário ao ser novamente ligado, que no caso é "amauras". </p>
 
 
-### 2. Controlando por Python
+<h3>2. Controlando por Python</h3>
+
+<p align="justify">
+Entre no VSCode e abra a pasta <code>Documentos/IC/raspilum_jubilee</code>. Esse caminho é referente ao repositório que você está acessando agora. Dentro dela, acesse a pasta <code>Controle_jubilee3d</code> e confira os scripts Python que realizam o controle da máquina e das ferramentas, assim como as pastas com testes e experimentos.  
+
+Para fazer um <i>Quick Start</i>, abra o notebook jupyter <code>Exemplo de uso/Operando Jubilee.ipynb</code>, esse arquivo contém exemplos de código para controle da plataforma e ferramenta. A seguir, você pode ver a árvore de diretórios desse projeto.
+</p>
+
+<pre>
+raspilum_jubilee/
+├── Controle_jubilee3d/           # Scripts e experimentos de controle
+│   ├── Exemplo de uso/               
+│   │   └── Operando Jubilee.ipynb     # Quick Start com exemplos de código
+│   ├── Experimento I - Crescimento Leveduras/    # Experimento realizado
+│   ├── Testes de Ferramentas/                    # Testes de ferramentas
+│   ├── camera.py                                 
+│   ├── camera_circle_detect.py
+│   ├── camera_controller.py
+│   ├── image_processing.py
+│   ├── jubilee_controller.py
+│   ├── operacoes_iniciais.ipynb
+│   ├── temperature.py
+│   └── __pycache__/                  
+│
+├── Imagens Readme/               # Imagens usadas na documentação
+├── .gitignore
+└── README.md
+</pre>
+
+<h3>2.1. Controlando por interface do servidor local</h3>
+
+
 
 ## Ferramentas implementadas e experimentos realizados
 
