@@ -77,6 +77,11 @@ O Jubilee 3D possui um sistema para acoplar e desacoplar ferramentas. Esse siste
 Todas as ferramentas planejadas para o sistema devem possuir "<i>wegde plate</i> para que seja possível a acoplar e desacoplar no carregador de ferramentas.
 </p>
 
+<p align="center">
+  <img src="./Imagens%20Readme/trocador_ferramentas.gif" width="200"><br>
+  <em>Figura 7 – Eixo de troca de ferramentas.</em>
+</p>
+
 
 ### Software
 
@@ -102,7 +107,7 @@ Entre no VSCode e abra a pasta <code>Documentos/IC/raspilum_jubilee</code>. Esse
 
 Para fazer um <i>Quick Start</i>, abra o notebook jupyter <code>Exemplo de uso/Operando Jubilee.ipynb</code>, esse arquivo contém exemplos de código para controle da plataforma e ferramenta. 
 
-O arquivo <code>jubilee_controller.py</code> é completamente baseado no arquivo de mesmo nome presente no repositório do Science Jubilee. Esse arquivo é o mais importante para o projeto, pois é responsável por gerar a interface python/G-Code. De forma resumida, o objeto que representa a máquina é criada nesse arquivo e, utilizando de uma comunicação com o servidor local, é possível enviar os comandos G-Code ativando métodos específicos do objeto JubileeController. 
+O arquivo <code>jubilee_controller.py</code> é completamente baseado no arquivo de mesmo nome presente no repositório do Science Jubilee <a href = https://github.com/machineagency/science-jubilee/tree/main>[6]</a>. Esse arquivo é o mais importante para o projeto, pois é responsável por gerar a interface python/G-Code. De forma resumida, o objeto que representa a máquina é criada nesse arquivo e, utilizando de uma comunicação com o servidor local, é possível enviar os comandos G-Code ativando métodos específicos do objeto JubileeController. 
 
 A seguir, você pode ver a árvore de diretórios desse diretório.
 </p>
@@ -133,7 +138,12 @@ raspilum_jubilee/
 
 ## Ferramentas implementadas e experimentos realizados
 
-### Câmera
+### Câmera - Monitorando de crescimento de <i>S. cerevisiae</i>
+
+<p align='justify'>A câmera USB instalada como ferramenta possui uma resolução de 5MP e é acessada através da biblioteca <i>python</i> <i>openCV</i>. Conferindo a árvores de arquivos do repositório, pode-se notar que há três arquivos com o palavra "camera". O <code>camera_controller.py</code> é referente à ferramenta da câmera, enquanto o <code>camera.py</code> e <code>camera_circle.py</code>, respectivamente, mantém o vídeo da câmera liga de forma contínua em uma janela separada e aplicam um algoritmo de processamento de imagem para detecção de círculos. </p>
+
+
+
 
 ### Gripper
 
