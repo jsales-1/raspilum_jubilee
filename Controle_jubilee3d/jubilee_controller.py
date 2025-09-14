@@ -1,216 +1,198 @@
-#!/usr/bin/env python3
-"""Driver for Controlling Jubilee"""
-#import websocket # for reading the machine model
-import requests # for issuing commands
+"""Driver para controlar a Jubilee"""
+
+import requests 
 import json
 import time
 import curses
 import pprint
-from inpromptu import Inpromptu#, cli_method
+from inpromptu import Inpromptu
 from functools import wraps
 from pynput import keyboard
 
 
-
-#TODO: Figure out how to print error messages from the Duet.
-
 class MachineStateError(Exception):
-    """Raise this error if the machine is in the wrong state to perform such a command."""
+    """Erro lançado se a máquina estiver em estado incorreto para executar o comando."""
     pass
 
 def machine_is_homed(func):
-    @wraps(func) # We need this for #@cli_method to work
+    """Decorador que verifica se a máquina está referenciada antes de executar um comando."""
+    @wraps(func)
     def homing_check(self, *args, **kwds):
-        # Check the cached value if one exists.
+        """Verifica o valor em cache dos eixos; consulta o estado se necessário."""
         if self.axes_homed and all(self.axes_homed):
             return func(self, *args, **kwds)
-        # Request homing status from the object model if not known.
         self.axes_homed = json.loads(self.gcode("M409 K\"move.axes[].homed\""))["result"][:4]
         if not all(self.axes_homed):
-            raise MachineStateError("Error: machine must first be homed.")
+            raise MachineStateError("Erro: a máquina deve estar referenciada primeiro.")
         return func(self, *args, **kwds)
     return homing_check
 
 
 class JubileeMotionController(Inpromptu):
-    """Driver for sending motion cmds and polling the machine state."""
+    """Driver para enviar comandos de movimento e consultar o estado da máquina."""
 
     LOCALHOST = "127.0.0.1"
 
     def __init__(self, address=LOCALHOST, debug=False, simulated=False, reset=False):
-        """Start with sane defaults. Setup command and subscribe connections."""
-        #super().__init__()
+        """Inicializa conexões, estado da máquina e configurações padrão."""
         if address != self.__class__.LOCALHOST:
-            print("Warning: disconnecting this application from the network will halt connection to Jubilee.")
+            print("Aviso: desconectar este aplicativo da rede encerrará a conexão com a Jubilee.")
         self.address = address
         self.debug = debug
         self.simulated = simulated
         self.model_update_timestamp = 0
         self.command_ws = None
-        self.wake_time = None # Next scheduled time that the update thread updates.
+        self.wake_time = None
         self.absolute_moves = True
-        self._active_tool_index = None # Cached value under the @property.
-        self._tool_z_offsets = None # Cached value under the @property.
-        self._axis_limits = None # Cached value under the @property.
+        self._active_tool_index = None
+        self._tool_z_offsets = None
+        self._axis_limits = None
         self.connect()
-        self.axes_homed = [False]*4 # Starter value before connecting.
+        self.axes_homed = [False]*4
         if reset:
-            self.reset() # also does a reconnect.
+            self.reset()
         self._set_absolute_moves(force=True)
-
+        self.mode_protect_tools = False
         self.gcode('M98 P"/sys/config.g"')
 
+
     def connect(self):
-        """Connect to Jubilee over http."""
+        """Conecta à Jubilee via HTTP e inicializa caches de propriedades."""
         if self.simulated:
             return
-        # Do the equivalent of a ping to see if the machine is up.
         if self.debug:
-            print(f"Connecting to {self.address} ...")
+            print(f"Conectando a {self.address} ...")
         try:
-            # "Ping" the machine by updating the only cacheable information we care about.
+            # Consulta o estado dos eixos como um 'ping' à máquina.
             self.axes_homed = json.loads(self.gcode("M409 K\"move.axes[].homed\"", timeout=1))["result"][:4]
 
-            # These data members are tied to @properties of the same name
-            # without the '_' prefix.
-            # Upon reconnecting, we need to flag that the @property must
-            # refresh; otherwise we will retrieve old values that may be invalid.
+            # Zera caches de propriedades que dependem da conexão.
             self._active_tool_index = None
             self._tool_z_offsets = None
             self._axis_limits = None
 
-            # To save time upon connecting, let's just hit the API on the
-            # first try for all the @properties we care about.
+            # Atualiza propriedades importantes na primeira conexão para agilizar o acesso.
             self.active_tool_index
             self.tool_z_offsets
             self.axis_limits
-            #pprint.pprint(json.loads(requests.get("http://127.0.0.1/machine/status").text))
-            # TODO: recover absolute/relative from object model instead of enforcing it here.
+
+            # Define movimentos absolutos.
             self._set_absolute_moves(force=True)
         except json.decoder.JSONDecodeError as e:
-            raise MachineStateError("DCS not ready to connect.") from e
+            raise MachineStateError("DCS não está pronto para conectar.") from e
         except requests.exceptions.Timeout as e:
-            raise MachineStateError("Connection timed out. URL may be invalid, or machine may not be connected to the network.") from e
+            raise MachineStateError("Tempo de conexão esgotado. URL inválida ou máquina não conectada.") from e
         if self.debug:
-            print("Connected.")
+            print("Conectado.")
 
 
     def gcode(self, cmd: str = "", timeout: float = None):
-        """Send a GCode cmd; return the response"""
+        """Envia um comando GCode e retorna a resposta."""
         if self.debug or self.simulated:
-            print(f"sending: {cmd}")
+            print(f"enviando: {cmd}")
         if self.simulated:
             return None
-        # RRF3 Only
+
         response = requests.post(f"http://{self.address}/machine/code", data=f"{cmd}", timeout=timeout).text
         if self.debug:
-            print(f"received: {response}")
-            #print(json.dumps(r, sort_keys=True, indent=4, separators=(',', ':')))
+            print(f"recebido: {response}")
         return response
 
 
     def download_file(self, filepath: str = None, timeout: float = None):
-        """Download the file into a file object. Full filepath must be specified.
-        Example: /sys/tfree0.g
-        """
-        # RRF3 Only
+        """Baixa um arquivo da máquina especificando o caminho completo. Ex.: /sys/tfree0.g."""
         file_contents = requests.get(f"http://{self.address}/machine/file{filepath}",
-                                     timeout=timeout).text
+                                    timeout=timeout).text
         return file_contents
 
 
     def reset(self):
-        """Issue a software reset."""
-        # End the subscribe thread first.
-        self.gcode("M999") # Issue a board reset. Assumes we are already connected
+        """Executa um reset de software e tenta reconectar a máquina."""
+        self.gcode("M999")  # Reseta a placa; assume que já está conectado
         self.axes_homed = [False]*4
         self.disconnect()
-        print("Reconnecting...")
+        print("Reconectando...")
         for i in range(10):
             time.sleep(1)
             try:
                 self.connect()
                 self.axes_homed = [False]*4
                 return
-            except MachineStateError as e:
+            except MachineStateError:
                 pass
-        raise MachineStateError("Reconnecting failed.")
+        raise MachineStateError("Falha ao reconectar.")
 
 
     def home_all_forced(self):
-        # Having a tool is only possible if the machine was already homed.
-        #if self.active_tool_index != -1:
-        #    self.park_tool()
-        #self.gcode("G28")
-        #self._set_absolute_moves(force=True)
-        # Update homing state. Do not query the object model because of race condition.
-        self.axes_homed = [True, True, True, True] # X, Y, Z, U
+        """Força todos os eixos como referenciados (X, Y, Z, U)."""
+        self.axes_homed = [True, True, True, True]
 
 
-    def home_all(self,mesh_mode_z=True):
+    def home_all(self, mesh_mode_z=True):
+        """Referencia todos os eixos da máquina."""
         self.home_xy()
         self.home_z(mesh_mode_z)
         self.home_u()
 
 
-    ##@cli_method
     def home_xy(self):
-        """Home the XY axes.
-        Home Y before X to prevent possibility of crashing into the tool rack.
+        """Referencia os eixos XY.
+        Y é referenciado antes de X para evitar colisão com o suporte de ferramentas.
         """
-
         self.gcode('M98 P"/sys/homey.g"')
         self.gcode('M98 P"/sys/homex.g"')
         self.axes_homed[0] = True
         self.axes_homed[1] = True
 
 
-    def home_z(self,mesh_mode = True):
-        """Home the Z axis.
-        Note that the Deck must be clear first.
+    def home_z(self, mesh_mode=True):
+        """Referencia o eixo Z.
+        A base deve estar livre de obstáculos antes de executar.
         """
-        
-        response = input("Is the Deck free of obstacles? [y/n]")
-        if response.lower() in ["y", "yes"]:
+        response = input("A base está livre de obstáculos? [s/n]")
+        if response.lower() in ["s", "sim"]:
             if mesh_mode:
                 self.gcode('M98 P"/sys/homez.g"')
-            if not mesh_mode:
+            else:
                 self.gcode('M98 P"/sys/homez_NM.g"')
-
-
         self.axes_homed[2] = True
-    
-    def home_u(self):
-        """Home the U axis.
-        """
-        response = input("Is the Deck free of obstacles? [y/n]")
-        if response.lower() in ["y", "yes"]:
-            self.gcode('M98 P"/sys/homeu.g"')
 
+
+    def home_u(self):
+        """Referencia o eixo U.
+        A base deve estar livre de obstáculos antes de executar.
+        """
+        response = input("A base está livre de obstáculos? [s/n]")
+        if response.lower() in ["s", "sim"]:
+            self.gcode('M98 P"/sys/homeu.g"')
         self.axes_homed[3] = True
 
 
-    ##@cli_method
+    def protect_tools(self, on: bool):
+        """Ativa ou desativa a proteção das ferramentas."""
+        if on:
+            self.gcode("M208 Y50:400")
+            self.mode_protect_tools = True
+        else:
+            self.gcode("M208 Y0:400")
+
+
     def home_in_place(self, *args: str):
-        """Set the current location of a machine axis or axes to 0."""
+        """Define a posição atual dos eixos especificados como zero."""
         for axis in args:
             if axis.upper() not in ['X', 'Y', 'Z', 'U']:
-                raise TypeError(f"Error: cannot home unknown axis: {axis}.")
+                raise TypeError(f"Erro: eixo desconhecido: {axis}.")
             self.gcode(f"G92 {axis.upper()}0")
 
-    
+
     def turn_off_drivers(self):
-        """Turn off all drivers.
-        """
+        """Desliga todos os drivers da máquina."""
         self.gcode('M18')
 
 
-
     @machine_is_homed
-    def _move_xyz(self, x: float = None, y: float = None, z: float = None, wait: bool = False, velocity:int = '13000'):
-        """Move in XYZ. Absolute/relative set externally. Wait until done."""
-        # TODO: find way to recover from out-of-bounds move requests.
-
+    def _move_xyz(self, x: float = None, y: float = None, z: float = None, wait: bool = False, velocity:int = 13000):
+        """Move a máquina nos eixos XYZ. Absoluto ou relativo definido externamente. Aguarda término se wait=True."""
         x_movement = f"X{x} " if x is not None else ""
         y_movement = f"Y{y} " if y is not None else ""
         z_movement = f"Z{z} " if z is not None else ""
@@ -219,7 +201,9 @@ class JubileeMotionController(Inpromptu):
         if wait:
             self.gcode(f"M400")
 
+
     def _set_absolute_moves(self, force: bool = False):
+        """Define os movimentos da máquina como absolutos."""
         if self.absolute_moves and not force:
             return
         self.gcode("G90")
@@ -227,133 +211,124 @@ class JubileeMotionController(Inpromptu):
 
 
     def _set_relative_moves(self, force: bool = False):
+        """Define os movimentos da máquina como relativos."""
         if not self.absolute_moves and not force:
             return
         self.gcode("G91")
         self.absolute_moves = False
 
+
     def emergence_stop(self):
+        """Executa parada de emergência da máquina."""
         self.gcode("M112")
-    
+
+
     def stop(self):
+        """Para a execução da máquina."""
         self.gcode("M0")
-    
-    def stop_drivers(self,drivers_list:list):
+
+
+    def stop_drivers(self, drivers_list: list):
+        """Desliga drivers específicos ou todos se a lista estiver vazia."""
         for driver in drivers_list:
-            self.gcode("M18 {driver} ")
+            self.gcode(f"M18 {driver}")
         if len(drivers_list) == 0:
             self.gcode("M18")
 
+
     def move_xyz_relative(self, x: float = None, y: float = None, z: float = None, wait: bool = False):
-        """Do a relative move in XYZ."""
+        """Move a máquina nos eixos XYZ de forma relativa."""
         self._set_relative_moves()
         self._move_xyz(x, y, z, wait)
 
 
-    ##@cli_method
     def move_xyz_absolute(self, x: float = None, y: float = None, z: float = None, wait: bool = False, velocity:int = 13000):
-        """Do an absolute move in XYZ."""
-        # TODO: use push and pop sematics instead.
+        """Move a máquina nos eixos XYZ de forma absoluta."""
         self._set_absolute_moves()
         self._move_xyz(x, y, z, wait, velocity)
 
 
     def set_feedrate(self, mm_per_min):
+        """Define a velocidade de deslocamento em mm/min."""
         self.gcode(f"F{mm_per_min}")
 
 
     @property
-    #@cli_method
     def position(self):
-        """Returns the machine control point in mm."""
-        # Axes are ordered X, Y, Z, U, E, E0, E1, ... En, where E is a copy of E0.
+        """Retorna a posição atual do ponto de controle da máquina em mm nos eixos XYZ."""
         response_chunks = self.gcode("M114").split()
         positions = [float(a.split(":")[1]) for a in response_chunks[:3]]
         return positions
 
 
-    #@cli_method
     def pickup_tool(self, tool_index: int):
-        """Pick up the tool specified by tool index."""
+        """Seleciona a ferramenta especificada pelo índice."""
         if tool_index < 0:
             return
         self.gcode(f"T{tool_index}")
-        # Update the cached value to prevent read delays.
         self._active_tool_index = tool_index
 
 
-    #@cli_method
     def park_tool(self):
-        """Park the current tool."""
+        """Retorna a ferramenta atual para o estacionamento."""
         self.gcode("T-1")
-        # Update the cached value to prevent read delays.
         self._active_tool_index = -1
 
 
     @property
-    #@cli_method
     def active_tool_index(self):
-        """Return the index of the current tool."""
-        if self._active_tool_index is None: # Starting from a fresh connection.
+        """Retorna o índice da ferramenta atualmente ativa."""
+        if self._active_tool_index is None:
             try:
                 response = self.gcode("T")
-                # On HTTP Interface, we get a string instead of -1 when there are no tools.
                 if response.startswith('No tool'):
                     return -1
-                # On HTTP Interface, we get a string instead of the tool index.
                 elif response.startswith('Tool'):
-                    # Recover from the string: 'Tool X is selected.'
                     self._active_tool_index = int(response.split()[1])
                 else:
                     self._active_tool_index = int(response)
             except ValueError as e:
-                print("Error occurred trying to read current tool!")
+                print("Erro ao ler a ferramenta atual!")
                 raise e
-        # Return the cached value.
         return self._active_tool_index
 
+
     @property
-    #@cli_method
     def tool_z_offsets(self):
-        """Return (in tool order) a list of tool's z offsets"""
-        # Starting from fresh connection, query from the Duet.
+        """Retorna uma lista com os offsets Z de todas as ferramentas."""
         if self._tool_z_offsets is None:
             try:
                 response = json.loads(self.gcode("M409 K\"tools\""))["result"]
-                #pprint.pprint(response)
-                self._tool_z_offsets = [] # Create a fresh list.
+                self._tool_z_offsets = []
                 for tool_data in response:
-                    tool_z_offset = tool_data["offsets"][2] # Pull Z axis
+                    tool_z_offset = tool_data["offsets"][2]
                     self._tool_z_offsets.append(tool_z_offset)
             except ValueError as e:
-                print("Error occurred trying to read z offsets of all tools!")
+                print("Erro ao ler offsets Z das ferramentas!")
                 raise e
-        # Return the cached value.
         return self._tool_z_offsets
 
 
     @property
-    #@cli_method
     def axis_limits(self):
-        """Return (in XYZU order) a list of tuples specifying (min, max) axis limit"""
-        # Starting from fresh connection, query from the Duet.
+        """Retorna uma lista de tuplas (min, max) com os limites dos eixos XYZU."""
         if self._axis_limits is None:
             try:
                 response = json.loads(self.gcode("M409 K\"move.axes\""))["result"]
-                #pprint.pprint(response)
-                self._axis_limits = [] # Create a fresh list.
+                self._axis_limits = []
                 for axis_data in response:
                     axis_min = axis_data["min"]
                     axis_max = axis_data["max"]
                     self._axis_limits.append((axis_min, axis_max))
             except ValueError as e:
-                print("Error occurred trying to read axis limits on each axis!")
+                print("Erro ao ler limites dos eixos!")
                 raise e
-        # Return the cached value.
         return self._axis_limits
+
 
     @machine_is_homed
     def keyboard_controll(self):
+        """Controla a máquina via teclado, movendo XYZ e ajustando passo em mm."""
         step = 10
         pressed_keys = set()
         running = True
@@ -364,7 +339,6 @@ class JubileeMotionController(Inpromptu):
                 if key.char in ['+', '-']:
                     pressed_keys.add(key.char)
             except AttributeError:
-
                 if key in [
                     keyboard.Key.up,
                     keyboard.Key.down,
@@ -392,17 +366,17 @@ class JubileeMotionController(Inpromptu):
         try:
             while running:
                 if keyboard.Key.up in pressed_keys:
-                    self.move_xyz_relative(0, step, 0)      # Y+
+                    self.move_xyz_relative(0, step, 0)
                 elif keyboard.Key.down in pressed_keys:
-                    self.move_xyz_relative(0, -step, 0)     # Y-
+                    self.move_xyz_relative(0, -step, 0)
                 elif keyboard.Key.left in pressed_keys:
-                    self.move_xyz_relative(-step, 0, 0)     # X-
+                    self.move_xyz_relative(-step, 0, 0)
                 elif keyboard.Key.right in pressed_keys:
-                    self.move_xyz_relative(step, 0, 0)      # X+
+                    self.move_xyz_relative(step, 0, 0)
                 elif keyboard.Key.page_up in pressed_keys:
-                    self.move_xyz_relative(0, 0, -step)      # Z+
+                    self.move_xyz_relative(0, 0, -step)
                 elif keyboard.Key.page_down in pressed_keys:
-                    self.move_xyz_relative(0, 0, step)     # Z-
+                    self.move_xyz_relative(0, 0, step)
                 elif '+' in pressed_keys:
                     step += 1
                 elif '-' in pressed_keys:
@@ -419,21 +393,21 @@ class JubileeMotionController(Inpromptu):
                     end="\r"
                 )
         except KeyboardInterrupt:
-            print("\n Interrompido")
+            print("\nInterrompido")
 
         listener.stop()
 
 
     def disconnect(self):
-        """Close the connection."""
+        """Encerra a conexão com a máquina."""
         pass
 
 
     def __enter__(self):
+        """Permite uso com contexto 'with'."""
         return self
 
+
     def __exit__(self, *args):
+        """Encerra a conexão ao sair do contexto 'with'."""
         self.disconnect()
-
-
-

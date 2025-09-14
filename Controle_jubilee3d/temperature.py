@@ -7,6 +7,8 @@ import time
 
 
 h = lgpio.gpiochip_open(0)
+file = input("Digite o nome que o arquivo com os dados terá")
+intervalo = time.sleep(1830)
 
 
 dhtDevice = adafruit_dht.DHT11(board.D26)

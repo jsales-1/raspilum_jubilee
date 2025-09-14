@@ -40,6 +40,8 @@ class camera_tool:
         Coodernadas foram descobertas empíricamente e podem ser 
         alteradas se necessário.
         """
+        self.machine.protect_tools(on=False)
+
         self.machine.move_xyz_absolute(y=220, velocity=self.move_velocity)
         self.machine.move_xyz_absolute(x=302, velocity=self.move_velocity)
         self.machine.gcode("G0 U70")
@@ -48,6 +50,9 @@ class camera_tool:
         self.machine.move_xyz_absolute(y=70, velocity=self.move_velocity)
         self.machine.move_xyz_absolute(x=50, y=120, velocity=self.move_velocity)
 
+        if self.machine.mode_protect_tools:
+            self.machine.protect_tools(on=False)
+
     def uninstall(self):
         """
         Remove a ferramenta da câmera da máquina.
@@ -55,6 +60,8 @@ class camera_tool:
         Este método move o cabeçote para as coordenadas específicas
         necessárias para desacoplar a câmera do sistema Jubilee.
         """
+        self.machine.protect_tools(on=False)
+
         self.machine.move_xyz_absolute(y=90, velocity=self.move_velocity)
         self.machine.move_xyz_absolute(x=302, velocity=self.move_velocity)
         self.machine.move_xyz_absolute(y=7, velocity=self.move_velocity)
@@ -62,6 +69,9 @@ class camera_tool:
         self.machine.move_xyz_absolute(y=70, velocity=self.move_velocity)
         self.machine.move_xyz_absolute(x=50, y=120, velocity=self.move_velocity)
         self.machine.gcode("G0 U0")
+
+        if self.machine.mode_protect_tools:
+            self.machine.protect_tools(on=False)
 
     def photo(self, filename='captura.jpg', video_index=0):
         """
