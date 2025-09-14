@@ -140,7 +140,7 @@ raspilum_jubilee/
 Na tela inicial aparecem painéis com status dos eixos, leitura de sensores e console para envio de G-Code; o Machine Control, que permite a movimentação manual dos eixos, troca de ferramentas e homing; Settings: ajustes de rede, firmware e parâmetros de movimento
 Essa interface, exibida na Figura 9, permite controle completo sem necessidade de scripts Python. Funciona muito bem para testes rápidos, calibração e operação básica da Jubilee RaspIlum.</p> 
 <p align="center">
-  <img src="./Imagens%20Readme/interface_local.png" width="200"><br>
+  <img src="./Imagens%20Readme/interface_local.png" width="600"><br>
   <em>Figura 9 – Interface Web do Duet Web Control.</em>
 </p>
 
