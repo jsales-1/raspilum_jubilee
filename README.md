@@ -16,7 +16,7 @@ A science-jubilee adapta essa infraestrutura para aplicações científicas, per
 ### Experimentos da literatura que utilizaram a plataforma:
 
 <p align="justify">
-1. O artigo "A high-throughput workflow for the synthesis of CdSe nanocrystals using a sonochemical materials acceleration platform", publicado em 2023, apresenta uma plataforma aceleradora de materiais para síntese de nanocristais de CdSe. O sistema combinou o Jubilee com um equipamento de automação de líquidos da Opentrons OT-2, ultrassom e espectrometria, permitindo 625 condições experimentais <a href="https://pubs.rsc.org/en/content/articlehtml/2023/dd/d3dd00033h">[3]</a>.
+1. O artigo "A high-throughput workflow for the synthesis of CdSe nanocrystals using a sonochemical materials acceleration platform", publicado em 2023, apresenta uma plataforma aceleradora de materiais para síntese de nanocristais de CdSe. O sistema combinou o Jubilee com um equipamento de automação de líquidos da Opentrons OT-2, ultrassom e espectrometria, permitindo 625 condições experimentais testadas de forma automatizada <a href="https://pubs.rsc.org/en/content/articlehtml/2023/dd/d3dd00033h">[3]</a>.
 </p>
 
 <p align="center">
@@ -49,7 +49,7 @@ O Jubilee RaspIlum é uma plataforma multifuncional para automação de experime
 <p align="justify"> O Jubilee é construído com perfis de alumínio anodizado que formam a estrutura principal. Os eixos de movimento utilizam guias lineares, polias e correias dentadas para deslocamento em três dimensões. O volume útil de movimentação é de aproximadamente 330 mm × 350 mm × 300 mm. A base é sustentada por três fusos acionados por motores de passo independentes, que realizam o nivelamento automático e a correção de inclinações da mesa. O peso total do sistema é de cerca de 20 kg. É possível conferir as etapas de montagem do sistema pelo manual oferecido no site do Jubilee 3D <a href="https://www.jubilee3d.com/index.php?title=Assembly_Instructions">[5]</a>. O Github do Science Jubilee também disponibiliza modelos 3D de ferramentas e componentes da estrutura do Jubilee, o que facilita a manutenção da máquina e criação de novas funcionalidades. <a href = https://github.com/machineagency/science-jubilee/tree/main>[6]</a>.
 </p>
   
-### Componentes eletromecânicos
+### Componentes elétricos/mecânicos
 
 <p align="justify">
 A Jubilee RaspIlum se movimenta por meio de 5 motores de passo, sendo 2 para XY e 3 para Z. Há também um sexto motor para o trocador de ferramentas, denominado eixo U. Os motores são controlados através de uma Duet Mini e sua placa de extensão, as quais são tipicamente utilizadas para controle de máquinas CNC e impressoras 3D, recebendo G-Code e realizando as operações <a href="https://www.jubilee3d.com/index.php?title=Assembly_Instructions">[5]</a> <a href="https://docs.duet3d.com/Duet3D_hardware/Duet_3_family/Duet_3_Mini_5+_Hardware_Overview">[7]</a>. Com essas duas placas, temos 8 drivers para controle de motores de passo, havendo atualmente 6 ocupados. Diferentemente do planejado para impressoras 3D, não utilizamos sistema de aquecimento de superfície na Jubilee RaspIlum.
@@ -86,8 +86,9 @@ Todas as ferramentas planejadas para o sistema devem possuir "<i>wegde plate</i>
 ### Software
 
 <p align="justify">
-Para criar uma interface mais simplificada e acessível, uma placa Raspberry Pi 5 é utilizada como Single Board Computer, o que permite que o sistema seja controlado por um servidor local ou por linguagem Python. O Raspberry possui gravada uma imagem de sistema operacional Linux específica para o controle e comunicação com a placa Duet. A instalação foi feita seguindo o protocolo disponível no site da Duet 3D <a href="https://docs.duet3d.com/User_manual/Machine_configuration/SBC_setup">[8]</a>. Para utilizar o Python nesse subsistema Linux, foi necessário uma versão do Anaconda específica para Raspberry Pi, a qual foi instalada por meio do GitHub Miniforge <a href="https://github.com/conda-forge/miniforge">[9]</a>.
+Para criar uma interface mais simplificada e acessível, uma placa Raspberry Pi 5 é utilizada como Single Board Computer, permitindo que o sistema seja controlado por um servidor local ou por linguagem Python. O Raspberry roda o sistema operacional Raspberry Pi OS, possui 8 GB de RAM e cerca de 128 GB de memória disponível. É executado no Raspberry o Duet Software Framework (DSF), que conecta a placa ao Duet 3, envia comandos G-Code e controla motores, sensores e ferramentas da máquina. A instalação foi feita seguindo o protocolo disponível no site da Duet 3D <a href="https://docs.duet3d.com/User_manual/Machine_configuration/SBC_setup">[8]</a>. Para utilizar o Python nesse subsistema Linux, foi necessário instalar uma versão do Anaconda específica para Raspberry Pi, através do GitHub Miniforge <a href="https://github.com/conda-forge/miniforge">[9]</a>
 </p>
+
 
 ## Uso do Jubilee RaspIlum
 
@@ -135,17 +136,36 @@ raspilum_jubilee/
 
 <h3>2.1. Controlando por interface do servidor local</h3>
 
+<p align = 'justify'>Abra o navegador Chromium e acesse http://jubilee.local/. A página exibida é a interface web do Duet Web Control, que já vem incluida na imagem do sistema operacional fornecida para o Raspberry Pi <a href="https://docs.duet3d.com/User_manual/Machine_configuration/SBC_setup">[8]</a>.
+Na tela inicial aparecem painéis com status dos eixos, leitura de sensores e console para envio de G-Code; o Machine Control, que permite a movimentação manual dos eixos, troca de ferramentas e homing; Settings: ajustes de rede, firmware e parâmetros de movimento
+Essa interface, exibida na Figura 9, permite controle completo sem necessidade de scripts Python. Funciona muito bem para testes rápidos, calibração e operação básica da Jubilee RaspIlum.</p> 
+<p align="center">
+  <img src="./Imagens%20Readme/interface_local.png" width="200"><br>
+  <em>Figura 9 – Interface Web do Duet Web Control.</em>
+</p>
 
-## Ferramentas implementadas e experimentos realizados
-
-### Câmera - Monitorando de crescimento de <i>S. cerevisiae</i>
-
-<p align='justify'>A câmera USB instalada como ferramenta possui uma resolução de 5MP e é acessada através da biblioteca <i>python</i> <i>openCV</i>. Conferindo a árvores de arquivos do repositório, pode-se notar que há três arquivos com o palavra "camera". O <code>camera_controller.py</code> é referente à ferramenta da câmera, enquanto o <code>camera.py</code> e <code>camera_circle.py</code>, respectivamente, mantém o vídeo da câmera liga de forma contínua em uma janela separada e aplicam um algoritmo de processamento de imagem para detecção de círculos. </p>
 
 
+## Ferramentas implementadas.
 
+### Câmera</i>
+
+<p align='justify'>A câmera USB instalada como ferramenta possui uma resolução de 5MP e é acessada através da biblioteca <i>python</i> <i>openCV</i>. Conferindo a árvores de arquivos do repositório, pode-se notar que há três arquivos com o palavra "camera". O arquivo <code>camera_controller.py</code> é responsável por gerenciar a câmera enquanto ferramenta do Jubilee RaspIlum, permitindo instalar e desinstalar a câmera, além de capturar imagens quando necessário. O arquivo <code>camera.py</code> mantém o vídeo da câmera ativo em uma janela separada, o que é útil para ajustes de foco e enquadramento antes de iniciar experimentos. O <code>camera_circle.py</code> aplica um algoritmo de detecção de círculos sobre o vídeo, mas essa funcionalidade é apenas um teste de processamento de imagem e não é importante para o uso da câmera na plataforma. </p>
+
+<p align="center">
+  <img src="./Imagens%20Readme/ferramenta_camera.jpg" width="300"><br>
+  <em>Figura 10 – Câmera USB vista em diferentes posições.</em>
+</p>
 
 ### Gripper
+<p align='justify'>
+O gripper é uma ferramenta de manipulação mecânica, projetada para pegar, transportar e soltar amostras leves. O gripper utiliza um servo SG9 conectado diretamente aos pinos GPIO do Raspberry, o que limita a carga que ele consegue suportar. Apesar disso, é adequado para segurar lâminas, por exemplo, em experimentos de <i>dip coating</i>. O design ainda está em desenvolvimento e melhorias futuras visam aumentar a força e a precisão da ferramenta através da susbtituição do motor utilizado. </p>
+
+<p align="center">
+  <img src="./Imagens%20Readme/ferramenta_garra.jpg" width="300"><br>
+  <em>Figura 11 – Gripper visto de diferentes posições.</em>
+</p>
+
 
 ## Referências      
 
