@@ -8,7 +8,7 @@ import time
 
 h = lgpio.gpiochip_open(0)
 file = input("Digite o nome que o arquivo com os dados terá")
-intervalo = time.sleep(1830)
+intervalo = int(input("Digite intervalo entre as gravações em segundos"))
 
 
 dhtDevice = adafruit_dht.DHT11(board.D26)
@@ -45,4 +45,4 @@ for i in range(n):
     df = pd.DataFrame(dados)
     df.to_excel("analise2.xlsx")
     
-    time.sleep(1830)
+    time.sleep(intervalo)
