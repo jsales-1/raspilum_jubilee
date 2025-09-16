@@ -38,20 +38,22 @@ while True:
         minDist=100,
         param1=100,
         param2=30,
-        minRadius=200,
+        minRadius=10,
         maxRadius=210
     )
 
     if circles is not None:
         circles = np.round(circles[0, :]).astype("int")
         circles = sorted(circles, key=lambda x: x[2], reverse=True)
-        x, y, r = circles[0]
+        
+        for circle in circles:
+            x, y, r = circle
 
-        # Desenha o círculo e seu centro
-        cv2.circle(frame, (x, y), r, (0, 255, 0), 4)
-        cv2.circle(frame, (x, y), 2, (0, 0, 255), 3)
-        cv2.putText(frame, f"{r}", (x - 40, y - r - 10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
+            # Desenha o círculo e seu centro
+            cv2.circle(frame, (x, y), r, (0, 255, 0), 4)
+            cv2.circle(frame, (x, y), 2, (0, 0, 255), 3)
+            cv2.putText(frame, f"{r}", (x - 40, y - r - 10),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
 
     # Mostra o frame processado
     cv2.imshow('Camera', frame)
