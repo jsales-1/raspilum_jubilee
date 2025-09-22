@@ -19,7 +19,7 @@ class camera_tool:
     move_velocity : int
         Velocidade padrão para movimentação do cabeçote durante instalação/desinstalação."""
 
-    def __init__(self, machine):
+    def __init__(self, machine,parking_position_xy=(302,7)):
         """
         Inicializa a ferramenta da câmera.
 
@@ -27,6 +27,7 @@ class camera_tool:
         ----------
         machine : Instância da Jubilee.
         """
+        self.parking_position_x,self.parking_position_y = parking_position_xy
         self.installed = False
         self.machine = machine
         self.move_velocity = 10000
@@ -42,10 +43,10 @@ class camera_tool:
         """
         self.machine.protect_tools(on=False)
 
-        self.machine.move_xyz_absolute(y=220, velocity=self.move_velocity)
-        self.machine.move_xyz_absolute(x=302, velocity=self.move_velocity)
-        self.machine.gcode("G0 U70")
-        self.machine.move_xyz_absolute(y=7, velocity=self.move_velocity)
+        self.machine.move_xyz_absolute(y=90, velocity=self.move_velocity)
+        self.machine.move_xyz_absolute(x=self.parking_position_x, velocity=self.move_velocity)
+        self.machine.gcode("G0 U80")
+        self.machine.move_xyz_absolute(y=self.parking_position_y, velocity=self.move_velocity)
         self.machine.gcode("G0 U0")
         self.machine.move_xyz_absolute(y=70, velocity=self.move_velocity)
         self.machine.move_xyz_absolute(x=50, y=120, velocity=self.move_velocity)
@@ -63,9 +64,9 @@ class camera_tool:
         self.machine.protect_tools(on=False)
 
         self.machine.move_xyz_absolute(y=90, velocity=self.move_velocity)
-        self.machine.move_xyz_absolute(x=302, velocity=self.move_velocity)
-        self.machine.move_xyz_absolute(y=7, velocity=self.move_velocity)
-        self.machine.gcode("G0 U70")
+        self.machine.move_xyz_absolute(x=self.parking_position_x, velocity=self.move_velocity)
+        self.machine.move_xyz_absolute(y=self.parking_position_y, velocity=self.move_velocity)
+        self.machine.gcode("G0 U80")
         self.machine.move_xyz_absolute(y=70, velocity=self.move_velocity)
         self.machine.move_xyz_absolute(x=50, y=120, velocity=self.move_velocity)
         self.machine.gcode("G0 U0")

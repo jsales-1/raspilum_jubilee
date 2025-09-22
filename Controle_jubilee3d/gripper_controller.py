@@ -2,15 +2,16 @@ import lgpio
 import time
 
 class Gripper:
-    def __init__(self,machine,servo_pin=13):
+    def __init__(self,machine,servo_pin=13,parking_position_xy=(40,7)):
 
+        self.parking_position_x,self.parking_position_y = parking_position_xy
         self.handle = lgpio.gpiochip_open(0)
         self.servo_pin = servo_pin
         self.machine = machine
         self.move_velocity = 10000
 
         self.machine.gcode("M208 Z100:300")
-        if self.machine.position2[2]<100:
+        if self.machine.position[2]<100:
             self.machine.move_xyz_absolute(z=100)
         
 
@@ -26,12 +27,11 @@ class Gripper:
         self.machine.protect_tools(on=False)
         
         self.machine.move_xyz_absolute(y=220, velocity=self.move_velocity)
-        self.machine.move_xyz_absolute(x=40, velocity=self.move_velocity)
+        self.machine.move_xyz_absolute(x=self.parking_position_x, velocity=self.move_velocity)
         self.machine.gcode("G0 U70")
-        self.machine.move_xyz_absolute(y=7, velocity=self.move_velocity)
+        self.machine.move_xyz_absolute(y=self.parking_position_y, velocity=self.move_velocity)
         self.machine.gcode("G0 U0")
         self.machine.move_xyz_absolute(y=70, velocity=self.move_velocity)
-        self.machine.move_xyz_absolute(x=70, y=120, velocity=self.move_velocity)
 
         if self.machine.mode_protect_tools:
             self.machine.protect_tools(on=False)
@@ -46,11 +46,10 @@ class Gripper:
         self.machine.protect_tools(on=False)
 
         self.machine.move_xyz_absolute(y=90, velocity=self.move_velocity)
-        self.machine.move_xyz_absolute(x=40, velocity=self.move_velocity)
-        self.machine.move_xyz_absolute(y=7, velocity=self.move_velocity)
+        self.machine.move_xyz_absolute(x=self.parking_position_x, velocity=self.move_velocity)
+        self.machine.move_xyz_absolute(y=self.parking_position_y, velocity=self.move_velocity)
         self.machine.gcode("G0 U70")
         self.machine.move_xyz_absolute(y=70, velocity=self.move_velocity)
-        self.machine.move_xyz_absolute(x=70, y=120, velocity=self.move_velocity)
         self.machine.gcode("G0 U0")
 
         if self.machine.mode_protect_tools:
