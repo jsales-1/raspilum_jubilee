@@ -1,7 +1,7 @@
 class Micropipette: 
     """
     Classe para controle de uma micropipeta automatizada integrada
-    a uma máquina do tipo Jubilee.
+    em uma Jubilee.
 
     Esta classe simula o funcionamento de uma pipeta de deslocamento
     positivo, permitindo instalar/desinstalar a ferramenta e realizar
@@ -29,7 +29,7 @@ class Micropipette:
         self.machine = machine
         self.move_velocity = 10000
 
-        # Configura altura mínima de segurança no eixo Z e executa homing
+        # Altura mínima de segurança no eixo Z e homing
         self.machine.gcode("M208 Z100:300")
         self.machine.gcode('M98 P"/sys/homev.g"')
         if self.machine.position[2] < 100:
