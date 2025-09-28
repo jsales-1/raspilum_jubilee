@@ -97,6 +97,19 @@ class Micropipette:
         
         next_position = ul / 4
         self.machine.gcode(f"G0 V{next_position}")
+    
+
+    def press_step(self, give_step):
+
+        if give_step > 300:
+            print("Não tente pipetar mais que 1200 µL")
+            return
+
+        if self.liquid_ul > 0:
+            self.machine.gcode("G0 V350")
+            self.liquid_ul = 0
+        
+        self.machine.gcode(f"G0 V{give_step}")
 
     def aspirate(self):
         """

@@ -1,0 +1,3130 @@
+﻿2025-06-30 10:19:30 Event logging started
+2025-06-30 10:19:30 Error: in file config.g line 113: Failed to parse major M-code number (m)
+2025-06-30 10:19:58 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 10:20:10 Event logging stopped
+2025-06-30 10:20:16 Event logging started
+2025-06-30 10:20:17 Error: in file config.g line 113: Failed to parse major M-code number (m)
+2025-06-30 10:20:31 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 10:20:53 Event logging stopped
+2025-06-30 10:20:59 Event logging started
+2025-06-30 10:21:00 Error: in file config.g line 113: Failed to parse major M-code number (m)
+2025-06-30 10:21:21 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 10:24:08 Event logging stopped
+2025-06-30 10:24:14 Event logging started
+2025-06-30 10:24:14 Error: in file config.g line 113: Failed to parse major M-code number (m)
+2025-06-30 10:27:23 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 10:27:27 Event logging stopped
+2025-06-30 10:27:33 Event logging started
+2025-06-30 10:27:34 Error: in file config.g line 113: Failed to parse major M-code number (m)
+2025-06-30 10:28:53 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 10:29:00 Event logging stopped
+2025-06-30 10:29:06 Event logging started
+2025-06-30 10:29:06 Error: in file config.g line 113: Failed to parse major M-code number (m)
+2025-06-30 10:32:47 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 10:32:55 Event logging stopped
+2025-06-30 10:33:01 Event logging started
+2025-06-30 10:33:01 Error: in file config.g line 113: Failed to parse major M-code number (m)
+2025-06-30 10:34:27 Error: M553: Failed to determine IP address required to set netmask
+2025-06-30 10:34:27 Event logging stopped
+2025-06-30 10:34:27 Event logging started
+2025-06-30 10:34:27 Error: in file config.g line 113: Failed to parse major M-code number (m)
+2025-06-30 10:34:35 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 10:34:40 Event logging stopped
+2025-06-30 10:34:46 Event logging started
+2025-06-30 10:34:46 Error: in file config.g line 113: Failed to parse major M-code number (m)
+2025-06-30 10:35:10 Error: M553: Failed to determine IP address required to set netmask
+2025-06-30 10:35:10 Event logging stopped
+2025-06-30 10:35:10 Event logging started
+2025-06-30 10:35:10 Error: in file config.g line 113: Failed to parse major M-code number (m)
+2025-06-30 10:35:17 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 10:35:46 Event logging stopped
+2025-06-30 10:35:52 Event logging started
+2025-06-30 10:35:52 Error: in file config.g line 113: Failed to parse major M-code number (m)
+2025-06-30 10:36:00 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 10:36:26 Event logging stopped
+2025-06-30 10:36:33 Event logging started
+2025-06-30 10:36:33 Error: in file config.g line 113: Failed to parse major M-code number (m)
+2025-06-30 10:37:06 Error: Must home axes [XY] before homing [Z]
+2025-06-30 10:37:11 Error: Must home axes [XY] before homing [Z]
+2025-06-30 10:37:12 Error: Must home axes [XY] before homing [Z]
+2025-06-30 10:37:13 Error: Must home axes [XY] before homing [Z]
+2025-06-30 10:37:38 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 10:37:49 Event logging stopped
+2025-06-30 10:37:55 Event logging started
+2025-06-30 10:37:55 Error: in file config.g line 113: Failed to parse major M-code number (m)
+2025-06-30 10:38:46 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 10:39:14 Event logging stopped
+2025-06-30 10:39:20 Event logging started
+2025-06-30 10:39:21 Error: in file config.g line 113: Failed to parse major M-code number (m)
+2025-06-30 10:41:35 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 10:42:07 Event logging stopped
+2025-06-30 10:42:13 Event logging started
+2025-06-30 10:42:13 Error: in file config.g line 113: Failed to parse major M-code number (m)
+2025-06-30 10:52:08 Event logging started
+2025-06-30 10:52:08 Error: in file config.g line 113: Failed to parse major M-code number (m)
+2025-06-30 10:52:44 Error: in file macro line 6: G1: insufficient axes homed
+2025-06-30 10:53:39 Error: in file macro line 30: G1: insufficient axes homed
+2025-06-30 11:00:55 Error: M553: Failed to determine IP address required to set netmask
+2025-06-30 11:00:55 Event logging stopped
+2025-06-30 11:00:55 Event logging started
+2025-06-30 11:02:08 Error: M553: Failed to determine IP address required to set netmask
+2025-06-30 11:02:08 Event logging stopped
+2025-06-30 11:02:08 Event logging started
+2025-06-30 11:02:08 Error: M208: X axis maximum must be greater than minimum
+2025-06-30 11:02:13 Event logging stopped
+2025-06-30 11:02:20 Event logging started
+2025-06-30 11:02:20 Error: M208: X axis maximum must be greater than minimum
+2025-06-30 11:03:04 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 11:04:03 Error: M553: Failed to determine IP address required to set netmask
+2025-06-30 11:04:04 Event logging stopped
+2025-06-30 11:04:04 Event logging started
+2025-06-30 11:05:12 Error: G29: No valid grid defined for bed probing
+2025-06-30 11:06:52 Event logging stopped
+2025-06-30 11:06:59 Event logging started
+2025-06-30 11:12:00 Error: M553: Failed to determine IP address required to set netmask
+2025-06-30 11:12:00 Event logging stopped
+2025-06-30 11:12:00 Event logging started
+2025-06-30 11:12:01 Error: M208: X axis maximum must be greater than minimum
+2025-06-30 11:12:29 Event logging stopped
+2025-06-30 11:12:36 Event logging started
+2025-06-30 11:12:37 Error: M208: X axis maximum must be greater than minimum
+2025-06-30 11:12:39 Event logging stopped
+2025-06-30 11:12:45 Event logging started
+2025-06-30 11:12:45 Error: M208: X axis maximum must be greater than minimum
+2025-06-30 11:12:56 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-06-30 11:12:57 Event logging stopped
+2025-06-30 12:12:45 Event logging started
+2025-06-30 12:12:46 Error: M208: X axis maximum must be greater than minimum
+2025-06-30 12:55:16 Error: M553: Failed to determine IP address required to set netmask
+2025-06-30 12:55:16 Event logging stopped
+2025-06-30 12:55:16 Event logging started
+2025-06-30 12:55:16 Error: M208: X axis maximum must be greater than minimum
+2025-06-30 12:55:46 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 12:55:49 Event logging stopped
+2025-06-30 12:55:56 Event logging started
+2025-06-30 12:55:56 Error: M208: X axis maximum must be greater than minimum
+2025-06-30 12:56:43 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 12:56:47 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 12:56:49 Event logging stopped
+2025-06-30 12:56:55 Event logging started
+2025-06-30 12:56:56 Error: M208: X axis maximum must be greater than minimum
+2025-06-30 12:57:13 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 12:57:18 Event logging stopped
+2025-06-30 12:57:24 Event logging started
+2025-06-30 12:57:25 Error: M208: X axis maximum must be greater than minimum
+2025-06-30 12:58:01 Error: in file macro line 30: G1: insufficient axes homed
+2025-06-30 12:58:12 Event logging stopped
+2025-06-30 12:58:18 Event logging started
+2025-06-30 12:58:19 Error: M208: X axis maximum must be greater than minimum
+2025-06-30 12:58:48 Error: M553: Failed to determine IP address required to set netmask
+2025-06-30 12:58:48 Event logging stopped
+2025-06-30 12:58:48 Event logging started
+2025-06-30 12:58:48 Error: M574: Pin 1.io1.in is not free
+2025-06-30 12:58:48 Error: M208: X axis maximum must be greater than minimum
+2025-06-30 12:59:03 Error: in file macro line 29: G1: Failed to enable endstops
+2025-06-30 12:59:06 Error: in file macro line 29: G1: Failed to enable endstops
+2025-06-30 12:59:12 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 12:59:13 Error: in file macro line 29: G1: Failed to enable endstops
+2025-06-30 12:59:14 Error: in file macro line 29: G1: Failed to enable endstops
+2025-06-30 12:59:15 Error: in file macro line 29: G1: Failed to enable endstops
+2025-06-30 13:00:32 Error: M553: Failed to determine IP address required to set netmask
+2025-06-30 13:00:32 Event logging stopped
+2025-06-30 13:00:32 Event logging started
+2025-06-30 13:00:32 Error: M574: Pin 1.io0.in is not free
+2025-06-30 13:00:32 Error: M208: X axis maximum must be greater than minimum
+2025-06-30 13:00:39 Error: in file macro line 29: G1: Failed to enable endstops
+2025-06-30 13:00:44 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 13:00:46 Error: in file macro line 29: G1: Failed to enable endstops
+2025-06-30 13:00:49 Error: in file macro line 29: G1: Failed to enable endstops
+2025-06-30 13:00:51 Error: in file macro line 29: G1: Failed to enable endstops
+2025-06-30 13:01:21 Event logging stopped
+2025-06-30 13:01:27 Event logging started
+2025-06-30 13:01:28 Error: M208: X axis maximum must be greater than minimum
+2025-06-30 13:01:34 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 13:01:44 Error: in file macro line 30: G1: insufficient axes homed
+2025-06-30 13:02:34 Event logging stopped
+2025-06-30 13:02:41 Event logging started
+2025-06-30 13:02:41 Error: M208: X axis maximum must be greater than minimum
+2025-06-30 13:03:01 Error: in file macro line 6: G1: insufficient axes homed
+2025-06-30 13:06:04 Error: M553: Failed to determine IP address required to set netmask
+2025-06-30 13:06:04 Event logging stopped
+2025-06-30 13:06:04 Event logging started
+2025-06-30 13:07:52 Error: M553: Failed to determine IP address required to set netmask
+2025-06-30 13:07:52 Event logging stopped
+2025-06-30 13:07:52 Event logging started
+2025-06-30 13:08:02 Error: in file macro line 30: G1: insufficient axes homed
+2025-06-30 13:11:37 Error: M553: Failed to determine IP address required to set netmask
+2025-06-30 13:11:37 Event logging stopped
+2025-06-30 13:11:37 Event logging started
+2025-06-30 13:11:43 Event logging stopped
+2025-06-30 13:11:49 Event logging started
+2025-06-30 13:12:06 Event logging stopped
+2025-06-30 13:12:12 Event logging started
+2025-06-30 13:13:43 Event logging stopped
+2025-06-30 13:13:50 Event logging started
+2025-06-30 13:14:00 Error: in file macro line 30: G1: insufficient axes homed
+2025-06-30 13:19:17 Event logging stopped
+2025-06-30 13:19:24 Event logging started
+2025-06-30 13:19:29 Event logging stopped
+2025-06-30 13:19:36 Event logging started
+2025-06-30 13:19:55 Error: M553: Failed to determine IP address required to set netmask
+2025-06-30 13:19:55 Event logging stopped
+2025-06-30 13:19:55 Event logging started
+2025-06-30 13:20:01 Event logging stopped
+2025-06-30 13:20:07 Event logging started
+2025-06-30 13:21:07 Event logging stopped
+2025-06-30 13:21:13 Event logging started
+2025-06-30 13:25:48 Event logging stopped
+2025-06-30 13:25:54 Event logging started
+2025-06-30 13:29:23 Error: M553: Failed to determine IP address required to set netmask
+2025-06-30 13:29:23 Event logging stopped
+2025-06-30 13:29:23 Event logging started
+2025-06-30 13:29:47 Event logging stopped
+2025-06-30 13:29:54 Event logging started
+2025-06-30 13:30:05 Error: in file macro line 30: G1: insufficient axes homed
+2025-06-30 13:34:42 Event logging stopped
+2025-06-30 13:34:48 Event logging started
+2025-06-30 13:53:24 Event logging stopped
+2025-06-30 13:53:30 Event logging started
+2025-06-30 13:54:20 Event logging stopped
+2025-06-30 13:54:27 Event logging started
+2025-06-30 13:56:21 Error: M553: Failed to determine IP address required to set netmask
+2025-06-30 13:56:21 Event logging stopped
+2025-06-30 13:56:21 Event logging started
+2025-06-30 13:56:32 Event logging stopped
+2025-06-30 13:56:38 Event logging started
+2025-06-30 13:57:19 Error: in file macro line 6: G1: insufficient axes homed
+2025-06-30 13:57:59 Event logging stopped
+2025-06-30 13:58:06 Event logging started
+2025-06-30 13:59:07 Error: M553: Failed to determine IP address required to set netmask
+2025-06-30 13:59:07 Event logging stopped
+2025-06-30 13:59:07 Event logging started
+2025-06-30 13:59:14 Error: in file macro line 6: G1: insufficient axes homed
+2025-06-30 14:00:17 Event logging stopped
+2025-06-30 14:00:23 Event logging started
+2025-06-30 14:00:31 Error: in file macro line 6: G1: insufficient axes homed
+2025-06-30 14:01:32 Event logging stopped
+2025-06-30 14:01:38 Event logging started
+2025-06-30 14:04:57 Error: in file macro line 6: G1: insufficient axes homed
+2025-06-30 14:05:18 Event logging stopped
+2025-06-30 14:05:24 Event logging started
+2025-06-30 14:53:51 Error: in file macro line 6: G1: insufficient axes homed
+2025-06-30 14:55:39 Error: in file macro line 6: G1: insufficient axes homed
+2025-06-30 14:58:09 Error: G0: insufficient axes homed
+2025-06-30 14:58:14 Error: G0: insufficient axes homed
+2025-06-30 15:03:00 Error: M553: Failed to determine IP address required to set netmask
+2025-06-30 15:03:00 Event logging stopped
+2025-06-30 15:03:00 Event logging started
+2025-06-30 15:03:12 Error: in file macro line 30: G1: insufficient axes homed
+2025-06-30 15:03:23 Error: in file macro line 30: G1: insufficient axes homed
+2025-06-30 15:03:31 Event logging stopped
+2025-06-30 15:03:38 Event logging started
+2025-06-30 15:03:47 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 15:03:57 Event logging stopped
+2025-06-30 15:04:04 Event logging started
+2025-06-30 15:04:35 Error: in file macro line 6: G1: insufficient axes homed
+2025-06-30 15:04:46 Error: M553: Failed to determine IP address required to set netmask
+2025-06-30 15:04:46 Event logging stopped
+2025-06-30 15:04:46 Event logging started
+2025-06-30 15:05:08 Event logging stopped
+2025-06-30 15:05:15 Event logging started
+2025-06-30 15:07:25 Event logging stopped
+2025-06-30 15:07:31 Event logging started
+2025-06-30 15:07:39 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 15:07:57 Event logging stopped
+2025-06-30 15:08:04 Event logging started
+2025-06-30 15:10:56 Error: G30: Probe was not triggered during probing move
+2025-06-30 15:10:56 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-06-30 15:10:56 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-06-30 15:10:56 Error: G29: Probe was not triggered during probing move
+2025-06-30 15:11:19 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 15:11:23 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 15:11:27 Event logging stopped
+2025-06-30 15:11:33 Event logging started
+2025-06-30 15:11:41 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 15:12:20 Error: G30: Probe was not triggered during probing move
+2025-06-30 15:12:20 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-06-30 15:12:21 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-06-30 15:12:21 Error: G29: Probe was not triggered during probing move
+2025-06-30 15:21:43 Error: G30: Probe was not triggered during probing move
+2025-06-30 15:21:43 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-06-30 15:21:43 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-06-30 15:21:43 Error: G29: Probe was not triggered during probing move
+2025-06-30 15:21:59 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-06-30 15:31:26 Event logging stopped
+2025-06-30 15:31:32 Event logging started
+2025-06-30 16:45:54 Error: G30: Probe was not triggered during probing move
+2025-06-30 16:46:13 Error: G30: Probe was not triggered during probing move
+2025-06-30 16:46:13 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-06-30 16:46:13 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-06-30 16:46:13 Error: G29: Probe was not triggered during probing move
+2025-06-30 16:54:30 Event logging stopped
+2025-06-30 16:54:36 Event logging started
+2025-06-30 16:54:57 Error: in file macro line 6: G1: insufficient axes homed
+2025-06-30 16:55:22 Error: G30: Probe was not triggered during probing move
+2025-06-30 16:55:41 Error: G30: Probe was not triggered during probing move
+2025-06-30 16:55:41 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-06-30 16:55:41 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-06-30 16:55:41 Error: G29: Probe was not triggered during probing move
+2025-06-30 16:58:39 Event logging stopped
+2025-06-30 16:58:46 Event logging started
+2025-06-30 17:06:40 Event logging stopped
+2025-06-30 17:06:46 Event logging started
+2025-06-30 17:07:36 Event logging stopped
+2025-06-30 17:07:42 Event logging started
+2025-06-30 17:08:46 Event logging stopped
+2025-06-30 17:08:52 Event logging started
+2025-06-30 17:11:14 Event logging stopped
+2025-06-30 17:11:20 Event logging started
+2025-06-30 17:12:38 Event logging stopped
+2025-06-30 17:12:45 Event logging started
+2025-06-30 17:13:48 Event logging stopped
+2025-06-30 17:13:55 Event logging started
+2025-06-30 17:14:06 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-06-30 17:14:07 Event logging stopped
+2025-07-01 09:02:40 Event logging started
+2025-07-01 09:03:29 Event logging stopped
+2025-07-01 09:03:35 Event logging started
+2025-07-01 09:05:24 Event logging stopped
+2025-07-01 09:05:30 Event logging started
+2025-07-01 09:05:54 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-07-01 09:05:59 Event logging stopped
+2025-07-01 09:06:06 Event logging started
+2025-07-01 09:08:57 Event logging stopped
+2025-07-01 09:09:04 Event logging started
+2025-07-01 09:09:56 Event logging stopped
+2025-07-01 09:10:03 Event logging started
+2025-07-01 09:10:13 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-07-01 09:10:17 Event logging stopped
+2025-07-01 09:10:23 Event logging started
+2025-07-01 09:11:13 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-07-01 09:11:15 Event logging stopped
+2025-07-01 09:11:22 Event logging started
+2025-07-01 09:12:30 Event logging stopped
+2025-07-01 09:12:37 Event logging started
+2025-07-01 09:12:53 Event logging stopped
+2025-07-01 09:13:00 Event logging started
+2025-07-01 09:14:29 Error: Must home axes [XY] before homing [Z]
+2025-07-01 09:14:50 Event logging stopped
+2025-07-01 09:14:56 Event logging started
+2025-07-01 09:16:46 Event logging stopped
+2025-07-01 09:16:52 Event logging started
+2025-07-01 09:17:18 Event logging stopped
+2025-07-01 09:17:25 Event logging started
+2025-07-01 09:18:39 Error: M553: Failed to determine IP address required to set netmask
+2025-07-01 09:18:39 Event logging stopped
+2025-07-01 09:18:39 Event logging started
+2025-07-01 09:19:01 Event logging stopped
+2025-07-01 09:19:07 Event logging started
+2025-07-01 09:19:48 Event logging stopped
+2025-07-01 09:19:55 Event logging started
+2025-07-01 09:20:47 Event logging stopped
+2025-07-01 09:20:54 Event logging started
+2025-07-01 09:21:27 Event logging stopped
+2025-07-01 09:21:34 Event logging started
+2025-07-01 09:22:06 Event logging stopped
+2025-07-01 09:22:12 Event logging started
+2025-07-01 09:23:54 Error: G30: Probe was not triggered during probing move
+2025-07-01 09:24:05 Error: G30: Probe was not triggered during probing move
+2025-07-01 09:24:16 Error: G30: Probe was not triggered during probing move
+2025-07-01 09:24:16 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-01 09:24:16 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-01 09:24:16 Error: G29: Probe was not triggered during probing move
+2025-07-01 09:35:43 Event logging stopped
+2025-07-01 09:35:49 Event logging started
+2025-07-01 09:51:20 Event logging stopped
+2025-07-01 09:51:26 Event logging started
+2025-07-01 09:51:38 Event logging stopped
+2025-07-01 09:51:44 Event logging started
+2025-07-01 10:24:46 Event logging stopped
+2025-07-01 10:24:53 Event logging started
+2025-07-01 10:40:28 Error: G28: G28 may not be used within a homing file
+2025-07-01 10:40:28 Error: G28: G28 may not be used within a homing file
+2025-07-01 10:40:28 Error: G28: G28 may not be used within a homing file
+2025-07-01 10:40:53 Error: Failed to home axes U
+2025-07-01 10:42:04 Error: G30: Probe was not triggered during probing move
+2025-07-01 10:42:15 Error: G30: Probe was not triggered during probing move
+2025-07-01 10:42:26 Error: G30: Probe was not triggered during probing move
+2025-07-01 10:42:26 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-01 10:42:26 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-01 10:42:26 Error: G29: Probe was not triggered during probing move
+2025-07-01 10:44:17 Event logging stopped
+2025-07-01 10:44:23 Event logging started
+2025-07-01 10:46:20 Warning: VIN under-voltage event (9.4V)
+2025-07-01 10:46:24 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-07-01 10:46:25 Event logging stopped
+2025-07-01 12:35:46 Event logging started
+2025-07-01 12:45:32 Error: G30: Probe was not triggered during probing move
+2025-07-01 12:45:43 Error: G30: Probe was not triggered during probing move
+2025-07-01 12:45:54 Error: G30: Probe was not triggered during probing move
+2025-07-01 12:45:54 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-01 12:45:54 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-01 12:45:55 Error: G29: Probe was not triggered during probing move
+2025-07-01 12:46:44 Error: G28: G28 may not be used within a homing file
+2025-07-01 12:46:44 Error: G28: G28 may not be used within a homing file
+2025-07-01 12:46:44 Error: G28: G28 may not be used within a homing file
+2025-07-01 12:49:44 Error: Failed to home axes U
+2025-07-01 13:07:48 Event logging stopped
+2025-07-01 13:07:54 Event logging started
+2025-07-01 13:11:25 Error: G30: Probe was not triggered during probing move
+2025-07-01 13:11:47 Error: G30: Probe was not triggered during probing move
+2025-07-01 13:11:47 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-01 13:11:47 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-01 13:11:48 Error: G29: Probe was not triggered during probing move
+2025-07-01 14:06:12 Error: G28: G28 may not be used within a homing file
+2025-07-01 14:06:12 Error: G28: G28 may not be used within a homing file
+2025-07-01 14:06:12 Error: G28: G28 may not be used within a homing file
+2025-07-01 14:14:17 Error: in file macro line 0: G0: expected number after 'Y'
+2025-07-01 14:14:17 Error: G0: expected number after 'Y'
+2025-07-01 14:14:17 Error: G0: expected number after 'Y'
+2025-07-01 14:14:17 Error: G0: expected number after 'Y'
+2025-07-01 14:14:17 Error: G0: expected number after 'Y'
+2025-07-01 14:14:17 Error: G0: expected number after 'Y'
+2025-07-01 14:14:17 Error: G0: expected number after 'Y'
+2025-07-01 14:14:17 Error: G0: expected number after 'Y'
+2025-07-01 14:14:17 Error: G0: expected number after 'Y'
+2025-07-01 14:14:17 Error: G0: expected number after 'Y'
+2025-07-01 14:14:17 Error: G0: expected number after 'Y'
+2025-07-01 14:14:17 Error: G0: expected number after 'Y'
+2025-07-01 14:14:18 Error: G0: expected number after 'Y'
+2025-07-01 14:14:18 Error: G0: expected number after 'Y'
+2025-07-01 14:14:18 Error: G0: expected number after 'Y'
+2025-07-01 14:14:18 Error: G0: expected number after 'Y'
+2025-07-01 14:14:18 Error: G0: expected number after 'Y'
+2025-07-01 14:14:18 Error: G0: expected number after 'Y'
+2025-07-01 14:14:18 Error: G0: expected number after 'Y'
+2025-07-01 14:14:18 Error: G0: expected number after 'Y'
+2025-07-01 14:14:18 Error: G0: expected number after 'Y'
+2025-07-01 14:14:18 Error: G0: expected number after 'Y'
+2025-07-01 14:14:18 Error: G0: expected number after 'Y'
+2025-07-01 14:14:18 Error: G0: expected number after 'Y'
+2025-07-01 14:14:18 Error: G0: expected number after 'Y'
+2025-07-01 14:14:19 Error: G0: expected number after 'Y'
+2025-07-01 14:14:19 Error: G0: expected number after 'Y'
+2025-07-01 14:14:19 Error: G0: expected number after 'Y'
+2025-07-01 14:14:19 Error: G0: expected number after 'Y'
+2025-07-01 14:14:19 Error: G0: expected number after 'Y'
+2025-07-01 14:14:19 Error: G0: expected number after 'Y'
+2025-07-01 14:14:19 Error: G0: expected number after 'Y'
+2025-07-01 14:14:19 Error: G0: expected number after 'Y'
+2025-07-01 14:14:19 Error: G0: expected number after 'Y'
+2025-07-01 14:14:19 Error: G0: expected number after 'Y'
+2025-07-01 14:14:19 Error: G0: expected number after 'Y'
+2025-07-01 14:14:19 Error: G0: expected number after 'Y'
+2025-07-01 14:14:20 Error: G0: expected number after 'Y'
+2025-07-01 14:14:20 Error: G0: expected number after 'Y'
+2025-07-01 14:14:20 Error: G0: expected number after 'Y'
+2025-07-01 14:14:20 Error: G0: expected number after 'Y'
+2025-07-01 14:14:20 Error: G0: expected number after 'Y'
+2025-07-01 14:14:20 Error: G0: expected number after 'Y'
+2025-07-01 14:14:20 Error: G0: expected number after 'Y'
+2025-07-01 14:14:20 Error: G0: expected number after 'Y'
+2025-07-01 14:14:20 Error: G0: expected number after 'Y'
+2025-07-01 14:14:20 Error: G0: expected number after 'Y'
+2025-07-01 14:14:20 Error: G0: expected number after 'Y'
+2025-07-01 14:14:20 Error: G0: expected number after 'Y'
+2025-07-01 14:27:16 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-07-01 14:27:26 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-07-01 14:28:39 Event logging stopped
+2025-07-01 14:28:45 Event logging started
+2025-07-01 14:30:30 Error: G30: Probe was not triggered during probing move
+2025-07-01 14:30:47 Error: Compensation or calibration cancelled due to probing errors
+2025-07-01 14:30:47 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-01 14:30:47 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-01 14:33:36 Event logging stopped
+2025-07-01 14:33:42 Event logging started
+2025-07-01 14:39:37 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-01 14:39:38 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-01 15:35:51 Error: G28: G28 may not be used within a homing file
+2025-07-01 15:35:51 Error: G28: G28 may not be used within a homing file
+2025-07-01 15:35:51 Error: G28: G28 may not be used within a homing file
+2025-07-01 15:42:12 Event logging stopped
+2025-07-01 15:42:18 Event logging started
+2025-07-01 15:42:29 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-07-01 15:42:29 Event logging stopped
+2025-07-02 08:05:20 Event logging started
+2025-07-02 08:10:44 Event logging stopped
+2025-07-02 08:18:34 Event logging started
+2025-07-02 08:18:34 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-02 08:21:18 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-02 08:21:19 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-02 08:22:11 Error: G30: Probe already triggered at start of probing move
+2025-07-02 08:22:11 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-02 08:22:12 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-02 08:22:12 Error: G29: Probe already triggered at start of probing move
+2025-07-02 08:22:57 Error: G30: Probe already triggered at start of probing move
+2025-07-02 08:22:57 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-02 08:23:07 Event logging stopped
+2025-07-02 08:23:13 Event logging started
+2025-07-02 08:23:14 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-02 08:24:09 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-02 08:24:09 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-02 08:29:40 Error: G28: G28 may not be used within a homing file
+2025-07-02 08:29:40 Error: G28: G28 may not be used within a homing file
+2025-07-02 08:29:40 Error: G28: G28 may not be used within a homing file
+2025-07-02 08:29:53 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-07-02 08:30:14 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-07-02 08:33:49 Event logging stopped
+2025-07-02 08:33:55 Event logging started
+2025-07-02 08:33:56 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-02 08:44:29 Error: M32: Could not find file ../gcodes/config.g
+2025-07-02 08:45:02 Error: M32: Could not find file gcodes/config.g
+2025-07-02 08:45:21 Error: M32: Could not find file config.g
+2025-07-02 08:46:48 Event logging stopped
+2025-07-02 08:46:48 Event logging started
+2025-07-02 08:47:50 Error: G30: Probe was not triggered during probing move
+2025-07-02 08:48:02 Error: G30: Probe already triggered at start of probing move
+2025-07-02 08:48:02 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-02 08:48:02 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-02 08:48:26 Error: G28: G28 may not be used within a homing file
+2025-07-02 08:48:26 Error: G28: G28 may not be used within a homing file
+2025-07-02 08:48:26 Error: G28: G28 may not be used within a homing file
+2025-07-02 08:48:30 Warning: Driver 0.1 warning: phase A may be disconnected, phase B may be disconnected
+2025-07-02 08:50:06 Error: M0: Pause the print before attempting to cancel it
+2025-07-02 08:50:46 Error: M0: Pause the print before attempting to cancel it
+2025-07-02 08:50:57 Error: M25: Cannot pause print, because no file is being printed!
+2025-07-02 08:50:57 Error: M0: Pause the print before attempting to cancel it
+2025-07-02 08:51:23 Error: M0: Pause the print before attempting to cancel it
+2025-07-02 08:54:31 Event logging stopped
+2025-07-02 08:54:31 Event logging started
+2025-07-02 08:57:23 Error: G30: Probe already triggered at start of probing move
+2025-07-02 08:57:23 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-02 08:57:23 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-02 08:58:31 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-02 08:58:31 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-02 09:00:07 Event logging stopped
+2025-07-02 09:00:07 Event logging started
+2025-07-02 09:00:31 Event logging stopped
+2025-07-02 09:00:31 Event logging started
+2025-07-02 09:00:44 Error: G30: Probe already triggered at start of probing move
+2025-07-02 09:01:05 Error: Compensation or calibration cancelled due to probing errors
+2025-07-02 09:01:05 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-02 09:01:05 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-02 09:26:42 Event logging stopped
+2025-07-02 09:26:42 Event logging started
+2025-07-02 09:28:42 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-02 09:28:42 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-02 10:15:48 Event logging started
+2025-07-02 10:15:49 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-02 10:16:38 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-02 10:16:38 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-02 10:18:57 Event logging stopped
+2025-07-02 10:19:03 Event logging started
+2025-07-02 10:19:03 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-02 10:46:33 Event logging stopped
+2025-07-04 10:07:39 Event logging started
+2025-07-04 10:07:40 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-04 10:07:46 Event logging stopped
+2025-07-04 10:07:46 Event logging started
+2025-07-04 10:08:46 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 10:08:46 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 10:09:50 Warning: SPI connection has been reset
+2025-07-04 10:09:50 Connection to SBC established!
+2025-07-04 10:09:50 Event logging stopped
+2025-07-04 10:09:50 Event logging started
+2025-07-04 10:09:50 Error: M584: Driver 1.0 does not exist
+Driver 1.1 does not exist
+2025-07-04 10:10:02 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-07-04 10:31:32 Event logging stopped
+2025-07-04 10:32:07 Event logging started
+2025-07-04 10:32:07 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-04 10:32:40 Event logging stopped
+2025-07-04 10:32:46 Event logging started
+2025-07-04 10:32:47 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-04 10:33:48 Event logging stopped
+2025-07-04 10:33:54 Event logging started
+2025-07-04 10:33:55 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-04 10:33:59 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-07-04 10:35:38 Warning: SPI connection has been reset
+2025-07-04 10:35:38 Connection to SBC established!
+2025-07-04 10:35:38 Event logging stopped
+2025-07-04 10:35:38 Event logging started
+2025-07-04 10:37:22 Event logging stopped
+2025-07-04 10:37:28 Event logging started
+2025-07-04 10:37:29 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-04 10:39:49 Error: Must home axes [XY] before homing [Z]
+2025-07-04 10:39:58 Event logging stopped
+2025-07-04 10:40:04 Event logging started
+2025-07-04 10:40:05 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-04 10:40:40 Event logging stopped
+2025-07-04 10:40:46 Event logging started
+2025-07-04 10:40:47 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-04 10:40:55 Event logging stopped
+2025-07-04 10:41:01 Event logging started
+2025-07-04 10:41:01 Error: M584: Driver 1.0 does not exist
+Driver 1.1 does not exist
+2025-07-04 10:41:01 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-04 10:41:12 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-07-04 10:42:33 Warning: SPI connection has been reset
+2025-07-04 10:42:33 Connection to SBC established!
+2025-07-04 10:42:33 Event logging stopped
+2025-07-04 10:42:33 Event logging started
+2025-07-04 10:42:51 Event logging stopped
+2025-07-04 10:42:57 Event logging started
+2025-07-04 10:42:58 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-04 10:43:20 Event logging stopped
+2025-07-04 10:43:26 Event logging started
+2025-07-04 10:43:27 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-04 10:44:34 Error: G30: Probe was not triggered during probing move
+2025-07-04 10:44:44 Error: Compensation or calibration cancelled due to probing errors
+2025-07-04 10:44:44 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 10:44:44 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 10:44:59 Event logging stopped
+2025-07-04 10:45:06 Event logging started
+2025-07-04 10:45:07 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-04 10:45:32 Event logging stopped
+2025-07-04 10:45:38 Event logging started
+2025-07-04 10:45:39 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-04 10:49:30 Error: G30: Probe was not triggered during probing move
+2025-07-04 10:49:30 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 10:49:30 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 10:49:30 Error: G29: Probe was not triggered during probing move
+2025-07-04 10:51:29 Event logging stopped
+2025-07-04 10:51:36 Event logging started
+2025-07-04 10:51:37 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-04 10:51:41 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-07-04 10:51:57 Event logging stopped
+2025-07-04 12:07:10 Event logging started
+2025-07-04 12:07:10 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-04 12:09:18 Error: G30: Probe was not triggered during probing move
+2025-07-04 12:09:18 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 12:09:19 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 12:09:19 Error: G29: Probe was not triggered during probing move
+2025-07-04 12:13:30 Event logging stopped
+2025-07-04 12:13:37 Event logging started
+2025-07-04 12:13:38 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-04 12:15:00 Error: G30: Probe was not triggered during probing move
+2025-07-04 12:15:00 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 12:15:00 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 12:15:00 Error: G29: Probe was not triggered during probing move
+2025-07-04 12:21:46 Event logging stopped
+2025-07-04 12:21:52 Event logging started
+2025-07-04 12:21:53 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-04 12:40:50 Event logging stopped
+2025-07-04 12:40:50 Event logging started
+2025-07-04 12:41:44 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 12:41:44 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 12:56:04 Error: G30: Probe was not triggered during probing move
+2025-07-04 12:56:04 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 12:56:05 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 12:56:05 Error: G29: Probe was not triggered during probing move
+2025-07-04 12:56:14 Event logging stopped
+2025-07-04 12:56:21 Event logging started
+2025-07-04 12:56:21 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-04 13:02:13 Error: G30: Probe was not triggered during probing move
+2025-07-04 13:02:13 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 13:02:14 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 13:02:14 Error: G29: Probe was not triggered during probing move
+2025-07-04 13:42:18 Event logging stopped
+2025-07-04 13:42:25 Event logging started
+2025-07-04 13:42:25 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-04 13:42:47 Event logging stopped
+2025-07-04 13:42:47 Event logging started
+2025-07-04 13:43:51 Error: G30: Probe was not triggered during probing move
+2025-07-04 13:43:52 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 13:43:52 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 13:51:36 Event logging stopped
+2025-07-04 13:51:36 Event logging started
+2025-07-04 13:51:45 Error: in file macro line 30: G1: insufficient axes homed
+2025-07-04 13:52:21 Error: in file macro line 30: G30: insufficient axes homed
+2025-07-04 13:52:26 Error: Expansion board 1 stopped sending status
+2025-07-04 13:52:38 Error: in file macro line 29: G1: Failed to enable endstops
+2025-07-04 13:53:12 Warning: SPI connection has been reset
+2025-07-04 13:53:12 Connection to SBC established!
+2025-07-04 13:53:12 Event logging stopped
+2025-07-04 13:53:12 Event logging started
+2025-07-04 13:53:21 Event logging stopped
+2025-07-04 13:53:21 Event logging started
+2025-07-04 13:54:11 Error: G30: Probe was not triggered during probing move
+2025-07-04 13:54:11 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 13:54:11 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 13:54:53 Error: G30: Probe was not triggered during probing move
+2025-07-04 13:54:53 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 13:54:53 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 13:56:50 Event logging stopped
+2025-07-04 13:56:50 Event logging started
+2025-07-04 14:07:01 Event logging stopped
+2025-07-04 14:07:01 Event logging started
+2025-07-04 14:09:06 Error: G30: Probe was not triggered during probing move
+2025-07-04 14:09:06 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 14:09:06 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 15:41:29 Warning: SPI connection has been reset
+2025-07-04 15:41:29 Connection to SBC established!
+2025-07-04 15:41:29 Event logging stopped
+2025-07-04 15:41:29 Event logging started
+2025-07-04 15:41:29 Error: M584: Driver 1.0 does not exist
+Driver 1.1 does not exist
+2025-07-04 15:41:36 Warning: VIN under-voltage event (9.4V)
+2025-07-04 15:41:40 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-07-04 15:45:18 Warning: SPI connection has been reset
+2025-07-04 15:45:18 Connection to SBC established!
+2025-07-04 15:45:18 Event logging stopped
+2025-07-04 15:45:18 Event logging started
+2025-07-04 15:45:39 Event logging stopped
+2025-07-04 15:45:39 Event logging started
+2025-07-04 15:46:33 Error: G30: Probe was not triggered during probing move
+2025-07-04 15:46:33 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 15:46:33 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-04 16:04:34 Warning: SPI connection has been reset
+2025-07-04 16:04:34 Connection to SBC established!
+2025-07-04 16:04:34 Event logging stopped
+2025-07-04 16:04:34 Event logging started
+2025-07-04 16:04:34 Error: M584: Driver 1.0 does not exist
+Driver 1.1 does not exist
+2025-07-04 16:15:37 Event logging stopped
+2025-07-07 11:29:16 Event logging started
+2025-07-07 11:29:17 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-07 11:31:54 Error: G30: Probe was not triggered during probing move
+2025-07-07 11:31:54 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 11:31:55 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 11:31:55 Error: G29: Probe was not triggered during probing move
+2025-07-07 11:32:48 Event logging stopped
+2025-07-07 11:32:48 Event logging started
+2025-07-07 11:33:07 Error: G1: insufficient axes homed
+2025-07-07 11:33:07 Error: G1: insufficient axes homed
+2025-07-07 11:33:07 Error: G1: insufficient axes homed
+2025-07-07 11:33:07 Error: G1: insufficient axes homed
+2025-07-07 11:33:07 Error: G1: insufficient axes homed
+2025-07-07 11:33:08 Error: G1: insufficient axes homed
+2025-07-07 11:33:08 Error: G1: insufficient axes homed
+2025-07-07 11:33:08 Error: G1: insufficient axes homed
+2025-07-07 11:33:08 Error: G1: insufficient axes homed
+2025-07-07 11:33:08 Error: G1: insufficient axes homed
+2025-07-07 11:33:08 Error: G1: insufficient axes homed
+2025-07-07 11:33:08 Error: G1: insufficient axes homed
+2025-07-07 11:33:08 Error: G1: insufficient axes homed
+2025-07-07 11:33:08 Error: G1: insufficient axes homed
+2025-07-07 11:33:08 Error: G1: insufficient axes homed
+2025-07-07 11:33:08 Error: G1: insufficient axes homed
+2025-07-07 11:33:08 Error: G1: insufficient axes homed
+2025-07-07 11:33:08 Error: G1: insufficient axes homed
+2025-07-07 11:33:09 Error: G1: insufficient axes homed
+2025-07-07 11:33:09 Error: G1: insufficient axes homed
+2025-07-07 11:33:24 Error: G1: insufficient axes homed
+2025-07-07 11:33:24 Error: G1: insufficient axes homed
+2025-07-07 11:33:24 Error: G1: insufficient axes homed
+2025-07-07 11:33:24 Error: G1: insufficient axes homed
+2025-07-07 11:33:24 Error: G1: insufficient axes homed
+2025-07-07 11:33:24 Error: G1: insufficient axes homed
+2025-07-07 11:33:24 Error: G1: insufficient axes homed
+2025-07-07 11:33:24 Error: G1: insufficient axes homed
+2025-07-07 11:33:24 Error: G1: insufficient axes homed
+2025-07-07 11:33:24 Error: G1: insufficient axes homed
+2025-07-07 11:33:24 Error: G1: insufficient axes homed
+2025-07-07 11:33:25 Error: G1: insufficient axes homed
+2025-07-07 11:33:25 Error: G1: insufficient axes homed
+2025-07-07 11:33:25 Error: G1: insufficient axes homed
+2025-07-07 11:33:25 Error: G1: insufficient axes homed
+2025-07-07 11:33:25 Error: G1: insufficient axes homed
+2025-07-07 11:33:25 Error: G1: insufficient axes homed
+2025-07-07 11:33:25 Error: G1: insufficient axes homed
+2025-07-07 11:33:25 Error: G1: insufficient axes homed
+2025-07-07 11:33:25 Error: G1: insufficient axes homed
+2025-07-07 11:34:32 Error: G0: insufficient axes homed
+2025-07-07 11:34:32 Error: G0: insufficient axes homed
+2025-07-07 11:34:32 Error: G0: insufficient axes homed
+2025-07-07 11:34:32 Error: G0: insufficient axes homed
+2025-07-07 11:34:36 Error: G0: insufficient axes homed
+2025-07-07 11:34:37 Error: G0: insufficient axes homed
+2025-07-07 11:34:37 Error: G0: insufficient axes homed
+2025-07-07 11:34:37 Error: G0: insufficient axes homed
+2025-07-07 11:34:42 Error: G0: insufficient axes homed
+2025-07-07 11:34:43 Error: G0: insufficient axes homed
+2025-07-07 11:34:43 Error: G0: insufficient axes homed
+2025-07-07 11:34:43 Error: G0: insufficient axes homed
+2025-07-07 11:40:20 Error: G0: insufficient axes homed
+2025-07-07 11:40:24 Error: G0: insufficient axes homed
+2025-07-07 11:40:28 Error: G0: insufficient axes homed
+2025-07-07 11:40:32 Error: G0: insufficient axes homed
+2025-07-07 11:41:18 Error: G30: Probe was not triggered during probing move
+2025-07-07 11:41:18 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 11:41:19 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 11:41:54 Error: G30: Probe was not triggered during probing move
+2025-07-07 11:41:54 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 11:41:55 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 11:42:42 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 11:42:42 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 11:51:35 Event logging stopped
+2025-07-07 11:51:35 Event logging started
+2025-07-07 11:51:40 Error: Expansion board 1 stopped sending status
+2025-07-07 13:20:52 Event logging stopped
+2025-07-07 13:20:58 Event logging started
+2025-07-07 13:20:59 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-07 13:23:20 Event logging stopped
+2025-07-07 13:23:20 Event logging started
+2025-07-07 13:26:30 Event logging stopped
+2025-07-07 13:26:30 Event logging started
+2025-07-07 13:27:39 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 13:27:39 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 15:29:52 Event logging stopped
+2025-07-07 15:29:52 Event logging started
+2025-07-07 15:30:29 Event logging stopped
+2025-07-07 15:30:29 Event logging started
+2025-07-07 15:30:38 Event logging stopped
+2025-07-07 15:30:38 Event logging started
+2025-07-07 15:31:24 Event logging stopped
+2025-07-07 15:31:24 Event logging started
+2025-07-07 15:31:30 Error: Expansion board 1 stopped sending status
+2025-07-07 15:31:52 Warning: SPI connection has been reset
+2025-07-07 15:31:52 Connection to SBC established!
+2025-07-07 15:31:53 Event logging stopped
+2025-07-07 15:31:53 Event logging started
+2025-07-07 15:32:03 Event logging stopped
+2025-07-07 15:32:03 Event logging started
+2025-07-07 15:32:08 Error: M0: Pause the print before attempting to cancel it
+2025-07-07 15:35:57 Event logging stopped
+2025-07-07 15:35:57 Event logging started
+2025-07-07 15:37:12 Error: G30: Probe was not triggered during probing move
+2025-07-07 15:37:12 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 15:37:12 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 16:04:19 Event logging stopped
+2025-07-07 16:04:19 Event logging started
+2025-07-07 16:05:10 Error: G30: Probe was not triggered during probing move
+2025-07-07 16:05:10 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 16:05:11 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 16:08:52 Event logging stopped
+2025-07-07 16:08:52 Event logging started
+2025-07-07 16:10:11 Error: G30: Probe was not triggered during probing move
+2025-07-07 16:10:11 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 16:10:11 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 16:18:03 Event logging stopped
+2025-07-07 16:18:03 Event logging started
+2025-07-07 16:18:53 Error: G30: Probe was not triggered during probing move
+2025-07-07 16:18:53 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 16:18:53 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 16:20:02 Error: G30: Probe was not triggered during probing move
+2025-07-07 16:20:02 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 16:20:02 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 16:22:52 Event logging stopped
+2025-07-07 16:22:52 Event logging started
+2025-07-07 16:24:14 Error: G30: Probe was not triggered during probing move
+2025-07-07 16:24:14 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 16:24:14 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 16:24:47 Error: in file macro line 25: G1: insufficient axes homed
+2025-07-07 16:25:09 Error: in file macro line 25: G1: insufficient axes homed
+2025-07-07 16:25:21 Event logging stopped
+2025-07-07 16:25:21 Event logging started
+2025-07-07 16:26:25 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 16:26:26 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 16:29:31 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 16:29:31 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 16:29:46 Error: G0: insufficient axes homed
+2025-07-07 16:30:10 Error: G0: insufficient axes homed
+2025-07-07 16:30:18 Event logging stopped
+2025-07-07 16:30:18 Event logging started
+2025-07-07 16:31:17 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 16:31:17 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 16:33:18 Error: G30: Probe was not triggered during probing move
+2025-07-07 16:33:19 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 16:33:19 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 16:34:25 Event logging stopped
+2025-07-07 16:34:25 Event logging started
+2025-07-07 16:35:25 Error: G30: Probe was not triggered during probing move
+2025-07-07 16:35:25 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 16:35:25 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 16:35:54 Event logging stopped
+2025-07-07 16:35:54 Event logging started
+2025-07-07 16:36:38 Event logging stopped
+2025-07-07 16:36:38 Event logging started
+2025-07-07 16:38:47 Event logging stopped
+2025-07-07 16:38:54 Event logging started
+2025-07-07 16:38:55 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-07 16:39:11 Warning: M14: Command is not supported
+2025-07-07 16:41:43 Error: M1: Pause the print before attempting to cancel it
+2025-07-07 16:41:51 Warning: SPI connection has been reset
+2025-07-07 16:41:51 Connection to SBC established!
+2025-07-07 16:41:51 Event logging stopped
+2025-07-07 16:41:51 Event logging started
+2025-07-07 16:41:51 Error: M584: Driver 1.0 does not exist
+Driver 1.1 does not exist
+2025-07-07 16:42:03 Error: in file macro line 6: G1: insufficient axes homed
+2025-07-07 16:42:09 Error: in file macro line 6: G1: insufficient axes homed
+2025-07-07 16:42:26 Event logging stopped
+2025-07-07 16:42:32 Event logging started
+2025-07-07 16:42:34 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-07 16:43:50 Error: M1: Pause the print before attempting to cancel it
+2025-07-07 16:43:54 Error: M1: Pause the print before attempting to cancel it
+2025-07-07 16:44:03 Error: M0: Pause the print before attempting to cancel it
+2025-07-07 16:45:41 Event logging stopped
+2025-07-07 16:45:41 Event logging started
+2025-07-07 16:45:51 Error: in file macro line 25: G1: insufficient axes homed
+2025-07-07 16:45:59 Error: in file macro line 25: G1: insufficient axes homed
+2025-07-07 16:47:27 Error: G30: Probe was not triggered during probing move
+2025-07-07 16:47:27 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 16:47:27 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 17:05:23 Event logging stopped
+2025-07-07 17:05:23 Event logging started
+2025-07-07 17:07:12 Event logging stopped
+2025-07-07 17:07:12 Event logging started
+2025-07-07 17:11:27 Event logging stopped
+2025-07-07 17:11:33 Event logging started
+2025-07-07 17:11:34 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-07 17:13:13 Event logging stopped
+2025-07-07 17:13:19 Event logging started
+2025-07-07 17:13:20 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-07 17:13:46 Event logging stopped
+2025-07-07 17:13:46 Event logging started
+2025-07-07 17:14:40 Event logging stopped
+2025-07-07 17:14:40 Event logging started
+2025-07-07 17:15:09 Error: G0: insufficient axes homed
+2025-07-07 17:15:09 Error: G0: insufficient axes homed
+2025-07-07 17:15:10 Error: G0: insufficient axes homed
+2025-07-07 17:15:10 Error: G0: insufficient axes homed
+2025-07-07 17:15:10 Error: G0: insufficient axes homed
+2025-07-07 17:15:10 Error: G0: insufficient axes homed
+2025-07-07 17:15:11 Error: G0: insufficient axes homed
+2025-07-07 17:15:12 Error: G0: insufficient axes homed
+2025-07-07 17:15:13 Error: G0: insufficient axes homed
+2025-07-07 17:15:13 Error: G0: insufficient axes homed
+2025-07-07 17:15:13 Error: G0: insufficient axes homed
+2025-07-07 17:15:13 Error: G0: insufficient axes homed
+2025-07-07 17:15:14 Error: G0: insufficient axes homed
+2025-07-07 17:15:14 Error: G0: insufficient axes homed
+2025-07-07 17:15:14 Error: G0: insufficient axes homed
+2025-07-07 17:15:14 Error: G0: insufficient axes homed
+2025-07-07 17:15:14 Error: G0: insufficient axes homed
+2025-07-07 17:15:14 Error: G0: insufficient axes homed
+2025-07-07 17:15:14 Error: G0: insufficient axes homed
+2025-07-07 17:15:15 Error: G0: insufficient axes homed
+2025-07-07 17:15:15 Error: G0: insufficient axes homed
+2025-07-07 17:15:15 Error: G0: insufficient axes homed
+2025-07-07 17:15:15 Error: G0: insufficient axes homed
+2025-07-07 17:15:15 Error: G0: insufficient axes homed
+2025-07-07 17:15:16 Error: G0: insufficient axes homed
+2025-07-07 17:15:16 Error: G0: insufficient axes homed
+2025-07-07 17:15:16 Error: G0: insufficient axes homed
+2025-07-07 17:15:17 Error: G0: insufficient axes homed
+2025-07-07 17:15:17 Error: G0: insufficient axes homed
+2025-07-07 17:15:17 Error: G0: insufficient axes homed
+2025-07-07 17:15:17 Error: G0: insufficient axes homed
+2025-07-07 17:15:17 Error: G0: insufficient axes homed
+2025-07-07 17:15:18 Error: G0: insufficient axes homed
+2025-07-07 17:15:19 Error: G0: insufficient axes homed
+2025-07-07 17:15:19 Error: G0: insufficient axes homed
+2025-07-07 17:15:19 Error: G0: insufficient axes homed
+2025-07-07 17:15:19 Error: G0: insufficient axes homed
+2025-07-07 17:15:20 Error: G0: insufficient axes homed
+2025-07-07 17:15:21 Error: G0: insufficient axes homed
+2025-07-07 17:15:21 Error: G0: insufficient axes homed
+2025-07-07 17:15:21 Error: G0: insufficient axes homed
+2025-07-07 17:15:21 Error: G0: insufficient axes homed
+2025-07-07 17:15:22 Error: G0: insufficient axes homed
+2025-07-07 17:15:22 Error: G0: insufficient axes homed
+2025-07-07 17:15:35 Error: G0: insufficient axes homed
+2025-07-07 17:15:35 Error: G0: insufficient axes homed
+2025-07-07 17:15:35 Error: G0: insufficient axes homed
+2025-07-07 17:15:35 Error: G0: insufficient axes homed
+2025-07-07 17:15:36 Error: G0: insufficient axes homed
+2025-07-07 17:15:42 Error: G0: insufficient axes homed
+2025-07-07 17:15:42 Error: G0: insufficient axes homed
+2025-07-07 17:15:43 Error: G0: insufficient axes homed
+2025-07-07 17:15:43 Error: G0: insufficient axes homed
+2025-07-07 17:15:43 Error: G0: insufficient axes homed
+2025-07-07 17:22:08 Error: G30: Probe was not triggered during probing move
+2025-07-07 17:22:08 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 17:22:08 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-07 17:22:08 Error: G29: Probe was not triggered during probing move
+2025-07-07 17:47:26 Event logging stopped
+2025-07-07 17:47:33 Event logging started
+2025-07-07 17:47:33 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-07 17:47:43 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-07-07 17:48:46 Event logging stopped
+2025-07-08 08:55:05 Event logging started
+2025-07-08 08:55:06 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-08 09:03:13 Event logging stopped
+2025-07-08 09:03:13 Event logging started
+2025-07-08 09:04:20 Error: G30: Probe was not triggered during probing move
+2025-07-08 09:04:20 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-08 09:04:20 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-08 10:10:38 Error: G30: Probe was not triggered during probing move
+2025-07-08 10:10:38 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-08 10:10:38 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-08 10:10:38 Error: G29: Probe was not triggered during probing move
+2025-07-08 10:50:07 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-07-08 12:39:58 Warning: SPI connection has been reset
+2025-07-08 12:39:58 Connection to SBC established!
+2025-07-08 12:39:58 Event logging stopped
+2025-07-08 12:39:58 Event logging started
+2025-07-08 12:40:02 Event logging stopped
+2025-07-08 12:40:02 Event logging started
+2025-07-08 12:41:01 Error: G30: Probe was not triggered during probing move
+2025-07-08 12:41:01 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-08 12:41:01 Error: G29: Height map file 0:/sys/heightmap.csv not found
+                                                                                                                                                                                                                                                                                       2025-07-08 13:22:48 Event logging started
+2025-07-08 13:22:48 Error: M584: Driver 1.0 does not exist
+Driver 1.1 does not exist
+2025-07-08 13:22:57 Error: in file macro line 6: G1: insufficient axes homed
+2025-07-08 13:23:06 Error: in file macro line 32: G1: insufficient axes homed
+2025-07-08 13:23:07 Event logging stopped
+2025-07-08 13:23:07 Event logging started
+2025-07-08 13:23:07 Error: M584: Driver 1.0 does not exist
+Driver 1.1 does not exist
+2025-07-08 13:23:15 Error: in file macro line 6: G1: insufficient axes homed
+2025-07-08 13:23:37 Error: in file macro line 32: G1: insufficient axes homed
+2025-07-08 13:23:40 Event logging stopped
+2025-07-08 13:23:46 Event logging started
+2025-07-08 13:23:47 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-08 13:23:59 Error: in file macro line 6: G1: insufficient axes homed
+2025-07-08 13:23:59 Event logging stopped
+2025-07-08 13:24:05 Event logging started
+2025-07-08 13:24:06 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-08 13:36:34 Error: G30: Probe was not triggered during probing move
+2025-07-08 13:36:34 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-08 13:36:34 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-08 13:36:34 Error: G29: Probe was not triggered during probing move
+2025-07-08 13:42:01 Event logging stopped
+2025-07-08 13:42:01 Event logging started
+2025-07-08 13:43:08 Error: G30: Probe was not triggered during probing move
+2025-07-08 13:43:08 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-08 13:43:08 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-08 14:01:45 Event logging stopped
+2025-07-08 14:01:45 Event logging started
+2025-07-08 14:03:06 Error: G30: Probe was not triggered during probing move
+2025-07-08 14:03:06 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-08 14:03:06 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-08 14:15:04 Event logging stopped
+2025-07-08 14:16:38 Event logging started
+2025-07-08 14:18:03 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-08 14:18:03 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-08 15:53:26 Event logging stopped
+2025-07-08 15:53:32 Event logging started
+2025-07-08 15:53:33 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-08 15:54:16 Event logging stopped
+2025-07-10 12:22:32 Event logging started
+2025-07-10 12:22:33 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-10 12:23:58 Event logging stopped
+2025-07-10 12:23:58 Event logging started
+2025-07-10 12:25:15 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 12:25:15 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 12:30:39 Event logging stopped
+2025-07-10 12:30:39 Event logging started
+2025-07-10 12:31:27 Error: G30: Probe was not triggered during probing move
+2025-07-10 12:31:27 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 12:31:27 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 12:31:27 Error: G29: Probe was not triggered during probing move
+2025-07-10 12:36:37 Event logging stopped
+2025-07-10 12:36:43 Event logging started
+2025-07-10 12:36:44 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-10 12:37:34 Error: G30: Probe was not triggered during probing move
+2025-07-10 12:37:34 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 12:37:34 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 12:37:34 Error: G29: Probe was not triggered during probing move
+2025-07-10 12:38:47 Event logging stopped
+2025-07-10 12:38:47 Event logging started
+2025-07-10 12:39:46 Error: G30: Probe was not triggered during probing move
+2025-07-10 12:39:46 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 12:39:46 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 12:40:14 Error: G0: insufficient axes homed
+2025-07-10 12:40:15 Error: G0: insufficient axes homed
+2025-07-10 12:40:32 Error: G0: insufficient axes homed
+2025-07-10 12:40:34 Error: G0: insufficient axes homed
+2025-07-10 13:08:11 Event logging stopped
+2025-07-10 13:08:17 Event logging started
+2025-07-10 13:08:18 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-10 13:15:06 Event logging stopped
+2025-07-10 13:15:13 Event logging started
+2025-07-10 13:15:14 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-10 13:15:58 Error: G30: Probe already triggered at start of probing move
+2025-07-10 13:16:08 Error: G30: Probe was not triggered during probing move
+2025-07-10 13:16:08 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 13:16:09 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 13:16:09 Error: G29: Probe was not triggered during probing move
+2025-07-10 13:16:53 Error: G0: insufficient axes homed
+2025-07-10 13:16:54 Error: G0: insufficient axes homed
+2025-07-10 13:24:20 Event logging stopped
+2025-07-10 13:24:27 Event logging started
+2025-07-10 13:24:28 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-10 13:25:27 Event logging stopped
+2025-07-10 13:25:27 Event logging started
+2025-07-10 13:26:27 Error: G30: Probe already triggered at start of probing move
+2025-07-10 13:26:38 Error: G30: Probe was not triggered during probing move
+2025-07-10 13:26:38 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 13:26:38 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 13:27:57 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 13:27:57 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 14:18:31 Event logging stopped
+2025-07-10 14:18:37 Event logging started
+2025-07-10 14:18:38 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-10 14:18:53 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-07-10 14:19:00 Event logging stopped
+2025-07-10 14:39:44 Event logging started
+2025-07-10 14:39:44 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-10 14:41:51 Event logging stopped
+2025-07-10 14:41:51 Event logging started
+2025-07-10 14:42:54 Error: G30: Probe was not triggered during probing move
+2025-07-10 14:42:54 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 14:42:55 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 17:12:33 Event logging stopped
+2025-07-10 17:12:33 Event logging started
+2025-07-10 17:13:44 Error: G30: Probe was not triggered during probing move
+2025-07-10 17:13:44 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 17:13:44 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 17:44:54 Event logging stopped
+2025-07-10 17:44:54 Event logging started
+2025-07-10 17:45:46 Error: G30: Probe was not triggered during probing move
+2025-07-10 17:45:46 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 17:45:46 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 17:46:54 Event logging stopped
+2025-07-10 17:46:54 Event logging started
+2025-07-10 17:47:54 Error: G30: Probe was not triggered during probing move
+2025-07-10 17:47:54 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 17:47:54 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 17:49:56 Event logging stopped
+2025-07-10 17:49:56 Event logging started
+2025-07-10 17:51:00 Error: G30: Probe was not triggered during probing move
+2025-07-10 17:51:00 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 17:51:00 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-10 17:53:43 Error: G0: insufficient axes homed
+2025-07-10 17:53:49 Error: G0: insufficient axes homed
+2025-07-10 17:58:27 Event logging stopped
+2025-07-14 13:45:09 Event logging started
+2025-07-14 13:45:09 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-14 13:45:27 Event logging stopped
+2025-07-14 13:45:27 Event logging started
+2025-07-14 13:46:32 Error: G30: Probe was not triggered during probing move
+2025-07-14 13:46:32 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-14 13:46:32 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-14 13:51:22 Event logging stopped
+2025-07-14 13:51:22 Event logging started
+2025-07-14 13:51:59 Event logging stopped
+2025-07-14 13:51:59 Event logging started
+2025-07-14 13:52:58 Error: G30: Probe was not triggered during probing move
+2025-07-14 13:52:58 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-14 13:52:58 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-14 17:34:35 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-07-14 17:34:35 Event logging stopped
+2025-07-15 13:21:41 Event logging started
+2025-07-15 13:21:42 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-15 13:25:22 Event logging stopped
+2025-07-15 13:25:22 Event logging started
+2025-07-15 13:26:27 Error: G30: Probe was not triggered during probing move
+2025-07-15 13:26:27 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-15 13:26:27 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-15 14:03:24 Event logging stopped
+2025-07-15 14:03:24 Event logging started
+2025-07-15 14:04:26 Error: G30: Probe was not triggered during probing move
+2025-07-15 14:04:26 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-15 14:04:26 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-15 14:05:28 Event logging stopped
+2025-07-15 14:05:28 Event logging started
+2025-07-15 14:05:43 Error: G0: insufficient axes homed
+2025-07-15 14:05:46 Error: G0: insufficient axes homed
+2025-07-15 14:06:05 Error: G0: insufficient axes homed
+2025-07-15 14:06:09 Error: G0: insufficient axes homed
+2025-07-15 14:06:28 Error: G0: insufficient axes homed
+2025-07-15 14:06:33 Error: G0: insufficient axes homed
+2025-07-15 14:06:33 Error: G0: insufficient axes homed
+2025-07-15 14:06:33 Error: G0: insufficient axes homed
+2025-07-15 14:06:33 Error: G0: insufficient axes homed
+2025-07-15 14:06:33 Error: G0: insufficient axes homed
+2025-07-15 14:06:34 Error: G0: insufficient axes homed
+2025-07-15 14:06:34 Error: G0: insufficient axes homed
+2025-07-15 14:06:34 Error: G0: insufficient axes homed
+2025-07-15 14:06:34 Error: G0: insufficient axes homed
+2025-07-15 14:06:34 Error: G0: insufficient axes homed
+2025-07-15 14:06:34 Error: G0: insufficient axes homed
+2025-07-15 14:06:34 Error: G0: insufficient axes homed
+2025-07-15 14:06:34 Error: G0: insufficient axes homed
+2025-07-15 14:06:34 Error: G0: insufficient axes homed
+2025-07-15 14:06:34 Error: G0: insufficient axes homed
+2025-07-15 14:06:34 Error: G0: insufficient axes homed
+2025-07-15 14:06:34 Error: G0: insufficient axes homed
+2025-07-15 14:06:35 Error: G0: insufficient axes homed
+2025-07-15 14:06:35 Error: G0: insufficient axes homed
+2025-07-15 14:06:35 Error: G0: insufficient axes homed
+2025-07-15 14:06:35 Error: G0: insufficient axes homed
+2025-07-15 14:06:35 Error: G0: insufficient axes homed
+2025-07-15 14:06:35 Error: G0: insufficient axes homed
+2025-07-15 14:06:35 Error: G0: insufficient axes homed
+2025-07-15 14:06:35 Error: G0: insufficient axes homed
+2025-07-15 14:06:35 Error: G0: insufficient axes homed
+2025-07-15 14:06:35 Error: G0: insufficient axes homed
+2025-07-15 14:06:35 Error: G0: insufficient axes homed
+2025-07-15 14:06:35 Error: G0: insufficient axes homed
+2025-07-15 14:06:35 Error: G0: insufficient axes homed
+2025-07-15 14:06:36 Error: G0: insufficient axes homed
+2025-07-15 14:06:36 Error: G0: insufficient axes homed
+2025-07-15 14:06:36 Error: G0: insufficient axes homed
+2025-07-15 14:06:36 Error: G0: insufficient axes homed
+2025-07-15 14:06:36 Error: G0: insufficient axes homed
+2025-07-15 14:07:02 Event logging stopped
+2025-07-15 14:07:02 Event logging started
+2025-07-15 14:07:20 Error: G0: insufficient axes homed
+2025-07-15 14:08:26 Error: G30: Probe was not triggered during probing move
+2025-07-15 14:08:26 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-15 14:08:26 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-15 14:12:24 Event logging stopped
+2025-07-15 14:12:24 Event logging started
+2025-07-15 14:13:24 Error: G30: Probe was not triggered during probing move
+2025-07-15 14:13:24 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-15 14:13:24 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-15 15:32:20 Event logging stopped
+2025-07-15 15:32:20 Event logging started
+2025-07-15 15:33:13 Error: G30: Probe was not triggered during probing move
+2025-07-15 15:33:13 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-15 15:33:13 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-15 17:18:04 Event logging stopped
+2025-07-15 17:18:10 Event logging started
+2025-07-15 17:18:11 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-15 17:18:18 Event logging stopped
+2025-07-16 11:10:58 Event logging started
+2025-07-16 11:10:59 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-16 11:12:10 Error: G30: Probe was not triggered during probing move
+2025-07-16 11:12:11 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-16 11:12:11 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-16 11:12:11 Error: G29: Probe was not triggered during probing move
+2025-07-16 11:15:08 Event logging stopped
+2025-07-16 11:15:15 Event logging started
+2025-07-16 11:15:16 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-16 11:17:13 Warning: VIN under-voltage event (9.4V)
+2025-07-16 11:17:17 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-07-16 11:17:18 Event logging stopped
+2025-07-16 12:04:34 Event logging started
+2025-07-16 12:04:35 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-16 12:06:29 Event logging stopped
+2025-07-16 12:06:29 Event logging started
+2025-07-16 12:07:40 Error: G30: Probe was not triggered during probing move
+2025-07-16 12:07:40 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-16 12:07:40 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-16 12:20:53 Event logging stopped
+2025-07-17 10:38:21 Event logging started
+2025-07-17 10:38:22 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-17 10:49:53 Error: G30: Probe was not triggered during probing move
+2025-07-17 10:49:53 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-17 10:49:53 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-17 10:49:53 Error: G29: Probe was not triggered during probing move
+2025-07-17 10:54:41 Warning: SPI connection has been reset
+2025-07-17 10:54:41 Connection to SBC established!
+2025-07-17 10:54:41 Event logging stopped
+2025-07-17 10:54:41 Event logging started
+2025-07-17 10:54:41 Error: M584: Driver 1.0 does not exist
+Driver 1.1 does not exist
+2025-07-17 10:54:52 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-07-17 10:55:21 Warning: SPI connection has been reset
+2025-07-17 10:55:21 Connection to SBC established!
+2025-07-17 10:55:21 Event logging stopped
+2025-07-17 10:55:21 Event logging started
+2025-07-17 10:57:28 Event logging stopped
+2025-07-17 10:57:28 Event logging started
+2025-07-17 11:00:10 Error: G30: Probe was not triggered during probing move
+2025-07-17 11:00:10 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-17 11:00:10 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-17 11:19:16 Event logging stopped
+2025-07-17 11:19:23 Event logging started
+2025-07-17 11:19:24 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-17 11:20:28 Event logging stopped
+2025-07-17 11:20:34 Event logging started
+2025-07-17 11:20:35 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-17 11:29:37 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-17 11:29:37 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-17 11:55:16 Event logging stopped
+2025-07-17 11:55:22 Event logging started
+2025-07-17 11:55:23 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-17 11:55:35 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-07-17 11:55:39 Event logging stopped
+2025-07-23 11:49:55 Event logging started
+2025-07-23 11:49:55 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-23 12:19:35 Event logging stopped
+2025-07-23 12:19:35 Event logging started
+2025-07-23 12:20:38 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-23 12:20:38 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-23 16:10:14 Event logging stopped
+2025-07-23 16:10:20 Event logging started
+2025-07-23 16:10:20 Error: M308: Unknown sensor type name "dht11"
+2025-07-23 16:10:20 Error: M308: Parent sensor 10 does not exist
+2025-07-23 16:10:21 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-23 16:13:00 Event logging stopped
+2025-07-23 16:13:06 Event logging started
+2025-07-23 16:13:07 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-23 16:21:32 Event logging stopped
+2025-07-23 16:21:38 Event logging started
+2025-07-23 16:21:38 Error: M308: Unknown sensor type name "dht11"
+2025-07-23 16:21:39 Error: M308: Parent sensor 10 does not exist
+2025-07-23 16:21:39 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-23 16:22:14 Event logging stopped
+2025-07-23 16:22:20 Event logging started
+2025-07-23 16:22:21 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-23 16:27:22 Event logging stopped
+2025-07-23 16:27:22 Event logging started
+2025-07-23 16:28:24 Error: G30: Probe was not triggered during probing move
+2025-07-23 16:28:24 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-23 16:28:24 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-23 16:29:40 Event logging stopped
+2025-07-23 16:29:46 Event logging started
+2025-07-23 16:29:47 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-23 16:32:00 Error: G30: Probe was not triggered during probing move
+2025-07-23 16:32:00 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-23 16:32:00 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-23 16:32:00 Error: G29: Probe was not triggered during probing move
+2025-07-23 16:33:00 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-23 16:33:00 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-23 16:34:13 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-23 16:34:13 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-23 16:35:40 Event logging stopped
+2025-07-23 16:35:47 Event logging started
+2025-07-23 16:35:48 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-23 16:46:48 Event logging stopped
+2025-07-29 08:03:22 Event logging started
+2025-07-29 08:03:23 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-29 09:29:22 Event logging stopped
+2025-07-29 09:29:22 Event logging started
+2025-07-29 09:30:23 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-29 09:30:23 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-29 09:32:09 Event logging stopped
+2025-07-29 09:32:16 Event logging started
+2025-07-29 09:32:16 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-29 09:33:25 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-29 09:33:25 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-29 09:34:12 Event logging stopped
+2025-07-29 09:34:18 Event logging started
+2025-07-29 09:34:19 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-29 09:35:12 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-29 09:35:12 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-29 09:38:57 Event logging stopped
+2025-07-29 09:39:03 Event logging started
+2025-07-29 09:39:04 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-29 09:40:07 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-29 09:40:07 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-29 09:40:38 Event logging stopped
+2025-07-29 09:40:44 Event logging started
+2025-07-29 09:40:45 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-29 09:41:46 Error: G30: Probe was not triggered during probing move
+2025-07-29 09:41:46 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-29 09:41:46 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-29 09:41:46 Error: G29: Probe was not triggered during probing move
+2025-07-29 10:05:55 Event logging stopped
+2025-07-29 10:05:55 Event logging started
+2025-07-29 10:06:20 Event logging stopped
+2025-07-29 10:06:20 Event logging started
+2025-07-29 10:06:28 Error: in file macro line 6: G1: insufficient axes homed
+2025-07-29 10:06:38 Event logging stopped
+2025-07-29 10:06:45 Event logging started
+2025-07-29 10:06:46 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-29 10:06:56 Event logging stopped
+2025-07-29 10:06:56 Event logging started
+2025-07-29 10:07:06 Event logging stopped
+2025-07-29 10:07:06 Event logging started
+2025-07-29 10:07:29 Error: G0: insufficient axes homed
+2025-07-29 10:08:24 Event logging stopped
+2025-07-29 10:08:31 Event logging started
+2025-07-29 10:08:32 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-29 10:11:38 Event logging stopped
+2025-07-29 10:11:44 Event logging started
+2025-07-29 10:11:44 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-29 10:11:46 Event logging stopped
+2025-07-29 10:11:46 Event logging started
+2025-07-29 10:12:49 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-29 10:12:49 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-29 13:36:40 Event logging stopped
+2025-07-29 13:36:40 Event logging started
+2025-07-29 13:36:48 Error: in file macro line 6: G1: insufficient axes homed
+2025-07-29 13:37:09 Error: in file macro line 6: G1: insufficient axes homed
+2025-07-29 13:37:43 Event logging stopped
+2025-07-29 13:37:49 Event logging started
+2025-07-29 13:37:50 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-29 13:39:55 Event logging stopped
+2025-07-29 13:39:55 Event logging started
+2025-07-29 13:40:43 Event logging stopped
+2025-07-29 13:40:50 Event logging started
+2025-07-29 13:40:51 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-29 13:41:25 Event logging stopped
+2025-07-29 13:41:25 Event logging started
+2025-07-29 13:42:12 Error: G30: Probe was not triggered during probing move
+2025-07-29 13:42:12 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-29 13:42:12 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-29 14:03:29 Event logging stopped
+2025-07-29 14:03:29 Event logging started
+2025-07-29 14:03:37 Error: in file macro line 6: G1: insufficient axes homed
+2025-07-29 14:03:43 Event logging stopped
+2025-07-29 14:03:49 Event logging started
+2025-07-29 14:03:50 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-29 14:20:56 Event logging stopped
+2025-07-29 14:20:56 Event logging started
+2025-07-29 14:22:04 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-29 14:22:04 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-29 14:36:30 Event logging stopped
+2025-07-29 14:36:36 Event logging started
+2025-07-29 14:36:37 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-29 14:36:39 Warning: VIN under-voltage event (9.5V)
+2025-07-29 14:36:43 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-07-29 14:36:52 Event logging stopped
+2025-07-30 08:01:29 Event logging started
+2025-07-30 08:01:30 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-30 08:01:33 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-30 08:08:35 Event logging stopped
+2025-07-30 08:08:35 Event logging started
+2025-07-30 08:09:31 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-30 08:09:31 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-30 12:13:48 Event logging stopped
+2025-07-30 12:13:48 Event logging started
+2025-07-30 12:13:57 Error: in file macro line 6: G1: insufficient axes homed
+2025-07-30 12:14:23 Event logging stopped
+2025-07-30 12:14:23 Event logging started
+2025-07-30 12:15:29 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-30 12:15:29 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-30 12:26:06 Event logging stopped
+2025-07-30 12:26:06 Event logging started
+2025-07-30 12:26:35 Event logging stopped
+2025-07-30 12:26:35 Event logging started
+2025-07-30 12:26:40 Error: in file macro line 6: G1: insufficient axes homed
+2025-07-30 12:26:51 Event logging stopped
+2025-07-30 12:26:51 Event logging started
+2025-07-30 12:27:50 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-30 12:27:51 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-30 14:59:30 Event logging stopped
+2025-07-30 14:59:37 Event logging started
+2025-07-30 14:59:41 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-07-30 14:59:56 Event logging stopped
+2025-07-30 15:00:22 Event logging started
+2025-07-30 15:00:22 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-30 15:11:01 Event logging stopped
+2025-07-30 15:11:01 Event logging started
+2025-07-30 15:12:13 Event logging stopped
+2025-07-30 15:12:19 Event logging started
+2025-07-30 15:12:20 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-30 15:13:11 Event logging stopped
+2025-07-30 15:13:17 Event logging started
+2025-07-30 15:13:18 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-30 15:14:01 Event logging stopped
+2025-07-30 15:14:07 Event logging started
+2025-07-30 15:14:09 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-30 15:14:44 Warning: M14: Command is not supported
+2025-07-30 15:14:45 Warning: M14: Command is not supported
+2025-07-30 15:16:00 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-30 15:16:00 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-30 15:20:02 Event logging stopped
+2025-07-30 15:20:02 Event logging started
+2025-07-30 15:20:44 Event logging stopped
+2025-07-30 15:20:50 Event logging started
+2025-07-30 15:20:51 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-30 15:21:37 Event logging stopped
+2025-07-30 15:21:37 Event logging started
+2025-07-30 15:22:34 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-30 15:22:34 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-31 15:40:43 Event logging stopped
+2025-07-31 15:40:43 Event logging started
+2025-07-31 15:41:33 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-31 15:41:33 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-07-31 16:04:40 Event logging stopped
+2025-07-31 16:04:46 Event logging started
+2025-07-31 16:04:47 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-07-31 16:05:41 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-07-31 16:05:41 Event logging stopped
+2025-08-01 07:51:19 Event logging started
+2025-08-01 07:51:19 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-01 07:51:27 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-01 08:17:21 Event logging stopped
+2025-08-01 08:17:21 Event logging started
+2025-08-01 08:18:22 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-08-01 08:18:22 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-08-01 09:39:16 Event logging stopped
+2025-08-01 09:39:16 Event logging started
+2025-08-01 12:51:12 Event logging stopped
+2025-08-01 12:51:12 Event logging started
+2025-08-01 12:51:19 Event logging stopped
+2025-08-01 12:51:19 Event logging started
+2025-08-01 12:51:37 Event logging stopped
+2025-08-01 12:51:37 Event logging started
+2025-08-01 12:52:33 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-08-01 12:52:33 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-08-01 13:00:46 Event logging stopped
+2025-08-01 13:00:46 Event logging started
+2025-08-01 13:01:03 Error: in file macro line 6: G1: insufficient axes homed
+2025-08-01 13:01:13 Event logging stopped
+2025-08-01 13:01:13 Event logging started
+2025-08-01 13:04:24 Event logging stopped
+2025-08-01 13:04:24 Event logging started
+2025-08-01 13:04:31 Error: in file macro line 6: G1: insufficient axes homed
+2025-08-01 13:05:00 Event logging stopped
+2025-08-01 13:05:00 Event logging started
+2025-08-01 13:25:26 Event logging stopped
+2025-08-01 13:25:26 Event logging started
+2025-08-01 14:24:33 Event logging stopped
+2025-08-01 14:24:33 Event logging started
+2025-08-01 14:25:56 Event logging stopped
+2025-08-01 14:26:02 Event logging started
+2025-08-01 14:26:03 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-01 14:26:05 Warning: VIN under-voltage event (9.4V)
+2025-08-01 14:26:09 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-08-01 14:26:12 Event logging stopped
+2025-08-04 11:30:55 Event logging started
+2025-08-04 11:30:55 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-04 11:30:59 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-04 11:34:04 Event logging stopped
+2025-08-04 11:34:04 Event logging started
+2025-08-04 12:04:22 Event logging stopped
+2025-08-04 12:04:22 Event logging started
+2025-08-04 12:04:37 Error: G0: insufficient axes homed
+2025-08-04 12:04:37 Error: G0: insufficient axes homed
+2025-08-04 12:04:37 Error: G0: insufficient axes homed
+2025-08-04 12:04:37 Error: G0: insufficient axes homed
+2025-08-04 12:04:37 Error: G0: insufficient axes homed
+2025-08-04 12:04:38 Error: G0: insufficient axes homed
+2025-08-04 12:04:38 Error: G0: insufficient axes homed
+2025-08-04 12:04:41 Error: G0: insufficient axes homed
+2025-08-04 12:04:41 Error: G0: insufficient axes homed
+2025-08-04 12:04:41 Error: G0: insufficient axes homed
+2025-08-04 12:04:41 Error: G0: insufficient axes homed
+2025-08-04 12:04:41 Error: G0: insufficient axes homed
+2025-08-04 12:04:41 Error: G0: insufficient axes homed
+2025-08-04 12:04:41 Error: G0: insufficient axes homed
+2025-08-04 12:04:55 Event logging stopped
+2025-08-04 12:05:02 Event logging started
+2025-08-04 12:05:03 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-04 12:05:34 Event logging stopped
+2025-08-04 12:05:41 Event logging started
+2025-08-04 12:05:42 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-04 12:06:45 Event logging stopped
+2025-08-04 12:06:51 Event logging started
+2025-08-04 12:06:52 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-04 12:07:27 Event logging stopped
+2025-08-04 12:07:33 Event logging started
+2025-08-04 12:07:34 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-04 12:07:57 Event logging stopped
+2025-08-04 12:08:04 Event logging started
+2025-08-04 12:08:05 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-04 14:29:47 Event logging stopped
+2025-08-04 14:29:47 Event logging started
+2025-08-04 14:38:43 Event logging stopped
+2025-08-04 14:38:43 Event logging started
+2025-08-04 14:38:50 Error: in file macro line 6: G1: insufficient axes homed
+2025-08-04 14:38:59 Event logging stopped
+2025-08-04 14:38:59 Event logging started
+2025-08-06 20:35:01 Warning: SPI connection has been reset
+2025-08-06 20:35:04 Connection to SBC established!
+2025-08-06 21:06:11 Warning: SPI connection has been reset
+2025-08-06 21:06:12 Connection to SBC established!
+2025-08-06 21:07:12 Warning: SPI connection has been reset
+2025-08-06 21:07:13 Connection to SBC established!
+2025-08-06 21:07:35 Warning: SPI connection has been reset
+2025-08-06 21:07:37 Connection to SBC established!
+2025-08-06 21:07:52 Warning: SPI connection has been reset
+2025-08-06 21:07:52 Connection to SBC established!
+2025-08-06 21:08:01 Warning: SPI connection has been reset
+2025-08-06 21:08:02 Connection to SBC established!
+2025-08-06 21:08:29 Warning: SPI connection has been reset
+2025-08-06 21:08:30 Connection to SBC established!
+2025-08-06 21:08:43 Warning: SPI connection has been reset
+2025-08-06 21:08:44 Connection to SBC established!
+2025-08-06 22:12:28 Warning: SPI connection has been reset
+2025-08-06 22:12:30 Connection to SBC established!
+2025-08-06 22:13:15 Warning: SPI connection has been reset
+2025-08-06 22:13:15 Connection to SBC established!
+2025-08-06 22:14:08 Warning: SPI connection has been reset
+2025-08-06 22:14:09 Connection to SBC established!
+2025-08-06 22:14:17 Warning: SPI connection has been reset
+2025-08-06 22:14:18 Connection to SBC established!
+2025-08-06 22:14:29 Warning: SPI connection has been reset
+2025-08-06 22:14:30 Connection to SBC established!
+2025-08-06 22:14:44 Warning: SPI connection has been reset
+2025-08-06 22:14:44 Connection to SBC established!
+2025-08-06 22:15:21 Warning: SPI connection has been reset
+2025-08-06 22:15:24 Connection to SBC established!
+2025-08-06 22:15:36 Warning: SPI connection has been reset
+2025-08-06 22:15:36 Connection to SBC established!
+2025-08-06 22:16:00 Warning: SPI connection has been reset
+2025-08-06 22:16:01 Connection to SBC established!
+2025-08-06 22:16:35 Warning: SPI connection has been reset
+2025-08-06 22:16:36 Connection to SBC established!
+2025-08-06 22:16:54 Warning: SPI connection has been reset
+2025-08-06 22:16:55 Connection to SBC established!
+2025-08-06 22:17:20 Warning: SPI connection has been reset
+2025-08-06 22:17:20 Connection to SBC established!
+2025-08-06 22:17:39 Warning: SPI connection has been reset
+2025-08-06 22:17:39 Connection to SBC established!
+2025-08-06 22:18:13 Warning: SPI connection has been reset
+2025-08-06 22:18:14 Connection to SBC established!
+2025-08-06 22:18:23 Warning: SPI connection has been reset
+2025-08-06 22:18:24 Connection to SBC established!
+2025-08-06 22:18:40 Warning: SPI connection has been reset
+2025-08-06 22:18:41 Connection to SBC established!
+2025-08-06 22:18:57 Warning: SPI connection has been reset
+2025-08-06 22:18:58 Connection to SBC established!
+2025-08-06 22:19:55 Warning: SPI connection has been reset
+2025-08-06 22:19:56 Connection to SBC established!
+2025-08-06 22:20:12 Warning: SPI connection has been reset
+2025-08-06 22:20:12 Connection to SBC established!
+2025-08-06 22:20:24 Warning: SPI connection has been reset
+2025-08-06 22:20:24 Connection to SBC established!
+2025-08-06 22:21:10 Warning: SPI connection has been reset
+2025-08-06 22:21:12 Connection to SBC established!
+2025-08-06 22:21:25 Warning: SPI connection has been reset
+2025-08-06 22:21:26 Connection to SBC established!
+2025-08-06 22:21:44 Warning: SPI connection has been reset
+2025-08-06 22:21:45 Connection to SBC established!
+2025-08-06 22:22:14 Warning: SPI connection has been reset
+2025-08-06 22:22:14 Connection to SBC established!
+2025-08-06 22:22:34 Warning: SPI connection has been reset
+2025-08-06 22:22:34 Connection to SBC established!
+2025-08-06 22:22:45 Warning: SPI connection has been reset
+2025-08-06 22:22:45 Connection to SBC established!
+2025-08-06 22:23:00 Warning: SPI connection has been reset
+2025-08-06 22:23:04 Connection to SBC established!
+2025-08-06 22:23:57 Warning: SPI connection has been reset
+2025-08-06 22:24:24 Connection to SBC established!
+2025-08-06 22:24:47 Warning: SPI connection has been reset
+2025-08-06 22:24:47 Connection to SBC established!
+2025-08-06 22:25:45 Warning: SPI connection has been reset
+2025-08-06 22:25:46 Connection to SBC established!
+2025-08-06 22:26:20 Warning: SPI connection has been reset
+2025-08-06 22:26:20 Connection to SBC established!
+2025-08-06 22:26:38 Warning: SPI connection has been reset
+2025-08-06 22:26:38 Connection to SBC established!
+2025-08-06 22:26:47 Warning: SPI connection has been reset
+2025-08-06 22:26:47 Connection to SBC established!
+2025-08-06 22:27:02 Warning: SPI connection has been reset
+2025-08-06 22:27:02 Connection to SBC established!
+2025-08-06 22:27:12 Warning: SPI connection has been reset
+2025-08-06 22:27:12 Connection to SBC established!
+2025-08-06 22:27:27 Warning: SPI connection has been reset
+2025-08-06 22:27:27 Connection to SBC established!
+2025-08-06 22:27:43 Warning: SPI connection has been reset
+2025-08-06 22:27:45 Connection to SBC established!
+2025-08-06 22:28:38 Warning: SPI connection has been reset
+2025-08-06 22:28:39 Connection to SBC established!
+2025-08-06 22:29:02 Warning: SPI connection has been reset
+2025-08-06 22:29:02 Connection to SBC established!
+2025-08-06 22:31:00 Warning: SPI connection has been reset
+2025-08-06 22:31:02 Connection to SBC established!
+2025-08-06 22:31:59 Warning: SPI connection has been reset
+2025-08-06 22:32:01 Connection to SBC established!
+2025-08-06 22:32:47 Warning: SPI connection has been reset
+2025-08-06 22:32:47 Connection to SBC established!
+2025-08-06 22:33:11 Warning: SPI connection has been reset
+2025-08-06 22:33:19 Connection to SBC established!
+2025-08-06 22:33:29 Warning: SPI connection has been reset
+2025-08-06 22:33:29 Connection to SBC established!
+2025-08-06 22:33:44 Warning: SPI connection has been reset
+2025-08-06 22:33:45 Connection to SBC established!
+2025-08-06 22:34:04 Warning: SPI connection has been reset
+2025-08-06 22:34:05 Connection to SBC established!
+2025-08-06 22:34:14 Warning: SPI connection has been reset
+2025-08-06 22:34:14 Connection to SBC established!
+2025-08-06 22:34:37 Warning: SPI connection has been reset
+2025-08-06 22:34:38 Connection to SBC established!
+2025-08-06 22:34:50 Warning: SPI connection has been reset
+2025-08-06 22:34:50 Connection to SBC established!
+2025-08-06 22:34:58 Warning: SPI connection has been reset
+2025-08-06 22:34:58 Connection to SBC established!
+2025-08-06 22:35:31 Warning: SPI connection has been reset
+2025-08-06 22:35:31 Connection to SBC established!
+2025-08-06 22:35:46 Warning: SPI connection has been reset
+2025-08-06 22:35:47 Connection to SBC established!
+2025-08-06 22:36:12 Warning: SPI connection has been reset
+2025-08-06 22:36:13 Connection to SBC established!
+2025-08-06 22:36:58 Warning: SPI connection has been reset
+2025-08-06 22:36:58 Connection to SBC established!
+2025-08-06 22:37:09 Warning: SPI connection has been reset
+2025-08-06 22:37:29 Connection to SBC established!
+2025-08-06 22:37:50 Warning: SPI connection has been reset
+2025-08-06 22:38:25 Connection to SBC established!
+2025-08-06 22:39:30 Warning: SPI connection has been reset
+2025-08-06 22:39:31 Connection to SBC established!
+2025-08-06 22:41:16 Warning: SPI connection has been reset
+2025-08-06 22:41:17 Connection to SBC established!
+2025-08-06 22:42:00 Warning: SPI connection has been reset
+2025-08-06 22:42:00 Connection to SBC established!
+2025-08-06 22:42:55 Warning: SPI connection has been reset
+2025-08-06 22:42:56 Connection to SBC established!
+2025-08-06 22:43:25 Warning: SPI connection has been reset
+2025-08-06 22:43:26 Connection to SBC established!
+2025-08-06 22:43:47 Warning: SPI connection has been reset
+2025-08-06 22:44:34 Connection to SBC established!
+2025-08-06 22:46:50 Warning: SPI connection has been reset
+2025-08-06 22:46:50 Connection to SBC established!
+2025-08-06 22:47:17 Warning: SPI connection has been reset
+2025-08-06 22:47:17 Connection to SBC established!
+2025-08-06 22:48:21 Warning: SPI connection has been reset
+2025-08-06 22:48:21 Connection to SBC established!
+2025-08-06 22:48:52 Warning: SPI connection has been reset
+2025-08-06 22:48:53 Connection to SBC established!
+2025-08-06 22:51:40 Warning: SPI connection has been reset
+2025-08-06 22:51:41 Connection to SBC established!
+2025-08-06 22:52:30 Warning: SPI connection has been reset
+2025-08-06 22:52:33 Connection to SBC established!
+2025-08-06 22:53:13 Warning: SPI connection has been reset
+2025-08-06 22:53:16 Connection to SBC established!
+2025-08-06 22:53:39 Warning: SPI connection has been reset
+2025-08-06 22:53:40 Connection to SBC established!
+2025-08-06 22:54:16 Warning: SPI connection has been reset
+2025-08-06 22:54:16 Connection to SBC established!
+2025-08-06 22:54:49 Warning: SPI connection has been reset
+2025-08-06 22:55:20 Connection to SBC established!
+2025-08-06 22:55:52 Warning: SPI connection has been reset
+2025-08-06 22:56:52 Connection to SBC established!
+2025-08-06 22:58:50 Warning: SPI connection has been reset
+2025-08-06 22:58:56 Connection to SBC established!
+2025-08-06 22:59:23 Warning: SPI connection has been reset
+2025-08-06 22:59:24 Connection to SBC established!
+2025-08-06 22:59:45 Warning: SPI connection has been reset
+2025-08-06 22:59:45 Connection to SBC established!
+2025-08-06 23:00:00 Warning: SPI connection has been reset
+2025-08-06 23:00:12 Connection to SBC established!
+2025-08-06 23:00:40 Warning: SPI connection has been reset
+2025-08-06 23:01:10 Connection to SBC established!
+2025-08-06 23:01:43 Warning: SPI connection has been reset
+2025-08-06 23:01:44 Connection to SBC established!
+2025-08-06 23:02:08 Warning: SPI connection has been reset
+2025-08-06 23:02:08 Connection to SBC established!
+2025-08-06 23:02:24 Warning: SPI connection has been reset
+2025-08-06 23:02:26 Connection to SBC established!
+2025-08-06 23:02:37 Warning: SPI connection has been reset
+2025-08-06 23:02:37 Connection to SBC established!
+2025-08-06 23:03:09 Warning: SPI connection has been reset
+2025-08-06 23:03:09 Connection to SBC established!
+2025-08-06 23:03:21 Warning: SPI connection has been reset
+2025-08-06 23:03:21 Connection to SBC established!
+2025-08-06 23:03:44 Warning: SPI connection has been reset
+2025-08-06 23:03:45 Connection to SBC established!
+2025-08-06 23:04:19 Warning: SPI connection has been reset
+2025-08-06 23:04:20 Connection to SBC established!
+2025-08-06 23:04:59 Warning: SPI connection has been reset
+2025-08-06 23:05:00 Connection to SBC established!
+2025-08-06 23:05:55 Warning: SPI connection has been reset
+2025-08-06 23:06:11 Connection to SBC established!
+2025-08-06 23:06:40 Warning: SPI connection has been reset
+2025-08-06 23:06:41 Connection to SBC established!
+2025-08-06 23:07:51 Warning: SPI connection has been reset
+2025-08-06 23:07:52 Connection to SBC established!
+2025-08-06 23:08:52 Warning: SPI connection has been reset
+2025-08-06 23:08:54 Connection to SBC established!
+2025-08-06 23:11:38 Warning: SPI connection has been reset
+2025-08-06 23:11:39 Connection to SBC established!
+2025-08-06 23:12:28 Warning: SPI connection has been reset
+2025-08-06 23:12:30 Connection to SBC established!
+2025-08-06 23:13:23 Warning: SPI connection has been reset
+2025-08-06 23:13:23 Connection to SBC established!
+2025-08-06 23:15:11 Warning: SPI connection has been reset
+2025-08-06 23:15:12 Connection to SBC established!
+2025-08-06 23:17:59 Warning: SPI connection has been reset
+2025-08-06 23:18:01 Connection to SBC established!
+2025-08-06 23:19:29 Warning: SPI connection has been reset
+2025-08-06 23:19:31 Connection to SBC established!
+2025-08-06 23:20:43 Warning: SPI connection has been reset
+2025-08-06 23:21:15 Connection to SBC established!
+2025-08-06 23:21:59 Warning: SPI connection has been reset
+2025-08-06 23:22:00 Connection to SBC established!
+2025-08-06 23:22:39 Warning: SPI connection has been reset
+2025-08-06 23:23:12 Connection to SBC established!
+2025-08-06 23:24:26 Warning: SPI connection has been reset
+2025-08-06 23:24:27 Connection to SBC established!
+2025-08-06 23:25:41 Warning: SPI connection has been reset
+2025-08-06 23:25:43 Connection to SBC established!
+2025-08-06 23:28:42 Warning: SPI connection has been reset
+2025-08-06 23:29:46 Connection to SBC established!
+2025-08-06 23:30:46 Warning: SPI connection has been reset
+2025-08-06 23:30:47 Connection to SBC established!
+2025-08-06 23:31:49 Warning: SPI connection has been reset
+2025-08-06 23:31:50 Connection to SBC established!
+2025-08-06 23:32:44 Warning: SPI connection has been reset
+2025-08-06 23:32:46 Connection to SBC established!
+2025-08-06 23:35:02 Warning: SPI connection has been reset
+2025-08-06 23:35:03 Connection to SBC established!
+2025-08-06 23:38:15 Warning: SPI connection has been reset
+2025-08-06 23:38:16 Connection to SBC established!
+2025-08-06 23:39:24 Warning: SPI connection has been reset
+2025-08-06 23:39:25 Connection to SBC established!
+2025-08-06 23:41:32 Warning: SPI connection has been reset
+2025-08-06 23:41:36 Connection to SBC established!
+2025-08-06 23:43:16 Warning: SPI connection has been reset
+2025-08-06 23:43:18 Connection to SBC established!
+2025-08-06 23:44:30 Warning: SPI connection has been reset
+2025-08-06 23:44:31 Connection to SBC established!
+2025-08-06 23:46:20 Warning: SPI connection has been reset
+2025-08-06 23:46:22 Connection to SBC established!
+2025-08-06 23:48:34 Warning: SPI connection has been reset
+2025-08-06 23:48:37 Connection to SBC established!
+2025-08-06 23:51:15 Warning: SPI connection has been reset
+2025-08-06 23:51:19 Connection to SBC established!
+2025-08-06 23:53:40 Warning: SPI connection has been reset
+2025-08-06 23:53:44 Connection to SBC established!
+2025-08-06 23:55:31 Warning: SPI connection has been reset
+2025-08-06 23:55:34 Connection to SBC established!
+2025-08-07 00:01:26 Warning: SPI connection has been reset
+2025-08-07 00:01:30 Connection to SBC established!
+2025-08-07 00:04:51 Warning: SPI connection has been reset
+2025-08-07 00:04:55 Connection to SBC established!
+2025-08-07 00:13:12 Warning: SPI connection has been reset
+2025-08-07 00:13:13 Connection to SBC established!
+2025-08-07 00:13:55 Warning: SPI connection has been reset
+2025-08-07 00:13:55 Connection to SBC established!
+2025-08-07 00:14:06 Warning: SPI connection has been reset
+2025-08-07 00:14:06 Connection to SBC established!
+2025-08-07 00:14:28 Warning: SPI connection has been reset
+2025-08-07 00:14:28 Connection to SBC established!
+2025-08-07 00:14:42 Warning: SPI connection has been reset
+2025-08-07 00:14:42 Connection to SBC established!
+2025-08-07 00:15:34 Warning: SPI connection has been reset
+2025-08-07 00:15:34 Connection to SBC established!
+2025-08-07 00:16:06 Warning: SPI connection has been reset
+2025-08-07 00:16:06 Connection to SBC established!
+2025-08-07 00:17:20 Warning: SPI connection has been reset
+2025-08-07 00:17:22 Connection to SBC established!
+2025-08-07 00:18:07 Warning: SPI connection has been reset
+2025-08-07 00:18:09 Connection to SBC established!
+2025-08-07 00:19:11 Warning: SPI connection has been reset
+2025-08-07 00:19:11 Connection to SBC established!
+2025-08-07 00:19:49 Warning: SPI connection has been reset
+2025-08-07 00:19:51 Connection to SBC established!
+2025-08-07 00:20:21 Warning: SPI connection has been reset
+2025-08-07 00:20:22 Connection to SBC established!
+2025-08-07 00:22:18 Warning: SPI connection has been reset
+2025-08-07 00:22:20 Connection to SBC established!
+2025-08-07 00:23:06 Warning: SPI connection has been reset
+2025-08-07 00:23:07 Connection to SBC established!
+2025-08-07 00:23:43 Warning: SPI connection has been reset
+2025-08-07 00:24:04 Connection to SBC established!
+2025-08-07 00:24:09 Warning: SPI connection has been reset
+2025-08-07 00:24:09 Connection to SBC established!
+2025-08-07 00:24:40 Warning: SPI connection has been reset
+2025-08-07 00:24:41 Connection to SBC established!
+2025-08-07 00:25:03 Warning: SPI connection has been reset
+2025-08-07 00:25:04 Connection to SBC established!
+2025-08-07 00:25:41 Warning: SPI connection has been reset
+2025-08-07 00:25:43 Connection to SBC established!
+2025-08-07 00:26:37 Warning: SPI connection has been reset
+2025-08-07 00:26:39 Connection to SBC established!
+2025-08-07 00:27:38 Warning: SPI connection has been reset
+2025-08-07 00:27:40 Connection to SBC established!
+2025-08-07 00:28:38 Warning: SPI connection has been reset
+2025-08-07 00:28:38 Connection to SBC established!
+2025-08-07 00:29:18 Warning: SPI connection has been reset
+2025-08-07 00:29:19 Connection to SBC established!
+2025-08-07 00:38:48 Warning: SPI connection has been reset
+2025-08-07 00:38:51 Connection to SBC established!
+2025-08-07 00:40:57 Warning: SPI connection has been reset
+2025-08-07 00:41:02 Connection to SBC established!
+2025-08-07 00:47:19 Warning: SPI connection has been reset
+2025-08-07 00:47:22 Connection to SBC established!
+2025-08-07 00:51:10 Warning: SPI connection has been reset
+2025-08-07 00:51:13 Connection to SBC established!
+2025-08-07 00:52:49 Warning: SPI connection has been reset
+2025-08-07 00:52:50 Connection to SBC established!
+2025-08-07 00:58:57 Warning: SPI connection has been reset
+2025-08-07 01:12:01 Connection to SBC established!
+2025-08-07 01:12:12 Warning: SPI connection has been reset
+2025-08-07 01:12:44 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 01:25:13 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-08-07 01:25:31 Warning: SPI connection has been reset
+2025-08-07 01:25:39 Connection to SBC established!
+2025-08-07 01:25:49 Warning: SPI connection has been reset
+2025-08-07 01:25:58 Warning: SPI connection has been reset
+2025-08-07 01:26:05 Connection to SBC established!
+2025-08-07 01:26:12 Warning: SPI connection has been reset
+2025-08-07 01:26:48 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 01:47:10 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-08-07 01:47:36 Warning: SPI connection has been reset
+2025-08-07 01:47:44 Connection to SBC established!
+2025-08-07 01:47:51 Warning: SPI connection has been reset
+2025-08-07 01:53:45 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 02:00:58 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-08-07 02:06:15 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 02:07:20 Connection to SBC established!
+2025-08-07 02:20:14 Warning: SPI connection has been reset
+2025-08-07 02:20:17 Connection to SBC established!
+2025-08-07 02:27:57 Warning: SPI connection has been reset
+2025-08-07 02:28:01 Connection to SBC established!
+2025-08-07 02:28:07 Warning: SPI connection has been reset
+2025-08-07 02:28:14 Connection to SBC established!
+2025-08-07 02:39:10 Warning: SPI connection has been reset
+2025-08-07 02:39:16 Connection to SBC established!
+2025-08-07 02:39:20 Warning: SPI connection has been reset
+2025-08-07 02:39:24 Connection to SBC established!
+2025-08-07 02:50:56 Warning: SPI connection has been reset
+2025-08-07 02:51:00 Connection to SBC established!
+2025-08-07 02:51:04 Warning: SPI connection has been reset
+2025-08-07 02:51:08 Connection to SBC established!
+2025-08-07 03:04:02 Warning: SPI connection has been reset
+2025-08-07 03:04:07 Connection to SBC established!
+2025-08-07 03:19:30 Warning: SPI connection has been reset
+2025-08-07 03:19:35 Connection to SBC established!
+2025-08-07 03:19:40 Warning: SPI connection has been reset
+2025-08-07 03:19:43 Connection to SBC established!
+2025-08-07 03:24:55 Warning: SPI connection has been reset
+2025-08-07 03:24:58 Connection to SBC established!
+2025-08-07 03:32:10 Warning: SPI connection has been reset
+2025-08-07 03:32:17 Connection to SBC established!
+2025-08-07 03:32:30 Warning: SPI connection has been reset
+2025-08-07 03:32:35 Connection to SBC established!
+2025-08-07 03:41:33 Warning: SPI connection has been reset
+2025-08-07 03:41:36 Warning: SPI connection has been reset
+2025-08-07 03:41:42 Connection to SBC established!
+2025-08-07 03:52:03 Warning: SPI connection has been reset
+2025-08-07 03:52:08 Connection to SBC established!
+2025-08-07 03:55:10 Warning: SPI connection has been reset
+2025-08-07 03:55:12 Connection to SBC established!
+2025-08-07 04:04:16 Warning: SPI connection has been reset
+2025-08-07 04:04:24 Connection to SBC established!
+2025-08-07 04:04:34 Warning: SPI connection has been reset
+2025-08-07 04:04:51 Warning: SPI connection has been reset
+2025-08-07 04:05:03 Connection to SBC established!
+2025-08-07 04:16:23 Warning: SPI connection has been reset
+2025-08-07 04:16:28 Connection to SBC established!
+2025-08-07 04:16:35 Warning: SPI connection has been reset
+2025-08-07 04:16:42 Connection to SBC established!
+2025-08-07 04:16:49 Warning: SPI connection has been reset
+2025-08-07 04:16:55 Connection to SBC established!
+2025-08-07 04:29:55 Warning: SPI connection has been reset
+2025-08-07 04:30:04 Connection to SBC established!
+2025-08-07 04:45:02 Warning: SPI connection has been reset
+2025-08-07 04:45:38 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 04:53:46 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-08-07 04:54:25 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 04:58:25 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 05:05:06 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 05:07:47 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 05:12:59 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 05:29:57 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 05:42:23 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 05:43:59 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 05:47:57 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 05:49:39 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 05:52:59 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 06:17:47 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 06:31:01 Connection to SBC established!
+2025-08-07 06:31:07 Warning: SPI connection has been reset
+2025-08-07 06:31:11 Connection to SBC established!
+2025-08-07 06:35:06 Warning: SPI connection has been reset
+2025-08-07 06:35:09 Connection to SBC established!
+2025-08-07 06:38:54 Warning: SPI connection has been reset
+2025-08-07 06:38:55 Connection to SBC established!
+2025-08-07 06:41:33 Warning: SPI connection has been reset
+2025-08-07 06:41:35 Connection to SBC established!
+2025-08-07 06:46:54 Warning: SPI connection has been reset
+2025-08-07 06:47:00 Connection to SBC established!
+2025-08-07 06:57:41 Warning: SPI connection has been reset
+2025-08-07 06:57:46 Connection to SBC established!
+2025-08-07 07:05:24 Warning: SPI connection has been reset
+2025-08-07 07:05:27 Connection to SBC established!
+2025-08-07 07:25:29 Warning: SPI connection has been reset
+2025-08-07 07:25:29 Connection to SBC established!
+2025-08-07 07:29:27 Warning: SPI connection has been reset
+2025-08-07 07:29:27 Connection to SBC established!
+2025-08-07 07:29:38 Warning: SPI connection has been reset
+2025-08-07 07:29:38 Connection to SBC established!
+2025-08-07 07:30:32 Warning: SPI connection has been reset
+2025-08-07 07:30:32 Connection to SBC established!
+2025-08-07 07:30:40 Warning: SPI connection has been reset
+2025-08-07 07:30:44 Connection to SBC established!
+2025-08-07 07:31:11 Warning: SPI connection has been reset
+2025-08-07 07:31:11 Connection to SBC established!
+2025-08-07 07:31:30 Warning: SPI connection has been reset
+2025-08-07 07:31:30 Connection to SBC established!
+2025-08-07 07:31:38 Warning: SPI connection has been reset
+2025-08-07 07:31:39 Connection to SBC established!
+2025-08-07 07:31:48 Warning: SPI connection has been reset
+2025-08-07 07:31:48 Connection to SBC established!
+2025-08-07 08:28:38 Warning: SPI connection has been reset
+2025-08-07 08:28:38 Connection to SBC established!
+2025-08-07 08:29:12 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 08:29:15 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-08-07 08:29:15 Warning: SPI connection has been reset
+2025-08-07 08:29:15 Connection to SBC established!
+2025-08-07 08:29:42 Warning: SPI connection has been reset
+2025-08-07 08:29:43 Connection to SBC established!
+2025-08-07 08:29:52 Warning: SPI connection has been reset
+2025-08-07 08:29:52 Connection to SBC established!
+2025-08-07 08:30:04 Warning: SPI connection has been reset
+2025-08-07 08:30:04 Connection to SBC established!
+2025-08-07 08:31:32 Warning: SPI connection has been reset
+2025-08-07 08:31:33 Connection to SBC established!
+2025-08-07 08:33:41 Warning: SPI connection has been reset
+2025-08-07 08:33:41 Connection to SBC established!
+2025-08-07 08:34:17 Warning: SPI connection has been reset
+2025-08-07 08:34:17 Connection to SBC established!
+2025-08-07 08:34:57 Warning: SPI connection has been reset
+2025-08-07 08:34:57 Connection to SBC established!
+2025-08-07 08:35:16 Warning: SPI connection has been reset
+2025-08-07 08:35:16 Connection to SBC established!
+2025-08-07 08:40:30 Warning: SPI connection has been reset
+2025-08-07 08:40:31 Connection to SBC established!
+2025-08-07 08:40:46 Warning: SPI connection has been reset
+2025-08-07 08:40:46 Connection to SBC established!
+2025-08-07 08:40:59 Warning: SPI connection has been reset
+2025-08-07 08:40:59 Connection to SBC established!
+2025-08-07 08:41:21 Warning: SPI connection has been reset
+2025-08-07 08:41:21 Connection to SBC established!
+2025-08-07 08:41:43 Warning: SPI connection has been reset
+2025-08-07 08:41:43 Connection to SBC established!
+2025-08-07 09:12:17 Warning: SPI connection has been reset
+2025-08-07 09:12:17 Connection to SBC established!
+2025-08-07 09:13:26 Warning: SPI connection has been reset
+2025-08-07 09:13:26 Connection to SBC established!
+2025-08-07 09:14:41 Warning: SPI connection has been reset
+2025-08-07 09:14:52 Connection to SBC established!
+2025-08-07 09:15:02 Warning: SPI connection has been reset
+2025-08-07 09:15:02 Connection to SBC established!
+2025-08-07 09:15:45 Warning: SPI connection has been reset
+2025-08-07 09:15:45 Connection to SBC established!
+2025-08-07 09:15:58 Warning: SPI connection has been reset
+2025-08-07 09:15:58 Connection to SBC established!
+2025-08-07 09:16:11 Warning: SPI connection has been reset
+2025-08-07 09:16:12 Connection to SBC established!
+2025-08-07 09:16:53 Warning: SPI connection has been reset
+2025-08-07 09:16:53 Connection to SBC established!
+2025-08-07 09:17:10 Warning: SPI connection has been reset
+2025-08-07 09:17:10 Connection to SBC established!
+2025-08-07 09:17:28 Warning: SPI connection has been reset
+2025-08-07 09:17:28 Connection to SBC established!
+2025-08-07 09:17:39 Warning: SPI connection has been reset
+2025-08-07 09:17:40 Connection to SBC established!
+2025-08-07 09:17:58 Warning: SPI connection has been reset
+2025-08-07 09:17:58 Connection to SBC established!
+2025-08-07 09:18:06 Warning: SPI connection has been reset
+2025-08-07 09:18:06 Connection to SBC established!
+2025-08-07 09:18:20 Warning: SPI connection has been reset
+2025-08-07 09:18:20 Connection to SBC established!
+2025-08-07 09:18:34 Warning: SPI connection has been reset
+2025-08-07 09:18:34 Connection to SBC established!
+2025-08-07 09:18:47 Warning: SPI connection has been reset
+2025-08-07 09:18:47 Connection to SBC established!
+2025-08-07 09:19:02 Warning: SPI connection has been reset
+2025-08-07 09:19:02 Connection to SBC established!
+2025-08-07 09:19:19 Warning: SPI connection has been reset
+2025-08-07 09:19:19 Connection to SBC established!
+2025-08-07 09:19:30 Warning: SPI connection has been reset
+2025-08-07 09:19:30 Connection to SBC established!
+2025-08-07 09:19:44 Warning: SPI connection has been reset
+2025-08-07 09:19:44 Connection to SBC established!
+2025-08-07 09:19:57 Warning: SPI connection has been reset
+2025-08-07 09:20:09 Connection to SBC established!
+2025-08-07 09:20:26 Warning: SPI connection has been reset
+2025-08-07 09:20:27 Connection to SBC established!
+2025-08-07 09:20:32 Warning: SPI connection has been reset
+2025-08-07 09:20:32 Connection to SBC established!
+2025-08-07 09:20:50 Warning: SPI connection has been reset
+2025-08-07 09:20:51 Connection to SBC established!
+2025-08-07 09:21:09 Warning: SPI connection has been reset
+2025-08-07 09:21:10 Connection to SBC established!
+2025-08-07 09:21:29 Warning: SPI connection has been reset
+2025-08-07 09:21:29 Connection to SBC established!
+2025-08-07 09:21:48 Warning: SPI connection has been reset
+2025-08-07 09:21:49 Connection to SBC established!
+2025-08-07 09:22:00 Warning: SPI connection has been reset
+2025-08-07 09:22:00 Connection to SBC established!
+2025-08-07 09:22:16 Warning: SPI connection has been reset
+2025-08-07 09:22:16 Connection to SBC established!
+2025-08-07 09:22:38 Warning: SPI connection has been reset
+2025-08-07 09:22:38 Connection to SBC established!
+2025-08-07 09:23:05 Warning: SPI connection has been reset
+2025-08-07 09:23:19 Connection to SBC established!
+2025-08-07 09:23:39 Warning: SPI connection has been reset
+2025-08-07 09:23:39 Connection to SBC established!
+2025-08-07 09:23:49 Warning: SPI connection has been reset
+2025-08-07 09:23:49 Connection to SBC established!
+2025-08-07 09:24:03 Warning: SPI connection has been reset
+2025-08-07 09:24:04 Connection to SBC established!
+2025-08-07 09:24:15 Warning: SPI connection has been reset
+2025-08-07 09:24:15 Connection to SBC established!
+2025-08-07 09:24:34 Warning: SPI connection has been reset
+2025-08-07 09:24:34 Connection to SBC established!
+2025-08-07 09:24:39 Warning: SPI connection has been reset
+2025-08-07 09:24:39 Connection to SBC established!
+2025-08-07 09:25:06 Warning: SPI connection has been reset
+2025-08-07 09:25:12 Connection to SBC established!
+2025-08-07 09:25:22 Warning: SPI connection has been reset
+2025-08-07 09:25:22 Connection to SBC established!
+2025-08-07 09:25:38 Warning: SPI connection has been reset
+2025-08-07 09:25:38 Connection to SBC established!
+2025-08-07 09:26:02 Warning: SPI connection has been reset
+2025-08-07 09:26:02 Connection to SBC established!
+2025-08-07 09:26:25 Warning: SPI connection has been reset
+2025-08-07 09:26:25 Connection to SBC established!
+2025-08-07 09:26:43 Warning: SPI connection has been reset
+2025-08-07 09:26:44 Connection to SBC established!
+2025-08-07 09:27:05 Warning: SPI connection has been reset
+2025-08-07 09:27:05 Connection to SBC established!
+2025-08-07 09:27:23 Warning: SPI connection has been reset
+2025-08-07 09:27:23 Connection to SBC established!
+2025-08-07 09:27:58 Warning: SPI connection has been reset
+2025-08-07 09:27:58 Connection to SBC established!
+2025-08-07 09:28:18 Warning: SPI connection has been reset
+2025-08-07 09:28:18 Connection to SBC established!
+2025-08-07 09:28:28 Warning: SPI connection has been reset
+2025-08-07 09:28:29 Connection to SBC established!
+2025-08-07 09:29:02 Warning: SPI connection has been reset
+2025-08-07 09:29:25 Connection to SBC established!
+2025-08-07 09:30:23 Warning: SPI connection has been reset
+2025-08-07 09:30:23 Connection to SBC established!
+2025-08-07 09:30:30 Warning: SPI connection has been reset
+2025-08-07 09:30:30 Connection to SBC established!
+2025-08-07 09:30:55 Warning: SPI connection has been reset
+2025-08-07 09:30:55 Connection to SBC established!
+2025-08-07 09:31:07 Warning: SPI connection has been reset
+2025-08-07 09:31:07 Connection to SBC established!
+2025-08-07 09:31:18 Warning: SPI connection has been reset
+2025-08-07 09:31:18 Connection to SBC established!
+2025-08-07 09:31:23 Warning: SPI connection has been reset
+2025-08-07 09:31:24 Connection to SBC established!
+2025-08-07 09:31:35 Warning: SPI connection has been reset
+2025-08-07 09:31:35 Connection to SBC established!
+2025-08-07 09:31:52 Warning: SPI connection has been reset
+2025-08-07 09:31:53 Connection to SBC established!
+2025-08-07 09:32:00 Warning: SPI connection has been reset
+2025-08-07 09:32:00 Connection to SBC established!
+2025-08-07 09:32:13 Warning: SPI connection has been reset
+2025-08-07 09:32:13 Connection to SBC established!
+2025-08-07 09:32:30 Warning: SPI connection has been reset
+2025-08-07 09:32:36 Connection to SBC established!
+2025-08-07 09:32:51 Warning: SPI connection has been reset
+2025-08-07 09:32:51 Connection to SBC established!
+2025-08-07 09:33:05 Warning: SPI connection has been reset
+2025-08-07 09:33:05 Connection to SBC established!
+2025-08-07 09:33:21 Warning: SPI connection has been reset
+2025-08-07 09:33:28 Connection to SBC established!
+2025-08-07 09:33:50 Warning: SPI connection has been reset
+2025-08-07 09:34:02 Connection to SBC established!
+2025-08-07 09:34:30 Warning: SPI connection has been reset
+2025-08-07 09:34:31 Connection to SBC established!
+2025-08-07 09:34:52 Warning: SPI connection has been reset
+2025-08-07 09:34:54 Connection to SBC established!
+2025-08-07 09:35:16 Warning: SPI connection has been reset
+2025-08-07 09:35:17 Connection to SBC established!
+2025-08-07 09:35:31 Warning: SPI connection has been reset
+2025-08-07 09:35:31 Connection to SBC established!
+2025-08-07 09:35:51 Warning: SPI connection has been reset
+2025-08-07 09:35:52 Connection to SBC established!
+2025-08-07 09:36:12 Warning: SPI connection has been reset
+2025-08-07 09:36:13 Connection to SBC established!
+2025-08-07 09:36:25 Warning: SPI connection has been reset
+2025-08-07 09:36:25 Connection to SBC established!
+2025-08-07 09:36:38 Warning: SPI connection has been reset
+2025-08-07 09:36:49 Connection to SBC established!
+2025-08-07 09:37:13 Warning: SPI connection has been reset
+2025-08-07 09:37:13 Connection to SBC established!
+2025-08-07 09:37:25 Warning: SPI connection has been reset
+2025-08-07 09:37:25 Connection to SBC established!
+2025-08-07 09:37:55 Warning: SPI connection has been reset
+2025-08-07 09:37:56 Connection to SBC established!
+2025-08-07 09:38:16 Warning: SPI connection has been reset
+2025-08-07 09:38:16 Connection to SBC established!
+2025-08-07 09:38:38 Warning: SPI connection has been reset
+2025-08-07 09:38:38 Connection to SBC established!
+2025-08-07 09:38:51 Warning: SPI connection has been reset
+2025-08-07 09:38:52 Connection to SBC established!
+2025-08-07 09:39:07 Warning: SPI connection has been reset
+2025-08-07 09:39:07 Connection to SBC established!
+2025-08-07 09:39:30 Warning: SPI connection has been reset
+2025-08-07 09:39:30 Connection to SBC established!
+2025-08-07 09:39:43 Warning: SPI connection has been reset
+2025-08-07 09:39:44 Connection to SBC established!
+2025-08-07 09:39:52 Warning: SPI connection has been reset
+2025-08-07 09:39:52 Connection to SBC established!
+2025-08-07 09:40:11 Warning: SPI connection has been reset
+2025-08-07 09:40:11 Connection to SBC established!
+2025-08-07 09:40:23 Warning: SPI connection has been reset
+2025-08-07 09:40:23 Connection to SBC established!
+2025-08-07 09:40:36 Warning: SPI connection has been reset
+2025-08-07 09:40:36 Connection to SBC established!
+2025-08-07 09:40:58 Warning: SPI connection has been reset
+2025-08-07 09:40:58 Connection to SBC established!
+2025-08-07 09:41:06 Warning: SPI connection has been reset
+2025-08-07 09:41:16 Connection to SBC established!
+2025-08-07 09:41:25 Warning: SPI connection has been reset
+2025-08-07 09:41:25 Connection to SBC established!
+2025-08-07 09:41:46 Warning: SPI connection has been reset
+2025-08-07 09:41:49 Connection to SBC established!
+2025-08-07 09:42:04 Warning: SPI connection has been reset
+2025-08-07 09:42:04 Connection to SBC established!
+2025-08-07 09:42:20 Warning: SPI connection has been reset
+2025-08-07 09:42:20 Connection to SBC established!
+2025-08-07 09:42:33 Warning: SPI connection has been reset
+2025-08-07 09:42:36 Connection to SBC established!
+2025-08-07 09:42:48 Warning: SPI connection has been reset
+2025-08-07 09:42:48 Connection to SBC established!
+2025-08-07 09:43:04 Warning: SPI connection has been reset
+2025-08-07 09:43:04 Connection to SBC established!
+2025-08-07 09:43:18 Warning: SPI connection has been reset
+2025-08-07 09:43:18 Connection to SBC established!
+2025-08-07 09:43:37 Warning: SPI connection has been reset
+2025-08-07 09:43:37 Connection to SBC established!
+2025-08-07 09:43:43 Warning: SPI connection has been reset
+2025-08-07 09:43:53 Connection to SBC established!
+2025-08-07 09:44:02 Warning: SPI connection has been reset
+2025-08-07 09:44:03 Connection to SBC established!
+2025-08-07 09:44:15 Warning: SPI connection has been reset
+2025-08-07 09:44:16 Connection to SBC established!
+2025-08-07 09:44:30 Warning: SPI connection has been reset
+2025-08-07 09:44:30 Connection to SBC established!
+2025-08-07 09:44:46 Warning: SPI connection has been reset
+2025-08-07 09:44:52 Connection to SBC established!
+2025-08-07 09:45:07 Warning: SPI connection has been reset
+2025-08-07 09:45:16 Connection to SBC established!
+2025-08-07 09:45:32 Warning: SPI connection has been reset
+2025-08-07 09:45:32 Connection to SBC established!
+2025-08-07 09:45:45 Warning: SPI connection has been reset
+2025-08-07 09:45:45 Connection to SBC established!
+2025-08-07 09:46:05 Warning: SPI connection has been reset
+2025-08-07 09:46:06 Connection to SBC established!
+2025-08-07 09:46:17 Warning: SPI connection has been reset
+2025-08-07 09:46:17 Connection to SBC established!
+2025-08-07 09:46:31 Warning: SPI connection has been reset
+2025-08-07 09:46:32 Connection to SBC established!
+2025-08-07 09:46:42 Warning: SPI connection has been reset
+2025-08-07 09:46:52 Connection to SBC established!
+2025-08-07 09:47:11 Warning: SPI connection has been reset
+2025-08-07 09:47:11 Connection to SBC established!
+2025-08-07 09:47:24 Warning: SPI connection has been reset
+2025-08-07 09:47:24 Connection to SBC established!
+2025-08-07 09:47:40 Warning: SPI connection has been reset
+2025-08-07 09:47:40 Connection to SBC established!
+2025-08-07 09:47:47 Warning: SPI connection has been reset
+2025-08-07 09:47:47 Connection to SBC established!
+2025-08-07 09:48:05 Warning: SPI connection has been reset
+2025-08-07 09:48:05 Connection to SBC established!
+2025-08-07 09:48:19 Warning: SPI connection has been reset
+2025-08-07 09:48:19 Connection to SBC established!
+2025-08-07 09:48:38 Warning: SPI connection has been reset
+2025-08-07 09:48:38 Connection to SBC established!
+2025-08-07 09:48:57 Warning: SPI connection has been reset
+2025-08-07 09:49:08 Connection to SBC established!
+2025-08-07 09:49:28 Warning: SPI connection has been reset
+2025-08-07 09:49:28 Connection to SBC established!
+2025-08-07 09:49:40 Warning: SPI connection has been reset
+2025-08-07 09:49:40 Connection to SBC established!
+2025-08-07 09:50:06 Warning: SPI connection has been reset
+2025-08-07 09:50:06 Connection to SBC established!
+2025-08-07 09:50:14 Warning: SPI connection has been reset
+2025-08-07 09:50:14 Connection to SBC established!
+2025-08-07 09:50:26 Warning: SPI connection has been reset
+2025-08-07 09:50:26 Connection to SBC established!
+2025-08-07 09:50:35 Warning: SPI connection has been reset
+2025-08-07 09:50:35 Connection to SBC established!
+2025-08-07 09:51:04 Warning: SPI connection has been reset
+2025-08-07 09:51:06 Connection to SBC established!
+2025-08-07 09:51:19 Warning: SPI connection has been reset
+2025-08-07 09:51:19 Connection to SBC established!
+2025-08-07 09:51:49 Warning: SPI connection has been reset
+2025-08-07 09:51:49 Connection to SBC established!
+2025-08-07 09:52:04 Warning: SPI connection has been reset
+2025-08-07 09:52:19 Connection to SBC established!
+2025-08-07 09:52:53 Warning: SPI connection has been reset
+2025-08-07 09:52:53 Connection to SBC established!
+2025-08-07 09:53:15 Warning: SPI connection has been reset
+2025-08-07 09:53:15 Connection to SBC established!
+2025-08-07 09:53:28 Warning: SPI connection has been reset
+2025-08-07 09:53:29 Connection to SBC established!
+2025-08-07 09:54:44 Warning: SPI connection has been reset
+2025-08-07 09:54:45 Connection to SBC established!
+2025-08-07 09:55:02 Warning: SPI connection has been reset
+2025-08-07 09:55:20 Connection to SBC established!
+2025-08-07 09:55:42 Warning: SPI connection has been reset
+2025-08-07 09:55:42 Connection to SBC established!
+2025-08-07 09:56:16 Warning: SPI connection has been reset
+2025-08-07 09:56:17 Connection to SBC established!
+2025-08-07 09:56:42 Warning: SPI connection has been reset
+2025-08-07 09:56:42 Connection to SBC established!
+2025-08-07 09:57:00 Warning: SPI connection has been reset
+2025-08-07 09:57:00 Connection to SBC established!
+2025-08-07 09:57:39 Warning: SPI connection has been reset
+2025-08-07 09:57:40 Connection to SBC established!
+2025-08-07 09:58:06 Warning: SPI connection has been reset
+2025-08-07 09:58:07 Connection to SBC established!
+2025-08-07 09:58:33 Warning: SPI connection has been reset
+2025-08-07 09:58:33 Connection to SBC established!
+2025-08-07 09:58:55 Warning: SPI connection has been reset
+2025-08-07 09:58:56 Connection to SBC established!
+2025-08-07 09:59:31 Warning: SPI connection has been reset
+2025-08-07 09:59:31 Connection to SBC established!
+2025-08-07 10:00:06 Warning: SPI connection has been reset
+2025-08-07 10:00:07 Connection to SBC established!
+2025-08-07 10:00:44 Warning: SPI connection has been reset
+2025-08-07 10:00:44 Connection to SBC established!
+2025-08-07 10:01:27 Warning: SPI connection has been reset
+2025-08-07 10:01:28 Connection to SBC established!
+2025-08-07 10:02:10 Warning: SPI connection has been reset
+2025-08-07 10:02:15 Connection to SBC established!
+2025-08-07 10:03:06 Warning: SPI connection has been reset
+2025-08-07 10:03:33 Connection to SBC established!
+2025-08-07 10:03:43 Warning: SPI connection has been reset
+2025-08-07 10:03:56 Connection to SBC established!
+2025-08-07 10:04:20 Warning: SPI connection has been reset
+2025-08-07 10:04:29 Connection to SBC established!
+2025-08-07 10:04:39 Warning: SPI connection has been reset
+2025-08-07 10:04:40 Connection to SBC established!
+2025-08-07 10:04:53 Warning: SPI connection has been reset
+2025-08-07 10:04:53 Connection to SBC established!
+2025-08-07 10:05:10 Warning: SPI connection has been reset
+2025-08-07 10:05:10 Connection to SBC established!
+2025-08-07 10:05:21 Warning: SPI connection has been reset
+2025-08-07 10:05:21 Connection to SBC established!
+2025-08-07 10:05:36 Warning: SPI connection has been reset
+2025-08-07 10:05:36 Connection to SBC established!
+2025-08-07 10:06:04 Warning: SPI connection has been reset
+2025-08-07 10:06:04 Connection to SBC established!
+2025-08-07 10:06:18 Warning: SPI connection has been reset
+2025-08-07 10:06:18 Connection to SBC established!
+2025-08-07 10:06:31 Warning: SPI connection has been reset
+2025-08-07 10:06:32 Connection to SBC established!
+2025-08-07 10:06:42 Warning: SPI connection has been reset
+2025-08-07 10:06:43 Connection to SBC established!
+2025-08-07 10:07:04 Warning: SPI connection has been reset
+2025-08-07 10:07:13 Connection to SBC established!
+2025-08-07 10:07:26 Warning: SPI connection has been reset
+2025-08-07 10:07:27 Connection to SBC established!
+2025-08-07 10:07:45 Warning: SPI connection has been reset
+2025-08-07 10:07:45 Connection to SBC established!
+2025-08-07 10:08:02 Warning: SPI connection has been reset
+2025-08-07 10:08:02 Connection to SBC established!
+2025-08-07 10:08:18 Warning: SPI connection has been reset
+2025-08-07 10:08:27 Connection to SBC established!
+2025-08-07 10:08:54 Warning: SPI connection has been reset
+2025-08-07 10:08:54 Connection to SBC established!
+2025-08-07 10:09:03 Warning: SPI connection has been reset
+2025-08-07 10:09:03 Connection to SBC established!
+2025-08-07 10:09:11 Warning: SPI connection has been reset
+2025-08-07 10:09:11 Connection to SBC established!
+2025-08-07 10:09:28 Warning: SPI connection has been reset
+2025-08-07 10:09:28 Connection to SBC established!
+2025-08-07 10:09:58 Warning: SPI connection has been reset
+2025-08-07 10:09:58 Connection to SBC established!
+2025-08-07 10:10:11 Warning: SPI connection has been reset
+2025-08-07 10:10:12 Connection to SBC established!
+2025-08-07 10:10:51 Warning: SPI connection has been reset
+2025-08-07 10:10:51 Connection to SBC established!
+2025-08-07 10:12:02 Warning: SPI connection has been reset
+2025-08-07 10:12:02 Connection to SBC established!
+2025-08-07 10:12:15 Warning: SPI connection has been reset
+2025-08-07 10:12:15 Connection to SBC established!
+2025-08-07 10:12:30 Warning: SPI connection has been reset
+2025-08-07 10:12:30 Connection to SBC established!
+2025-08-07 10:12:49 Warning: SPI connection has been reset
+2025-08-07 10:12:49 Connection to SBC established!
+2025-08-07 10:13:03 Warning: SPI connection has been reset
+2025-08-07 10:13:03 Connection to SBC established!
+2025-08-07 10:13:18 Warning: SPI connection has been reset
+2025-08-07 10:13:18 Connection to SBC established!
+2025-08-07 10:14:51 Warning: SPI connection has been reset
+2025-08-07 10:14:54 Warning: SPI connection has been reset
+2025-08-07 10:14:56 Connection to SBC established!
+2025-08-07 10:15:13 Warning: SPI connection has been reset
+2025-08-07 10:15:14 Connection to SBC established!
+2025-08-07 10:16:56 Warning: SPI connection has been reset
+2025-08-07 10:16:56 Connection to SBC established!
+2025-08-07 10:30:20 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 11:03:00 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-08-07 11:03:02 Warning: SPI connection has been reset
+2025-08-07 11:03:03 Connection to SBC established!
+2025-08-07 11:03:39 Warning: SPI connection has been reset
+2025-08-07 11:03:41 Connection to SBC established!
+2025-08-07 11:04:17 Warning: SPI connection has been reset
+2025-08-07 11:04:20 Connection to SBC established!
+2025-08-07 11:05:38 Warning: SPI connection has been reset
+2025-08-07 11:05:40 Connection to SBC established!
+2025-08-07 11:06:24 Warning: SPI connection has been reset
+2025-08-07 11:06:25 Connection to SBC established!
+2025-08-07 11:07:51 Warning: SPI connection has been reset
+2025-08-07 11:07:52 Connection to SBC established!
+2025-08-07 11:10:03 Warning: SPI connection has been reset
+2025-08-07 11:10:04 Connection to SBC established!
+2025-08-07 11:11:07 Warning: SPI connection has been reset
+2025-08-07 11:11:09 Connection to SBC established!
+2025-08-07 11:13:07 Warning: SPI connection has been reset
+2025-08-07 11:13:09 Connection to SBC established!
+2025-08-07 11:13:44 Warning: SPI connection has been reset
+2025-08-07 11:13:45 Connection to SBC established!
+2025-08-07 11:14:36 Warning: SPI connection has been reset
+2025-08-07 11:14:37 Connection to SBC established!
+2025-08-07 11:15:17 Warning: SPI connection has been reset
+2025-08-07 11:15:17 Connection to SBC established!
+2025-08-07 11:15:37 Warning: SPI connection has been reset
+2025-08-07 11:15:37 Connection to SBC established!
+2025-08-07 11:17:16 Warning: SPI connection has been reset
+2025-08-07 11:17:17 Connection to SBC established!
+2025-08-07 11:18:44 Warning: SPI connection has been reset
+2025-08-07 11:18:47 Connection to SBC established!
+2025-08-07 11:19:53 Warning: SPI connection has been reset
+2025-08-07 11:19:55 Connection to SBC established!
+2025-08-07 11:20:48 Warning: SPI connection has been reset
+2025-08-07 11:20:50 Connection to SBC established!
+2025-08-07 11:22:34 Warning: SPI connection has been reset
+2025-08-07 11:22:34 Connection to SBC established!
+2025-08-07 11:23:31 Warning: SPI connection has been reset
+2025-08-07 11:23:32 Connection to SBC established!
+2025-08-07 11:24:33 Warning: SPI connection has been reset
+2025-08-07 11:24:34 Connection to SBC established!
+2025-08-07 11:24:49 Warning: SPI connection has been reset
+2025-08-07 11:24:50 Connection to SBC established!
+2025-08-07 11:25:24 Warning: SPI connection has been reset
+2025-08-07 11:25:25 Connection to SBC established!
+2025-08-07 11:26:02 Warning: SPI connection has been reset
+2025-08-07 11:26:04 Connection to SBC established!
+2025-08-07 11:26:52 Warning: SPI connection has been reset
+2025-08-07 11:26:52 Connection to SBC established!
+2025-08-07 11:27:27 Warning: SPI connection has been reset
+2025-08-07 11:27:47 Connection to SBC established!
+2025-08-07 11:29:16 Warning: SPI connection has been reset
+2025-08-07 11:29:17 Connection to SBC established!
+2025-08-07 11:30:55 Warning: SPI connection has been reset
+2025-08-07 11:30:58 Connection to SBC established!
+2025-08-07 11:32:11 Warning: SPI connection has been reset
+2025-08-07 11:32:12 Connection to SBC established!
+2025-08-07 11:33:55 Warning: SPI connection has been reset
+2025-08-07 11:33:57 Connection to SBC established!
+2025-08-07 11:34:57 Warning: SPI connection has been reset
+2025-08-07 11:34:59 Connection to SBC established!
+2025-08-07 11:35:21 Warning: SPI connection has been reset
+2025-08-07 11:35:22 Connection to SBC established!
+2025-08-07 11:36:16 Warning: SPI connection has been reset
+2025-08-07 11:36:19 Connection to SBC established!
+2025-08-07 11:37:40 Warning: SPI connection has been reset
+2025-08-07 11:37:42 Connection to SBC established!
+2025-08-07 11:38:16 Warning: SPI connection has been reset
+2025-08-07 11:38:18 Connection to SBC established!
+2025-08-07 11:39:46 Warning: SPI connection has been reset
+2025-08-07 11:39:48 Connection to SBC established!
+2025-08-07 11:42:16 Warning: SPI connection has been reset
+2025-08-07 11:42:18 Connection to SBC established!
+2025-08-07 11:45:35 Warning: SPI connection has been reset
+2025-08-07 11:45:37 Connection to SBC established!
+2025-08-07 11:46:29 Warning: SPI connection has been reset
+2025-08-07 11:46:31 Connection to SBC established!
+2025-08-07 11:48:05 Warning: SPI connection has been reset
+2025-08-07 11:48:07 Connection to SBC established!
+2025-08-07 11:50:23 Warning: SPI connection has been reset
+2025-08-07 11:50:26 Connection to SBC established!
+2025-08-07 11:53:18 Warning: SPI connection has been reset
+2025-08-07 11:53:20 Connection to SBC established!
+2025-08-07 11:53:27 Warning: SPI connection has been reset
+2025-08-07 11:53:28 Connection to SBC established!
+2025-08-07 12:00:26 Warning: SPI connection has been reset
+2025-08-07 12:00:33 Connection to SBC established!
+2025-08-07 12:03:20 Warning: SPI connection has been reset
+2025-08-07 12:03:23 Connection to SBC established!
+2025-08-07 12:06:02 Warning: SPI connection has been reset
+2025-08-07 12:06:04 Connection to SBC established!
+2025-08-07 12:07:24 Warning: SPI connection has been reset
+2025-08-07 12:07:27 Connection to SBC established!
+2025-08-07 12:07:32 Warning: SPI connection has been reset
+2025-08-07 12:07:36 Connection to SBC established!
+2025-08-07 12:12:59 Warning: SPI connection has been reset
+2025-08-07 12:13:02 Connection to SBC established!
+2025-08-07 12:19:47 Warning: SPI connection has been reset
+2025-08-07 12:25:49 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 12:33:55 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-08-07 12:34:03 Warning: SPI connection has been reset
+2025-08-07 12:34:07 Connection to SBC established!
+2025-08-07 12:34:17 Warning: SPI connection has been reset
+2025-08-07 12:34:28 Connection to SBC established!
+2025-08-07 12:44:05 Warning: SPI connection has been reset
+2025-08-07 12:44:09 Connection to SBC established!
+2025-08-07 12:58:28 Warning: SPI connection has been reset
+2025-08-07 12:58:30 Connection to SBC established!
+2025-08-07 13:11:35 Warning: SPI connection has been reset
+2025-08-07 13:11:43 Connection to SBC established!
+2025-08-07 13:18:08 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 13:20:49 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-08-07 13:21:01 Warning: SPI connection has been reset
+2025-08-07 13:21:08 Connection to SBC established!
+2025-08-07 13:28:10 Warning: SPI connection has been reset
+2025-08-07 13:28:27 Warning: SPI connection has been reset
+2025-08-07 13:28:42 Warning: SPI connection has been reset
+2025-08-07 13:29:37 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 13:36:22 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-08-07 13:37:12 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 13:44:11 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 13:48:57 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 13:53:34 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 14:05:22 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 14:08:04 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 14:14:17 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 14:18:00 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 14:27:15 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 14:34:36 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 14:42:34 Warning: Did not get enough CPU time during SPI transfer, your SBC may be overloaded
+2025-08-07 14:45:59 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-08-07 14:45:59 Warning: SPI connection has been reset
+2025-08-07 14:45:59 Connection to SBC established!
+2025-08-07 14:46:03 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-07 16:05:05 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-07 16:05:13 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-08 07:48:03 Event logging stopped
+2025-08-08 07:50:48 Event logging started
+2025-08-08 07:50:49 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-08 08:01:00 Event logging stopped
+2025-08-08 09:35:55 Event logging started
+2025-08-08 09:35:55 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-08 09:35:59 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-08 09:42:00 Event logging stopped
+2025-08-08 09:42:00 Event logging started
+2025-08-11 04:47:17 Warning: SPI connection has been reset
+2025-08-11 04:47:17 Connection to SBC established!
+2025-08-11 08:07:33 Warning: SPI connection has been reset
+2025-08-11 08:07:34 Connection to SBC established!
+2025-08-11 08:08:08 Warning: SPI connection has been reset
+2025-08-11 08:08:09 Connection to SBC established!
+2025-08-11 08:08:20 Warning: SPI connection has been reset
+2025-08-11 08:08:21 Connection to SBC established!
+2025-08-11 08:08:36 Warning: SPI connection has been reset
+2025-08-11 08:08:47 Connection to SBC established!
+2025-08-11 08:08:59 Warning: SPI connection has been reset
+2025-08-11 08:09:02 Connection to SBC established!
+2025-08-11 08:09:15 Warning: SPI connection has been reset
+2025-08-11 08:09:16 Connection to SBC established!
+2025-08-11 08:10:49 Warning: SPI connection has been reset
+2025-08-11 08:11:04 Connection to SBC established!
+2025-08-11 08:11:19 Warning: SPI connection has been reset
+2025-08-11 08:11:21 Connection to SBC established!
+2025-08-11 08:11:37 Warning: SPI connection has been reset
+2025-08-11 08:11:39 Connection to SBC established!
+2025-08-11 08:11:52 Warning: SPI connection has been reset
+2025-08-11 08:11:54 Connection to SBC established!
+2025-08-11 08:12:09 Warning: SPI connection has been reset
+2025-08-11 08:12:13 Connection to SBC established!
+2025-08-11 08:12:27 Warning: SPI connection has been reset
+2025-08-11 08:12:31 Connection to SBC established!
+2025-08-11 08:12:49 Warning: SPI connection has been reset
+2025-08-11 08:12:49 Connection to SBC established!
+2025-08-11 08:14:07 Warning: SPI connection has been reset
+2025-08-11 08:14:08 Connection to SBC established!
+2025-08-11 08:16:22 Warning: SPI connection has been reset
+2025-08-11 08:16:26 Connection to SBC established!
+2025-08-11 08:17:22 Warning: SPI connection has been reset
+2025-08-11 08:17:29 Connection to SBC established!
+2025-08-11 08:19:28 Warning: SPI connection has been reset
+2025-08-11 08:19:49 Connection to SBC established!
+2025-08-11 08:19:56 Warning: SPI connection has been reset
+2025-08-11 08:20:02 Connection to SBC established!
+2025-08-11 08:20:20 Warning: SPI connection has been reset
+2025-08-11 08:20:25 Connection to SBC established!
+2025-08-11 08:20:36 Warning: SPI connection has been reset
+2025-08-11 08:20:36 Connection to SBC established!
+2025-08-11 08:20:54 Warning: SPI connection has been reset
+2025-08-11 08:20:54 Connection to SBC established!
+2025-08-11 08:21:02 Warning: SPI connection has been reset
+2025-08-11 08:21:02 Connection to SBC established!
+2025-08-11 08:21:16 Warning: SPI connection has been reset
+2025-08-11 08:21:16 Connection to SBC established!
+2025-08-11 08:21:31 Warning: SPI connection has been reset
+2025-08-11 08:21:31 Connection to SBC established!
+2025-08-11 08:21:48 Warning: SPI connection has been reset
+2025-08-11 08:21:49 Connection to SBC established!
+2025-08-11 08:21:58 Warning: SPI connection has been reset
+2025-08-11 08:21:58 Connection to SBC established!
+2025-08-11 08:23:00 Warning: SPI connection has been reset
+2025-08-11 08:23:06 Connection to SBC established!
+2025-08-11 08:23:22 Warning: SPI connection has been reset
+2025-08-11 08:23:37 Connection to SBC established!
+2025-08-11 08:23:54 Warning: SPI connection has been reset
+2025-08-11 08:23:55 Connection to SBC established!
+2025-08-11 08:24:53 Warning: SPI connection has been reset
+2025-08-11 08:24:54 Connection to SBC established!
+2025-08-11 08:25:00 Warning: SPI connection has been reset
+2025-08-11 08:25:08 Connection to SBC established!
+2025-08-11 08:25:27 Warning: SPI connection has been reset
+2025-08-11 08:25:38 Connection to SBC established!
+2025-08-11 08:25:52 Warning: SPI connection has been reset
+2025-08-11 08:25:53 Connection to SBC established!
+2025-08-11 08:26:15 Warning: SPI connection has been reset
+2025-08-11 08:26:16 Connection to SBC established!
+2025-08-11 08:26:47 Warning: SPI connection has been reset
+2025-08-11 08:26:47 Connection to SBC established!
+2025-08-11 08:27:06 Warning: SPI connection has been reset
+2025-08-11 08:27:06 Connection to SBC established!
+2025-08-11 08:27:20 Warning: SPI connection has been reset
+2025-08-11 08:27:20 Connection to SBC established!
+2025-08-11 08:27:55 Warning: SPI connection has been reset
+2025-08-11 08:28:08 Connection to SBC established!
+2025-08-11 08:28:26 Warning: SPI connection has been reset
+2025-08-11 08:28:27 Connection to SBC established!
+2025-08-11 08:28:38 Warning: SPI connection has been reset
+2025-08-11 08:28:47 Connection to SBC established!
+2025-08-11 08:29:06 Warning: SPI connection has been reset
+2025-08-11 08:29:06 Connection to SBC established!
+2025-08-11 08:29:20 Warning: SPI connection has been reset
+2025-08-11 08:29:20 Connection to SBC established!
+2025-08-11 08:29:39 Warning: SPI connection has been reset
+2025-08-11 08:29:39 Connection to SBC established!
+2025-08-11 08:30:03 Warning: SPI connection has been reset
+2025-08-11 08:30:03 Connection to SBC established!
+2025-08-11 08:30:22 Warning: SPI connection has been reset
+2025-08-11 08:30:22 Connection to SBC established!
+2025-08-11 08:30:35 Warning: SPI connection has been reset
+2025-08-11 08:30:36 Connection to SBC established!
+2025-08-11 08:30:51 Warning: SPI connection has been reset
+2025-08-11 08:30:52 Connection to SBC established!
+2025-08-11 08:31:00 Warning: SPI connection has been reset
+2025-08-11 08:31:01 Connection to SBC established!
+2025-08-11 08:32:01 Warning: SPI connection has been reset
+2025-08-11 08:32:20 Connection to SBC established!
+2025-08-11 08:32:43 Warning: SPI connection has been reset
+2025-08-11 08:32:43 Connection to SBC established!
+2025-08-11 08:32:50 Warning: SPI connection has been reset
+2025-08-11 08:32:50 Connection to SBC established!
+2025-08-11 08:33:03 Warning: SPI connection has been reset
+2025-08-11 08:33:03 Connection to SBC established!
+2025-08-11 08:33:15 Warning: SPI connection has been reset
+2025-08-11 08:33:23 Connection to SBC established!
+2025-08-11 08:33:37 Warning: SPI connection has been reset
+2025-08-11 08:33:38 Connection to SBC established!
+2025-08-11 08:33:45 Warning: SPI connection has been reset
+2025-08-11 08:33:45 Connection to SBC established!
+2025-08-11 08:33:56 Warning: SPI connection has been reset
+2025-08-11 08:33:57 Connection to SBC established!
+2025-08-11 08:34:11 Warning: SPI connection has been reset
+2025-08-11 08:34:12 Connection to SBC established!
+2025-08-11 08:36:19 Warning: SPI connection has been reset
+2025-08-11 08:36:19 Connection to SBC established!
+2025-08-11 08:36:34 Warning: SPI connection has been reset
+2025-08-11 08:36:34 Connection to SBC established!
+2025-08-11 08:37:10 Warning: SPI connection has been reset
+2025-08-11 08:37:10 Connection to SBC established!
+2025-08-11 08:40:50 Warning: SPI connection has been reset
+2025-08-11 08:41:10 Connection to SBC established!
+2025-08-11 08:41:17 Warning: SPI connection has been reset
+2025-08-11 08:41:18 Connection to SBC established!
+2025-08-11 08:42:26 Warning: SPI connection has been reset
+2025-08-11 08:42:51 Connection to SBC established!
+2025-08-11 08:43:12 Warning: SPI connection has been reset
+2025-08-11 08:43:12 Connection to SBC established!
+2025-08-11 08:43:24 Warning: SPI connection has been reset
+2025-08-11 08:43:33 Connection to SBC established!
+2025-08-11 08:43:45 Warning: SPI connection has been reset
+2025-08-11 08:43:45 Connection to SBC established!
+2025-08-11 08:44:05 Warning: SPI connection has been reset
+2025-08-11 08:44:06 Connection to SBC established!
+2025-08-11 08:44:44 Warning: SPI connection has been reset
+2025-08-11 08:44:44 Connection to SBC established!
+2025-08-11 08:44:55 Warning: SPI connection has been reset
+2025-08-11 08:44:55 Connection to SBC established!
+2025-08-11 08:46:02 Warning: SPI connection has been reset
+2025-08-11 08:46:14 Connection to SBC established!
+2025-08-11 08:46:29 Warning: SPI connection has been reset
+2025-08-11 08:46:38 Connection to SBC established!
+2025-08-11 08:47:11 Warning: SPI connection has been reset
+2025-08-11 08:47:11 Connection to SBC established!
+2025-08-11 08:47:18 Warning: SPI connection has been reset
+2025-08-11 08:48:20 Connection to SBC established!
+2025-08-11 08:48:56 Warning: SPI connection has been reset
+2025-08-11 08:48:58 Connection to SBC established!
+2025-08-11 08:49:26 Warning: SPI connection has been reset
+2025-08-11 08:49:26 Connection to SBC established!
+2025-08-11 08:49:44 Warning: SPI connection has been reset
+2025-08-11 08:49:45 Connection to SBC established!
+2025-08-11 08:50:29 Warning: SPI connection has been reset
+2025-08-11 08:50:30 Connection to SBC established!
+2025-08-11 08:51:04 Warning: SPI connection has been reset
+2025-08-11 08:51:04 Connection to SBC established!
+2025-08-11 08:51:48 Warning: SPI connection has been reset
+2025-08-11 08:51:48 Connection to SBC established!
+2025-08-11 08:52:54 Warning: SPI connection has been reset
+2025-08-11 08:52:55 Connection to SBC established!
+2025-08-11 08:53:11 Warning: SPI connection has been reset
+2025-08-11 08:53:16 Connection to SBC established!
+2025-08-11 08:55:14 Warning: SPI connection has been reset
+2025-08-11 08:55:19 Connection to SBC established!
+2025-08-11 08:55:39 Warning: SPI connection has been reset
+2025-08-11 08:56:03 Connection to SBC established!
+2025-08-11 08:57:04 Warning: SPI connection has been reset
+2025-08-11 08:57:04 Connection to SBC established!
+2025-08-11 08:57:36 Warning: SPI connection has been reset
+2025-08-11 08:57:37 Connection to SBC established!
+2025-08-11 09:04:30 Warning: SPI connection has been reset
+2025-08-11 09:05:36 Connection to SBC established!
+2025-08-11 09:06:05 Warning: SPI connection has been reset
+2025-08-11 09:06:05 Connection to SBC established!
+2025-08-11 09:06:25 Warning: SPI connection has been reset
+2025-08-11 09:06:54 Connection to SBC established!
+2025-08-11 09:07:00 Warning: SPI connection has been reset
+2025-08-11 09:07:00 Connection to SBC established!
+2025-08-11 09:07:43 Warning: SPI connection has been reset
+2025-08-11 09:07:45 Connection to SBC established!
+2025-08-11 09:08:34 Warning: SPI connection has been reset
+2025-08-11 09:08:34 Connection to SBC established!
+2025-08-11 09:09:07 Warning: SPI connection has been reset
+2025-08-11 09:09:09 Connection to SBC established!
+2025-08-11 09:09:42 Warning: SPI connection has been reset
+2025-08-11 09:09:42 Connection to SBC established!
+2025-08-11 09:22:15 Event logging started
+2025-08-11 09:22:15 Error: M584: Driver 1.0 does not exist
+Driver 1.1 does not exist
+2025-08-11 09:22:16 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-11 09:22:23 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-11 12:13:53 Error: in file macro line 32: G1: insufficient axes homed
+2025-08-11 12:13:58 Event logging stopped
+2025-08-11 12:13:58 Event logging started
+2025-08-11 12:13:58 Error: M584: Driver 1.0 does not exist
+Driver 1.1 does not exist
+2025-08-11 12:14:12 Error: in file macro line 6: G1: insufficient axes homed
+2025-08-11 12:14:21 Error: in file macro line 32: G1: insufficient axes homed
+2025-08-11 12:14:29 Event logging stopped
+2025-08-11 12:14:36 Event logging started
+2025-08-11 12:14:37 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-11 12:14:42 Event logging stopped
+2025-08-11 12:14:42 Event logging started
+2025-08-11 12:14:53 Event logging stopped
+2025-08-11 12:14:53 Event logging started
+2025-08-11 12:16:14 Event logging stopped
+2025-08-11 12:16:20 Event logging started
+2025-08-11 12:16:20 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-11 12:16:25 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-08-11 12:16:29 Event logging stopped
+2025-08-17 15:47:21 Event logging started
+2025-08-17 15:47:21 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-17 15:47:25 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-17 15:58:33 Event logging stopped
+2025-08-17 15:58:33 Event logging started
+2025-08-17 16:11:09 Warning: SPI connection has been reset
+2025-08-17 16:11:09 Connection to SBC established!
+2025-08-17 16:11:10 Event logging stopped
+2025-08-17 16:11:10 Event logging started
+2025-08-17 16:11:10 Error: M584: Driver 1.0 does not exist
+Driver 1.1 does not exist
+2025-08-17 17:33:44 Warning: VIN under-voltage event (9.0V)
+2025-08-17 17:33:49 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-08-17 17:33:52 Event logging stopped
+2025-08-24 09:40:48 Event logging started
+2025-08-24 09:40:48 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-24 09:40:52 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-24 12:52:12 Event logging stopped
+2025-08-24 12:52:12 Event logging started
+2025-08-24 14:33:28 Event logging stopped
+2025-08-24 14:33:28 Event logging started
+2025-08-24 14:34:03 Error: in file macro line 6: G1: insufficient axes homed
+2025-08-24 14:34:15 Error: in file macro line 6: G1: insufficient axes homed
+2025-08-24 14:34:22 Error: in file macro line 6: G1: insufficient axes homed
+2025-08-24 14:37:16 Event logging stopped
+2025-08-24 14:37:16 Event logging started
+2025-08-24 14:37:26 Warning: M14: Command is not supported
+2025-08-24 14:38:09 Event logging stopped
+2025-08-24 14:38:09 Event logging started
+2025-08-24 14:38:19 Error: in file macro line 6: G1: insufficient axes homed
+2025-08-24 14:38:31 Event logging stopped
+2025-08-24 14:38:37 Event logging started
+2025-08-24 14:38:38 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-24 14:39:38 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-08-24 14:39:39 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-08-24 14:46:24 Event logging stopped
+2025-08-24 14:46:30 Event logging started
+2025-08-24 14:46:31 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-24 14:46:34 Event logging stopped
+2025-08-26 08:01:44 Event logging started
+2025-08-26 08:01:44 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-26 08:01:48 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-26 08:20:43 Event logging stopped
+2025-08-26 08:20:43 Event logging started
+2025-08-26 08:30:14 Event logging stopped
+2025-08-26 08:30:14 Event logging started
+2025-08-26 08:30:39 Event logging stopped
+2025-08-26 08:30:46 Event logging started
+2025-08-26 08:30:46 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-26 08:30:53 Event logging stopped
+2025-08-26 08:30:53 Event logging started
+2025-08-26 08:32:39 Event logging stopped
+2025-08-26 08:32:46 Event logging started
+2025-08-26 08:32:47 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-26 08:32:54 Event logging stopped
+2025-08-26 08:32:54 Event logging started
+2025-08-26 08:37:01 Event logging stopped
+2025-08-26 08:37:01 Event logging started
+2025-08-26 08:37:13 Event logging stopped
+2025-08-26 08:37:20 Event logging started
+2025-08-26 08:37:20 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-26 08:37:36 Event logging stopped
+2025-08-26 08:37:36 Event logging started
+2025-08-26 08:37:49 Event logging stopped
+2025-08-26 08:37:49 Event logging started
+2025-08-26 08:38:04 Event logging stopped
+2025-08-26 08:38:10 Event logging started
+2025-08-26 08:38:10 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-26 08:38:49 Event logging stopped
+2025-08-26 08:38:49 Event logging started
+2025-08-26 08:38:54 Event logging stopped
+2025-08-26 08:38:54 Event logging started
+2025-08-26 08:39:02 Warning: SPI connection has been reset
+2025-08-26 08:39:02 Connection to SBC established!
+2025-08-26 08:39:02 Event logging stopped
+2025-08-26 08:39:02 Event logging started
+2025-08-26 08:39:03 Error: M584: Driver 1.0 does not exist
+Driver 1.1 does not exist
+2025-08-26 08:39:22 Event logging stopped
+2025-08-26 08:39:22 Event logging started
+2025-08-26 08:39:22 Error: M584: Driver 1.0 does not exist
+Driver 1.1 does not exist
+2025-08-26 08:39:27 Error: in file macro line 6: G1: insufficient axes homed
+2025-08-26 08:39:36 Error: in file macro line 32: G1: insufficient axes homed
+2025-08-26 08:39:41 Event logging stopped
+2025-08-26 08:39:48 Event logging started
+2025-08-26 08:39:48 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-26 08:40:06 Event logging stopped
+2025-08-26 08:40:06 Event logging started
+2025-08-26 08:48:15 Event logging stopped
+2025-08-26 08:48:15 Event logging started
+2025-08-26 08:48:21 Error: in file macro line 6: G1: insufficient axes homed
+2025-08-26 08:48:30 Event logging stopped
+2025-08-26 08:48:37 Event logging started
+2025-08-26 08:48:38 Error: M552: On-board firmware cannot process network-related commands when using an attached Single Board Computer
+2025-08-26 09:27:49 Event logging stopped
+2025-08-26 09:27:55 Event logging started
+2025-08-26 09:32:34 Event logging stopped
+2025-08-26 09:32:34 Event logging started
+2025-08-26 09:32:42 Event logging stopped
+2025-08-26 09:32:48 Event logging started
+2025-08-26 09:37:11 Event logging stopped
+2025-08-26 09:37:17 Event logging started
+2025-08-26 10:06:51 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-08-26 10:07:39 Warning: SPI connection has been reset
+2025-08-26 10:07:39 Connection to SBC established!
+2025-08-26 10:07:39 Event logging stopped
+2025-08-26 10:07:39 Event logging started
+2025-08-26 10:08:32 Event logging stopped
+2025-08-26 10:08:32 Event logging started
+2025-08-26 10:08:48 Event logging stopped
+2025-08-26 10:08:54 Event logging started
+2025-08-26 10:18:18 Event logging stopped
+2025-08-26 10:18:18 Event logging started
+2025-08-26 10:18:19 Event logging stopped
+2025-08-26 10:18:25 Event logging started
+2025-08-26 10:31:19 Warning: SPI connection has been reset
+2025-08-26 10:31:21 Connection to SBC established!
+2025-08-26 10:33:23 Event logging stopped
+2025-08-26 10:36:39 Event logging started
+2025-08-26 10:45:59 Event logging stopped
+2025-08-26 10:45:59 Event logging started
+2025-08-26 10:45:59 Event logging stopped
+2025-08-26 10:46:06 Event logging started
+2025-08-26 11:28:51 Warning: SPI connection has been reset
+2025-08-26 11:28:51 Connection to SBC established!
+2025-08-26 11:28:52 Event logging stopped
+2025-08-26 11:28:52 Event logging started
+2025-08-26 11:28:52 Error: M584: Driver 1.0 does not exist
+Driver 1.1 does not exist
+2025-08-26 11:28:52 Event logging stopped
+2025-09-02 12:19:32 Event logging started
+2025-09-02 12:20:51 Event logging stopped
+2025-09-02 12:20:51 Event logging started
+2025-09-02 12:37:41 Event logging stopped
+2025-09-02 12:37:47 Event logging started
+2025-09-02 12:38:48 Event logging stopped
+2025-09-03 16:36:47 Event logging started
+2025-09-03 17:10:12 Event logging stopped
+2025-09-05 13:51:11 Event logging started
+2025-09-05 13:52:20 Event logging stopped
+2025-09-05 13:52:20 Event logging started
+2025-09-05 13:56:50 Warning: SPI connection has been reset
+2025-09-05 13:56:50 Connection to SBC established!
+2025-09-05 13:56:50 Event logging stopped
+2025-09-05 13:56:50 Event logging started
+2025-09-05 13:56:50 Error: M584: Driver 1.0 does not exist
+Driver 1.1 does not exist
+2025-09-05 13:57:06 Event logging stopped
+2025-09-05 15:56:28 Event logging started
+2025-09-05 17:30:07 Event logging stopped
+2025-09-07 08:59:56 Event logging started
+2025-09-07 13:35:21 Event logging stopped
+2025-09-07 13:35:21 Event logging started
+2025-09-07 13:35:22 Event logging stopped
+2025-09-07 13:35:28 Event logging started
+2025-09-07 14:51:02 Event logging stopped
+2025-09-07 14:51:02 Event logging started
+2025-09-07 14:51:03 Event logging stopped
+2025-09-07 14:51:09 Event logging started
+2025-09-07 14:52:14 Error: G0: insufficient axes homed
+2025-09-07 14:55:47 Event logging stopped
+2025-09-07 14:55:47 Event logging started
+2025-09-07 14:55:48 Event logging stopped
+2025-09-07 14:55:54 Event logging started
+2025-09-07 14:56:45 Event logging stopped
+2025-09-07 14:56:45 Event logging started
+2025-09-07 14:56:45 Event logging stopped
+2025-09-07 14:56:52 Event logging started
+2025-09-07 15:20:07 Error: G30: Probe was not triggered during probing move
+2025-09-07 15:20:29 Event logging stopped
+2025-09-07 15:20:35 Event logging started
+2025-09-07 15:20:37 Event logging stopped
+2025-09-07 15:20:37 Event logging started
+2025-09-07 15:20:38 Event logging stopped
+2025-09-07 15:20:44 Event logging started
+2025-09-07 15:24:31 Event logging stopped
+2025-09-07 15:24:31 Event logging started
+2025-09-07 15:24:32 Event logging stopped
+2025-09-07 15:24:38 Event logging started
+2025-09-07 15:25:08 Event logging stopped
+2025-09-07 15:25:15 Event logging started
+2025-09-07 16:23:41 Event logging stopped
+2025-09-07 16:23:47 Event logging started
+2025-09-07 17:36:30 Event logging stopped
+2025-09-07 17:36:36 Event logging started
+2025-09-10 12:37:17 Event logging stopped
+2025-09-10 12:37:24 Event logging started
+2025-09-10 12:38:08 Event logging stopped
+2025-09-10 12:38:08 Event logging started
+2025-09-10 13:02:02 Event logging stopped
+2025-09-10 13:02:07 Event logging started
+2025-09-10 13:04:05 Event logging stopped
+2025-09-12 08:24:19 Event logging started
+2025-09-12 09:03:18 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-09-12 09:03:19 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-09-12 09:05:52 Event logging stopped
+2025-09-12 09:05:52 Event logging started
+2025-09-12 09:07:23 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-09-12 09:07:23 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-09-12 09:21:01 Event logging stopped
+2025-09-12 09:21:01 Event logging started
+2025-09-12 10:18:35 Event logging stopped
+2025-09-12 10:18:41 Event logging started
+2025-09-12 10:18:46 Event logging stopped
+2025-09-12 15:50:09 Event logging started
+2025-09-12 15:51:27 Error: G1: no endstop configured for axis 4
+2025-09-12 15:52:22 Event logging stopped
+2025-09-12 15:52:29 Event logging started
+2025-09-12 15:52:29 Error: in file config.g line 155: Unterminated string
+2025-09-12 15:54:16 Event logging stopped
+2025-09-12 15:54:22 Event logging started
+2025-09-12 16:18:55 Event logging stopped
+2025-09-12 16:19:01 Event logging started
+2025-09-12 16:22:11 Event logging stopped
+2025-09-12 16:22:17 Event logging started
+2025-09-12 16:36:40 Event logging stopped
+2025-09-12 16:36:46 Event logging started
+2025-09-12 16:37:28 Event logging stopped
+2025-09-12 16:37:34 Event logging started
+2025-09-12 16:39:07 Event logging stopped
+2025-09-12 16:39:07 Event logging started
+2025-09-12 16:39:08 Error: M574: endstop type 0 is no longer supported. Use type 1 and invert the input pin instead.
+2025-09-12 16:41:03 Event logging stopped
+2025-09-12 16:41:09 Event logging started
+2025-09-12 16:53:37 Event logging stopped
+2025-09-12 16:53:43 Event logging started
+2025-09-12 16:53:47 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-09-12 17:03:16 Warning: SPI connection has been reset
+2025-09-12 17:03:16 Connection to SBC established!
+2025-09-12 17:03:16 Event logging stopped
+2025-09-12 17:03:16 Event logging started
+2025-09-12 17:07:40 Event logging stopped
+2025-09-12 17:07:40 Event logging started
+2025-09-12 17:07:40 Error: M574: endstop type 0 is no longer supported. Use type 1 and invert the input pin instead.
+2025-09-12 17:08:09 Event logging stopped
+2025-09-12 17:08:15 Event logging started
+2025-09-12 17:15:10 Event logging stopped
+2025-09-12 17:15:16 Event logging started
+2025-09-12 17:15:17 Error: M574: endstop type 0 is no longer supported. Use type 1 and invert the input pin instead.
+2025-09-12 17:17:25 Event logging stopped
+2025-09-12 17:17:31 Event logging started
+2025-09-12 17:18:53 Event logging stopped
+2025-09-12 17:18:53 Event logging started
+2025-09-12 17:36:02 Event logging stopped
+2025-09-12 17:36:02 Event logging started
+2025-09-12 17:36:17 Event logging stopped
+2025-09-12 17:36:23 Event logging started
+2025-09-12 17:36:47 Event logging stopped
+2025-09-12 17:36:47 Event logging started
+2025-09-12 17:36:58 Event logging stopped
+2025-09-12 17:37:04 Event logging started
+2025-09-12 17:37:46 Event logging stopped
+2025-09-12 17:37:53 Event logging started
+2025-09-12 17:37:54 Error: M574: endstop type 0 is no longer supported. Use type 1 and invert the input pin instead.
+2025-09-12 17:38:42 Error: G1: no endstop configured for axis 4
+2025-09-12 17:38:51 Error: G1: no endstop configured for axis 4
+2025-09-12 17:38:52 Error: G1: no endstop configured for axis 4
+2025-09-12 17:39:18 Event logging stopped
+2025-09-12 17:39:18 Event logging started
+2025-09-12 17:39:38 Event logging stopped
+2025-09-12 17:39:44 Event logging started
+2025-09-12 17:40:36 Event logging stopped
+2025-09-12 17:40:42 Event logging started
+2025-09-12 17:41:27 Event logging stopped
+2025-09-12 17:41:27 Event logging started
+2025-09-12 17:49:12 Event logging stopped
+2025-09-12 17:49:12 Event logging started
+2025-09-12 17:49:46 Warning: Lost connection to Duet (Timeout while waiting for transfer ready pin)
+2025-09-12 17:51:17 Warning: SPI connection has been reset
+2025-09-12 17:51:17 Connection to SBC established!
+2025-09-12 17:51:17 Event logging stopped
+2025-09-12 17:51:17 Event logging started
+2025-09-12 17:51:57 Event logging stopped
+2025-09-12 17:52:03 Event logging started
+2025-09-12 17:52:16 Event logging stopped
+2025-09-12 17:52:22 Event logging started
+2025-09-12 18:08:42 Event logging stopped
+2025-09-12 18:08:42 Event logging started
+2025-09-12 18:09:11 Event logging stopped
+2025-09-12 18:09:17 Event logging started
+2025-09-12 18:09:20 Error: G1: no endstop configured for axis 4
+2025-09-12 18:09:26 Error: G1: no endstop configured for axis 4
+2025-09-12 18:11:08 Event logging stopped
+2025-09-12 18:11:08 Event logging started
+2025-09-12 18:11:14 Event logging stopped
+2025-09-12 18:11:21 Event logging started
+2025-09-12 18:12:40 Event logging stopped
+2025-09-12 18:12:40 Event logging started
+2025-09-12 18:31:10 Event logging stopped
+2025-09-12 18:31:10 Event logging started
+2025-09-12 20:31:41 Event logging stopped
+2025-09-12 20:31:41 Event logging started
+2025-09-12 20:36:49 Event logging stopped
+2025-09-12 20:36:49 Event logging started
+2025-09-12 21:09:18 Event logging stopped
+2025-09-12 21:09:24 Event logging started
+2025-09-12 21:10:14 Event logging stopped
+2025-09-14 09:01:53 Event logging started
+2025-09-14 09:53:49 Event logging stopped
+2025-09-14 09:53:49 Event logging started
+2025-09-14 10:56:10 Event logging stopped
+2025-09-14 10:56:10 Event logging started
+2025-09-14 13:26:58 Event logging stopped
+2025-09-14 13:27:05 Event logging started
+2025-09-14 13:28:13 Event logging stopped
+2025-09-14 13:28:13 Event logging started
+2025-09-14 18:28:48 Warning: SPI connection has been reset
+2025-09-14 18:28:53 Connection to SBC established!
+2025-09-14 18:29:02 Warning: SPI connection has been reset
+2025-09-14 18:29:03 Connection to SBC established!
+2025-09-14 18:32:11 Warning: SPI connection has been reset
+2025-09-14 18:32:13 Connection to SBC established!
+2025-09-14 18:32:29 Event logging stopped
+2025-09-14 18:48:38 Event logging started
+2025-09-14 18:48:44 Event logging stopped
+2025-09-16 13:52:48 Event logging started
+2025-09-16 14:04:18 Event logging stopped
+2025-09-16 14:04:18 Event logging started
+2025-09-16 14:04:41 Error: G0: insufficient axes homed
+2025-09-16 14:09:12 Error: M0: Pause the print before attempting to cancel it
+2025-09-16 14:26:28 Event logging stopped
+2025-09-16 14:26:28 Event logging started
+2025-09-16 15:29:42 Event logging stopped
+2025-09-16 15:29:48 Event logging started
+2025-09-16 15:29:55 Event logging stopped
+2025-09-17 10:06:22 Event logging started
+2025-09-17 10:37:16 Event logging stopped
+2025-09-17 10:37:16 Event logging started
+2025-09-17 10:37:17 Event logging stopped
+2025-09-17 10:37:23 Event logging started
+2025-09-17 10:37:44 Event logging stopped
+2025-09-17 10:37:50 Event logging started
+2025-09-17 16:03:21 Event logging stopped
+2025-09-19 16:39:43 Event logging started
+2025-09-19 16:45:13 Event logging stopped
+2025-09-19 16:45:13 Event logging started
+2025-09-19 19:45:26 Warning: SPI connection has been reset
+2025-09-19 19:45:26 Connection to SBC established!
+2025-09-19 19:45:26 Event logging stopped
+2025-09-19 19:45:26 Event logging started
+2025-09-19 19:45:26 Error: M584: Driver 1.0 does not exist
+Driver 1.1 does not exist
+2025-09-19 19:45:26 Error: M584: Driver 1.2 does not exist
+2025-09-19 19:48:53 Event logging stopped
+2025-09-19 19:48:59 Event logging started
+2025-09-19 19:50:49 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-09-19 19:50:49 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-09-19 19:56:39 Warning: Driver 1.2 warning: phase A may be disconnected, phase B may be disconnected
+2025-09-19 19:56:54 Error: in file macro line 3: G1: insufficient axes homed
+2025-09-20 00:20:05 Event logging stopped
+2025-09-20 00:20:11 Event logging started
+2025-09-20 00:20:37 Warning: SPI connection has been reset
+2025-09-20 00:20:37 Connection to SBC established!
+2025-09-20 00:20:37 Event logging stopped
+2025-09-20 00:20:37 Event logging started
+2025-09-20 00:20:37 Error: M584: Driver 1.0 does not exist
+Driver 1.1 does not exist
+2025-09-20 00:20:37 Error: M584: Driver 1.2 does not exist
+2025-09-20 00:20:39 Event logging stopped
+2025-09-21 10:25:30 Event logging started
+2025-09-21 10:27:06 Event logging stopped
+2025-09-21 10:27:06 Event logging started
+2025-09-21 11:47:38 Event logging stopped
+2025-09-21 11:47:38 Event logging started
+2025-09-21 11:54:03 Event logging stopped
+2025-09-21 11:54:10 Event logging started
+2025-09-21 11:56:52 Event logging stopped
+2025-09-21 11:56:58 Event logging started
+2025-09-21 12:00:01 Event logging stopped
+2025-09-21 12:00:01 Event logging started
+2025-09-21 12:03:59 Error: G0: insufficient axes homed
+2025-09-21 12:03:59 Error: G0: insufficient axes homed
+2025-09-21 12:03:59 Error: G0: insufficient axes homed
+2025-09-21 12:04:00 Error: G0: insufficient axes homed
+2025-09-21 12:04:00 Error: G0: insufficient axes homed
+2025-09-21 12:04:00 Error: G0: insufficient axes homed
+2025-09-21 12:04:00 Error: G0: insufficient axes homed
+2025-09-21 12:04:00 Error: G0: insufficient axes homed
+2025-09-21 12:04:01 Error: G0: insufficient axes homed
+2025-09-21 12:04:01 Error: G0: insufficient axes homed
+2025-09-21 12:04:06 Error: G0: insufficient axes homed
+2025-09-21 12:04:07 Error: G0: insufficient axes homed
+2025-09-21 12:04:07 Error: G0: insufficient axes homed
+2025-09-21 12:04:08 Error: G0: insufficient axes homed
+2025-09-21 12:04:08 Error: G0: insufficient axes homed
+2025-09-21 12:04:08 Error: G0: insufficient axes homed
+2025-09-21 12:04:08 Error: G0: insufficient axes homed
+2025-09-21 12:04:08 Error: G0: insufficient axes homed
+2025-09-21 12:04:09 Error: G0: insufficient axes homed
+2025-09-21 12:04:09 Error: G0: insufficient axes homed
+2025-09-21 12:17:56 Event logging stopped
+2025-09-21 12:18:02 Event logging started
+2025-09-21 12:23:30 Error: G0: insufficient axes homed
+2025-09-21 12:23:30 Error: G0: insufficient axes homed
+2025-09-21 12:23:31 Error: G0: insufficient axes homed
+2025-09-21 12:23:32 Error: G0: insufficient axes homed
+2025-09-21 12:23:32 Error: G0: insufficient axes homed
+2025-09-21 12:23:33 Error: G0: insufficient axes homed
+2025-09-21 12:23:33 Error: G0: insufficient axes homed
+2025-09-21 12:23:33 Error: G0: insufficient axes homed
+2025-09-21 12:23:34 Error: G0: insufficient axes homed
+2025-09-21 12:23:34 Error: G0: insufficient axes homed
+2025-09-21 12:23:35 Error: G0: insufficient axes homed
+2025-09-21 12:23:35 Error: G0: insufficient axes homed
+2025-09-21 12:23:36 Error: G0: insufficient axes homed
+2025-09-21 12:23:36 Error: G0: insufficient axes homed
+2025-09-21 12:23:36 Error: G0: insufficient axes homed
+2025-09-21 12:23:38 Error: G0: insufficient axes homed
+2025-09-21 12:23:38 Error: G0: insufficient axes homed
+2025-09-21 12:23:38 Error: G0: insufficient axes homed
+2025-09-21 12:23:39 Error: G0: insufficient axes homed
+2025-09-21 12:23:39 Error: G0: insufficient axes homed
+2025-09-21 12:23:39 Error: G0: insufficient axes homed
+2025-09-21 12:23:39 Error: G0: insufficient axes homed
+2025-09-21 12:23:40 Error: G0: insufficient axes homed
+2025-09-21 12:23:41 Error: G0: insufficient axes homed
+2025-09-21 12:23:41 Error: G0: insufficient axes homed
+2025-09-21 12:23:42 Error: G0: insufficient axes homed
+2025-09-21 12:23:42 Error: G0: insufficient axes homed
+2025-09-21 12:23:42 Error: G0: insufficient axes homed
+2025-09-21 12:23:43 Error: G0: insufficient axes homed
+2025-09-21 12:23:43 Error: G0: insufficient axes homed
+2025-09-21 15:06:54 Event logging stopped
+2025-09-21 15:07:01 Event logging started
+2025-09-21 17:59:49 Event logging stopped
+2025-09-21 17:59:56 Event logging started
+2025-09-21 18:05:04 Event logging stopped
+2025-09-21 18:05:04 Event logging started
+2025-09-21 18:12:30 Error: M558: Pin 'io4.in' is not free
+2025-09-21 18:12:35 Event logging stopped
+2025-09-21 18:12:41 Event logging started
+2025-09-21 18:12:55 Event logging stopped
+2025-09-21 18:12:55 Event logging started
+2025-09-21 18:18:28 Event logging stopped
+2025-09-21 18:18:34 Event logging started
+2025-09-21 18:27:53 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-09-21 18:27:53 Error: G29: Height map file 0:/sys/heightmap.csv not found
+2025-09-21 20:11:23 Event logging stopped
+2025-09-21 20:11:23 Event logging started
+2025-09-21 20:27:02 Event logging stopped
+2025-09-21 20:27:08 Event logging started
+2025-09-21 20:31:37 Event logging stopped
+2025-09-21 20:31:37 Event logging started
+2025-09-21 21:28:32 Event logging stopped
+2025-09-21 21:28:38 Event logging started
+2025-09-21 21:31:13 Event logging stopped
+2025-09-21 21:31:13 Event logging started
+2025-09-21 21:32:55 Error: in file macro line 3: G1: insufficient axes homed
+2025-09-21 22:08:20 Event logging stopped
+2025-09-21 22:08:26 Event logging started
+2025-09-21 22:23:16 Event logging stopped
+2025-09-24 09:09:40 Event logging started
+2025-09-24 09:10:14 Event logging stopped
+2025-09-24 09:10:20 Event logging started
+2025-09-24 09:10:30 Event logging stopped
+2025-09-26 12:54:58 Event logging started
+2025-09-26 14:57:05 Warning: SPI connection has been reset
+2025-09-26 14:57:05 Connection to SBC established!
+2025-09-26 16:20:25 Event logging stopped
+2025-09-26 16:24:42 Event logging started
+2025-09-26 16:26:54 Event logging stopped
+2025-09-26 16:29:15 Event logging started
+2025-09-26 18:27:07 Event logging stopped
+2025-09-26 18:27:13 Event logging started
+2025-09-26 18:27:23 Event logging stopped
+2025-09-28 08:57:34 Event logging started
+2025-09-28 09:18:21 Event logging stopped
+2025-09-28 09:18:21 Event logging started
