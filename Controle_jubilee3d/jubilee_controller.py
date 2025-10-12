@@ -44,8 +44,9 @@ class JubileeMotionController(Inpromptu):
         self.command_ws = None
         self.wake_time = None
         self.absolute_moves = True
-        self._active_tool_index = None
-        self._tool_z_offsets = None
+        self.tool = None
+        #self._active_tool_index = None
+        #self._tool_z_offsets = None
         self._axis_limits = None
         self.connect()
         self.axes_homed = [False]*4
@@ -126,6 +127,9 @@ class JubileeMotionController(Inpromptu):
     def home_all_forced(self):
         """Força todos os eixos como referenciados (X, Y, Z, U)."""
         self.axes_homed = [True, True, True, True]
+        all_axis = ["X","Y","Z","U"]
+        for i,axi in zip(self.position,all_axis):
+            self.gcode(f"G92 {axi}{i}")
 
 
     def home_all(self, mesh_mode_z=True):
@@ -261,18 +265,18 @@ class JubileeMotionController(Inpromptu):
         return positions
 
 
-    def pickup_tool(self, tool_index: int):
-        """Seleciona a ferramenta especificada pelo índice."""
-        if tool_index < 0:
-            return
-        self.gcode(f"T{tool_index}")
-        self._active_tool_index = tool_index
+    #def pickup_tool(self, tool_index: int):
+    #    """Seleciona a ferramenta especificada pelo índice."""
+    #    if tool_index < 0:
+    #        return
+    #    self.gcode(f"T{tool_index}")
+    #    self._active_tool_index = tool_index
 
 
-    def park_tool(self):
-        """Retorna a ferramenta atual para o estacionamento."""
-        self.gcode("T-1")
-        self._active_tool_index = -1
+    #def park_tool(self):
+    #    """Retorna a ferramenta atual para o estacionamento."""
+    #    self.gcode("T-1")
+    #   self._active_tool_index = -1
 
 
     @property

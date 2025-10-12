@@ -1,22 +1,13 @@
-class Micropipette: 
+class Micropipette:
     """
     Classe para controle de uma micropipeta automatizada integrada
     em uma Jubilee.
 
-    Esta classe simula o funcionamento de uma pipeta de deslocamento
-    positivo, permitindo instalar/desinstalar a ferramenta e realizar
-    operações de pipetagem como aspirar, dispensar e ejetar ponteiras.
-
-    Attributes:
-        machine: Objeto que representa a máquina Jubilee, permitindo
-            enviar comandos G-Code e realizar movimentações.
-        parking_position_x (float): Posição X de estacionamento/acoplamento.
-        parking_position_y (float): Posição Y de estacionamento/acoplamento.
-        move_velocity (int): Velocidade dos movimentos em mm/min.
-        liquid_ul (float): Volume de líquido atualmente aspirado, em microlitros (µL).
+    Esta versão segue a mesma lógica das outras ferramentas (ex: camera_tool, Gripper),
+    incluindo controle de estado, nome, e verificação de ferramenta atual.
     """
 
-    def __init__(self, machine, parking_position_xy=(138, 18)):
+    def __init__(self, machine, parking_position_xy=(138, 18), move_velocity=10000):
         """
         Inicializa a micropipeta e posiciona o eixo Z em uma altura segura.
 
@@ -24,18 +15,19 @@ class Micropipette:
             machine: Instância de controle da máquina Jubilee.
             parking_position_xy (tuple, optional): Coordenadas (X, Y) para 
                 estacionamento da micropipeta. Default é (138, 18).
+            move_velocity (int, optional): Velocidade padrão de movimentação (mm/min).
         """
+        self.name = "Micropipeta"
         self.parking_position_x, self.parking_position_y = parking_position_xy
         self.machine = machine
-        self.move_velocity = 10000
+        self.move_velocity = move_velocity
+        self.liquid_ul = 0
+        self.installed = False
 
-        # Altura mínima de segurança no eixo Z e homing
         self.machine.gcode("M208 Z100:300")
         self.machine.gcode('M98 P"/sys/homev.g"')
         if self.machine.position[2] < 100:
             self.machine.move_xyz_absolute(z=100)
-        
-        self.liquid_ul = 0
 
     def install(self):
         """
@@ -44,34 +36,52 @@ class Micropipette:
         Move o cabeçote até as coordenadas específicas necessárias
         para acoplar a micropipeta ao sistema.
         """
-        self.machine.protect_tools(on=False)
-        self.machine.move_xyz_absolute(y=220, velocity=self.move_velocity)
-        self.machine.move_xyz_absolute(x=self.parking_position_x, velocity=self.move_velocity)
-        self.machine.gcode("G0 U70")
-        self.machine.move_xyz_absolute(y=self.parking_position_y, velocity=self.move_velocity)
-        self.machine.gcode("G0 U0")
-        self.machine.move_xyz_absolute(y=70, velocity=self.move_velocity)
-
-        if self.machine.mode_protect_tools:
+        if self.machine.tool is None:
             self.machine.protect_tools(on=False)
 
-    def uninstall(self):
+            self.machine.move_xyz_absolute(y=220, velocity=self.move_velocity)
+            self.machine.move_xyz_absolute(x=self.parking_position_x, velocity=self.move_velocity)
+            self.machine.gcode("G0 U70")
+            self.machine.move_xyz_absolute(y=self.parking_position_y, velocity=self.move_velocity)
+            self.machine.gcode("G0 U0")
+            self.machine.move_xyz_absolute(y=70, velocity=self.move_velocity)
+
+            if self.machine.mode_protect_tools:
+                self.machine.protect_tools(on=True)
+
+            self.machine.tool = self.name
+            self.installed = True
+
+        else:
+            print(f"[{self.name}] Não é possível instalar: desinstale '{self.machine.tool}' primeiro.")
+
+
+    def uninstall(self, velocity=None):
         """
         Desinstala a micropipeta da máquina Jubilee.
 
         Move o cabeçote até as coordenadas específicas necessárias
         para desacoplar a micropipeta do sistema.
         """
-        self.machine.protect_tools(on=False)
-        self.machine.move_xyz_absolute(y=90, velocity=self.move_velocity)
-        self.machine.move_xyz_absolute(x=self.parking_position_x, velocity=self.move_velocity)
-        self.machine.move_xyz_absolute(y=self.parking_position_y, velocity=self.move_velocity)
-        self.machine.gcode("G0 U70")
-        self.machine.move_xyz_absolute(y=70, velocity=self.move_velocity)
-        self.machine.gcode("G0 U0")
-
-        if self.machine.mode_protect_tools:
+        if self.machine.tool == self.name:
+            v = velocity or self.move_velocity
             self.machine.protect_tools(on=False)
+
+            self.machine.move_xyz_absolute(y=90, velocity=v)
+            self.machine.move_xyz_absolute(x=self.parking_position_x, velocity=v)
+            self.machine.move_xyz_absolute(y=self.parking_position_y, velocity=v)
+            self.machine.gcode("G0 U70")
+            self.machine.move_xyz_absolute(y=70, velocity=v)
+            self.machine.gcode("G0 U0")
+
+            if self.machine.mode_protect_tools:
+                self.machine.protect_tools(on=True)
+
+            self.machine.tool = None
+            self.installed = False
+        else:
+            print(f"[{self.name}] Nenhuma micropipeta instalada ou outra ferramenta ativa.")
+
 
     def press(self, ul):
         """
@@ -80,75 +90,60 @@ class Micropipette:
         Args:
             ul (float): Volume em microlitros (µL) que se deseja aspirar.
                         O valor máximo permitido é 1200 µL.
-
-        Observações:
-            - Caso já haja líquido armazenado (`liquid_ul > 0`), 
-              o êmbolo é zerado antes de um novo ajuste.
-            - O movimento do êmbolo é controlado pelo eixo virtual V
-              do firmware da máquina.
         """
         if ul > 1200:
-            print("Não tente pipetar mais que 1200 µL")
+            print(f"[{self.name}] Não tente pipetar mais que 1200 µL.")
             return
 
         if self.liquid_ul > 0:
             self.machine.gcode("G0 V350")
             self.liquid_ul = 0
-        
-        next_position = ul / 4
+
+        next_position = round(((ul + 13.68852)/3.42413),2)
         self.machine.gcode(f"G0 V{next_position}")
-    
+
 
     def press_step(self, give_step):
-
+        """Pressiona o êmbolo diretamente em um valor de passo."""
         if give_step > 300:
-            print("Não tente pipetar mais que 1200 µL")
+            print(f"[{self.name}] Limite máximo de curso atingido.")
             return
 
         if self.liquid_ul > 0:
             self.machine.gcode("G0 V350")
             self.liquid_ul = 0
-        
+
         self.machine.gcode(f"G0 V{give_step}")
+
 
     def aspirate(self):
         """
         Aspira o líquido previamente configurado pelo método `press`.
 
         Atualiza o atributo `liquid_ul` com o volume atualmente aspirado.
-
-        Observações:
-            - É necessário usar o método `press` antes, para definir
-              o volume desejado.
-            - O valor do eixo V é convertido em microlitros usando a 
-              relação: `liquid_ul = V * 4`.
         """
         positions = self.machine.gcode("M114")
         valor_v = float(positions.split("V:")[1].split("E:")[0].strip())
+
         if valor_v == 0:
-            print("Use o método 'press' antes")
+            print(f"[{self.name}] Use o método 'press' antes de aspirar.")
             return
-        
-        self.liquid_ul = valor_v * 4
+
+        self.liquid_ul = valor_v * 3.42413 + 13.68852
         self.machine.gcode("G0 V0")
+
 
     def dispense(self):
         """
         Dispensa o líquido atualmente aspirado.
-
-        Move o êmbolo da micropipeta até a posição V=400,
-        liberando o conteúdo e zerando `liquid_ul`.
         """
         self.machine.gcode("G0 V400")
         self.liquid_ul = 0
 
+
     def eject_tip(self):
         """
         Ejeta a ponteira da micropipeta.
-
-        Move o êmbolo até V=450 para ejetar a ponteira usada e 
-        retorna em seguida para V=0, garantindo que a micropipeta 
-        esteja pronta para receber uma nova ponteira.
         """
         self.machine.gcode("G0 V450")
         self.liquid_ul = 0

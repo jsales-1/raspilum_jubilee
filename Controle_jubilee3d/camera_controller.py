@@ -19,7 +19,7 @@ class camera_tool:
     move_velocity : int
         Velocidade padrão para movimentação do cabeçote durante instalação/desinstalação."""
 
-    def __init__(self, machine,parking_position_xy=(302,7)):
+    def __init__(self, machine,parking_position_xy=(302,20),move_velocity = 3000):
         """
         Inicializa a ferramenta da câmera.
 
@@ -27,10 +27,11 @@ class camera_tool:
         ----------
         machine : Instância da Jubilee.
         """
+        self.name = "Câmera"
         self.parking_position_x,self.parking_position_y = parking_position_xy
         self.installed = False
         self.machine = machine
-        self.move_velocity = 10000
+        self.move_velocity = move_velocity
 
     def install(self):
         """
@@ -41,18 +42,27 @@ class camera_tool:
         Coodernadas foram descobertas empíricamente e podem ser 
         alteradas se necessário.
         """
-        self.machine.protect_tools(on=False)
-
-        self.machine.move_xyz_absolute(y=90, velocity=self.move_velocity)
-        self.machine.move_xyz_absolute(x=self.parking_position_x, velocity=self.move_velocity)
-        self.machine.gcode("G0 U80")
-        self.machine.move_xyz_absolute(y=self.parking_position_y, velocity=self.move_velocity)
-        self.machine.gcode("G0 U0")
-        self.machine.move_xyz_absolute(y=70, velocity=self.move_velocity)
-        self.machine.move_xyz_absolute(x=50, y=120, velocity=self.move_velocity)
-
-        if self.machine.mode_protect_tools:
+        if self.machine.tool == None:
             self.machine.protect_tools(on=False)
+
+            self.machine.move_xyz_absolute(y=90, velocity=self.move_velocity)
+            self.machine.move_xyz_absolute(x=self.parking_position_x, velocity=self.move_velocity)
+            self.machine.gcode("G0 U80")
+            self.machine.move_xyz_absolute(y=self.parking_position_y, velocity=self.move_velocity)
+            self.machine.gcode("G0 U0")
+            self.machine.move_xyz_absolute(y=70, velocity=self.move_velocity)
+            self.machine.move_xyz_absolute(x=50, y=120, velocity=self.move_velocity)
+
+            if self.machine.mode_protect_tools:
+                self.machine.protect_tools(on=True)
+            
+            self.machine.tool = self.name
+        
+        else: 
+            print('Desinstale a última ferramenta')
+
+        
+
 
     def uninstall(self):
         """
@@ -61,18 +71,21 @@ class camera_tool:
         Este método move o cabeçote para as coordenadas específicas
         necessárias para desacoplar a câmera do sistema Jubilee.
         """
-        self.machine.protect_tools(on=False)
-
-        self.machine.move_xyz_absolute(y=90, velocity=self.move_velocity)
-        self.machine.move_xyz_absolute(x=self.parking_position_x, velocity=self.move_velocity)
-        self.machine.move_xyz_absolute(y=self.parking_position_y, velocity=self.move_velocity)
-        self.machine.gcode("G0 U80")
-        self.machine.move_xyz_absolute(y=70, velocity=self.move_velocity)
-        self.machine.move_xyz_absolute(x=50, y=120, velocity=self.move_velocity)
-        self.machine.gcode("G0 U0")
-
-        if self.machine.mode_protect_tools:
+        if  self.machine.tool == self.name:
             self.machine.protect_tools(on=False)
+
+            self.machine.move_xyz_absolute(y=90, velocity=self.move_velocity)
+            self.machine.move_xyz_absolute(x=self.parking_position_x, velocity=self.move_velocity)
+            self.machine.move_xyz_absolute(y=self.parking_position_y, velocity=self.move_velocity)
+            self.machine.gcode("G0 U80")
+            self.machine.move_xyz_absolute(y=70, velocity=self.move_velocity)
+            self.machine.move_xyz_absolute(x=50, y=120, velocity=self.move_velocity)
+            self.machine.gcode("G0 U0")
+
+            if self.machine.mode_protect_tools:
+                self.machine.protect_tools(on=True)
+            
+            self.machine.tool = None
 
     def photo(self, filename='captura.jpg', video_index=0):
         """
