@@ -24,10 +24,7 @@ class Micropipette:
         self.liquid_ul = 0
         self.installed = False
 
-        self.machine.gcode("M208 Z100:300")
         self.machine.gcode('M98 P"/sys/homev.g"')
-        if self.machine.position[2] < 100:
-            self.machine.move_xyz_absolute(z=100)
 
     def install(self):
         """
@@ -36,7 +33,13 @@ class Micropipette:
         Move o cabeçote até as coordenadas específicas necessárias
         para acoplar a micropipeta ao sistema.
         """
+
+        
+    
         if self.machine.tool is None:
+            self.machine.gcode("M208 Z150:300")
+            if self.machine.position[2] < 150:
+                self.machine.move_xyz_absolute(z=150)
             self.machine.protect_tools(on=False)
 
             self.machine.move_xyz_absolute(y=220, velocity=self.move_velocity)
@@ -63,6 +66,7 @@ class Micropipette:
         Move o cabeçote até as coordenadas específicas necessárias
         para desacoplar a micropipeta do sistema.
         """
+
         if self.machine.tool == self.name:
             v = velocity or self.move_velocity
             self.machine.protect_tools(on=False)
@@ -79,8 +83,11 @@ class Micropipette:
 
             self.machine.tool = None
             self.installed = False
+            self.machine.gcode("M208 Z0:300")
+
         else:
             print(f"[{self.name}] Nenhuma micropipeta instalada ou outra ferramenta ativa.")
+
 
 
     def press(self, ul):

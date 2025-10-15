@@ -240,10 +240,10 @@ class JubileeMotionController(Inpromptu):
             self.gcode("M18")
 
 
-    def move_xyz_relative(self, x: float = None, y: float = None, z: float = None, wait: bool = False):
+    def move_xyz_relative(self, x: float = None, y: float = None, z: float = None, wait: bool = False,velocity:int = 13000):
         """Move a máquina nos eixos XYZ de forma relativa."""
         self._set_relative_moves()
-        self._move_xyz(x, y, z, wait)
+        self._move_xyz(x, y, z, wait,velocity)
 
 
     def move_xyz_absolute(self, x: float = None, y: float = None, z: float = None, wait: bool = False, velocity:int = 13000):
