@@ -2,7 +2,9 @@ import cv2
 import numpy as np
 import time
 
-cap = cv2.VideoCapture(0)
+
+
+cap = cv2.VideoCapture(3)
 if not cap.isOpened():
     print("Erro ao abrir a câmera.")
     exit()
