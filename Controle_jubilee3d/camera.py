@@ -4,7 +4,7 @@ import time
 
 
 
-cap = cv2.VideoCapture(3)
+cap = cv2.VideoCapture(0)
 if not cap.isOpened():
     print("Erro ao abrir a câmera.")
     exit()
