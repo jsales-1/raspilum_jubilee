@@ -11,7 +11,7 @@ file = input("Digite o nome que o arquivo com os dados terá: \n")
 intervalo = int(input("Digite intervalo entre as gravações em segundos: \n"))
 
 
-dhtDevice = adafruit_dht.DHT11(board.D26)
+dhtDevice = adafruit_dht.DHT22(board.D26)
 
 
 n = 1000

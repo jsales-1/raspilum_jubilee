@@ -7,7 +7,7 @@ class Micropipette:
     incluindo controle de estado, nome, e verificação de ferramenta atual.
     """
 
-    def __init__(self, machine, parking_position_xy=(138, 18), move_velocity=10000):
+    def __init__(self, machine, parking_position_xy=(138, 18), move_velocity=3000,linear_coeficientes_ab=(3.49009,12.82974)):
         """
         Inicializa a micropipeta e posiciona o eixo Z em uma altura segura.
 
@@ -21,6 +21,7 @@ class Micropipette:
         self.parking_position_x, self.parking_position_y = parking_position_xy
         self.machine = machine
         self.move_velocity = move_velocity
+        self.linear_coeficientes_ab=linear_coeficientes_ab
         self.liquid_ul = 0
         self.installed = False
 
@@ -33,11 +34,12 @@ class Micropipette:
         Move o cabeçote até as coordenadas específicas necessárias
         para acoplar a micropipeta ao sistema.
         """
-
         
     
         if self.machine.tool is None:
             self.machine.gcode("M208 Z150:300")
+            
+
             if self.machine.position[2] < 150:
                 self.machine.move_xyz_absolute(z=150)
             self.machine.protect_tools(on=False)
@@ -51,6 +53,7 @@ class Micropipette:
 
             if self.machine.mode_protect_tools:
                 self.machine.protect_tools(on=True)
+                self.machine.gcode("M208 Y80:400")
 
             self.machine.tool = self.name
             self.installed = True
@@ -103,10 +106,10 @@ class Micropipette:
             return
 
         if self.liquid_ul > 0:
-            self.machine.gcode("G0 V350")
+            self.machine.gcode("G0 V350 F4000")
             self.liquid_ul = 0
 
-        next_position = round(((ul + 13.68852)/3.42413),2)
+        next_position = round(((ul + self.linear_coeficientes_ab[1])/self.linear_coeficientes_ab[0]),2)
         self.machine.gcode(f"G0 V{next_position}")
 
 
@@ -117,7 +120,7 @@ class Micropipette:
             return
 
         if self.liquid_ul > 0:
-            self.machine.gcode("G0 V350")
+            self.machine.gcode("G0 V350 F1200")
             self.liquid_ul = 0
 
         self.machine.gcode(f"G0 V{give_step}")
@@ -136,22 +139,28 @@ class Micropipette:
             print(f"[{self.name}] Use o método 'press' antes de aspirar.")
             return
 
-        self.liquid_ul = valor_v * 3.42413 + 13.68852
-        self.machine.gcode("G0 V0")
+        self.liquid_ul = valor_v * self.linear_coeficientes_ab[0] + self.linear_coeficientes_ab[1]
+        self.machine.gcode("G0 V0 F4000")
 
 
-    def dispense(self):
+    def dispense(self,velocity=None):
         """
         Dispensa o líquido atualmente aspirado.
         """
-        self.machine.gcode("G0 V400")
+        if velocity == None:
+            self.machine.gcode("G0 V380 F800")
+        else:
+            velocidade_step_min=(velocity * 60) / self.linear_coeficientes_ab[0]
+            self.machine.gcode(f"G0 V380 F{int(velocidade_step_min)}")
+            
         self.liquid_ul = 0
+        self.machine.gcode("G0 V100 F4000")
 
 
-    def eject_tip(self):
+    def eject_tip(self,velocity=9000):
         """
         Ejeta a ponteira da micropipeta.
         """
-        self.machine.gcode("G0 V450")
+        self.machine.gcode(f"G0 V450 F{velocity}")
         self.liquid_ul = 0
-        self.machine.gcode("G0 V0")
+        self.machine.gcode(f"G0 V0 F{velocity}")
