@@ -1,0 +1,5 @@
+Resumo estatístico por volume teórico:
+              Volume experimental (µL)           Erro absoluto (µL)           Erro relativo (%)          
+                                  mean       std               mean       std              mean       std
+Valor teórico                                                                                            
+200                         201.604814  0.897119           1.604814  0.897119          0.802407  0.448559

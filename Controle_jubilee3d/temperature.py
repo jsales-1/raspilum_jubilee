@@ -7,14 +7,14 @@ import time
 
 
 h = lgpio.gpiochip_open(0)
-file = input("Digite o nome que o arquivo com os dados terá: \n")
-intervalo = int(input("Digite intervalo entre as gravações em segundos: \n"))
+file = input("Digite o nome que o arquivo com os dados terá: \n_leituras")
+intervalo = int(input("Digite intervalo entre as gravações em segundos: \n_leituras"))
 
 
 dhtDevice = adafruit_dht.DHT22(board.D26)
 
 
-n = 1000
+n_leituras = int(input("Digite o número de leituras"))
 
 dados = {
     'Temperatura (°C)':[],
@@ -22,7 +22,7 @@ dados = {
     'Hora':[]
 }
 
-for i in range(n):
+for i in range(n_leituras):
 
     now = datetime.now()
 
