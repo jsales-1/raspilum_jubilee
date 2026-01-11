@@ -110,7 +110,7 @@ class Micropipette:
             self.liquid_ul = 0
 
         next_position = round(((ul + self.linear_coeficientes_ab[1])/self.linear_coeficientes_ab[0]),2)
-        self.machine.gcode(f"G0 V{next_position}")
+        self.machine.gcode(f"G0 V{next_position} F4000")
 
 
     def press_step(self, give_step):
