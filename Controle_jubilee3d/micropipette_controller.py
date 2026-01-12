@@ -86,7 +86,7 @@ class Micropipette:
 
             self.machine.tool = None
             self.installed = False
-            self.machine.gcode("M208 Z0:300")
+            self.machine.gcode("M208 Z0:320")
 
         else:
             print(f"[{self.name}] Nenhuma micropipeta instalada ou outra ferramenta ativa.")
@@ -106,11 +106,11 @@ class Micropipette:
             return
 
         if self.liquid_ul > 0:
-            self.machine.gcode("G0 V350 F4000")
+            self.machine.gcode("G0 V350 F10000")
             self.liquid_ul = 0
 
         next_position = round(((ul + self.linear_coeficientes_ab[1])/self.linear_coeficientes_ab[0]),2)
-        self.machine.gcode(f"G0 V{next_position} F4000")
+        self.machine.gcode(f"G0 V{next_position} F10000")
 
 
     def press_step(self, give_step):
@@ -148,13 +148,13 @@ class Micropipette:
         Dispensa o líquido atualmente aspirado.
         """
         if velocity == None:
-            self.machine.gcode("G0 V380 F800")
+            self.machine.gcode("G0 V352 F800")
         else:
             velocidade_step_min=(velocity * 60) / self.linear_coeficientes_ab[0]
-            self.machine.gcode(f"G0 V380 F{int(velocidade_step_min)}")
+            self.machine.gcode(f"G0 V352 F{int(velocidade_step_min)}")
             
         self.liquid_ul = 0
-        self.machine.gcode("G0 V100 F4000")
+        self.machine.gcode("G0 V175 F10000")
 
 
     def eject_tip(self,velocity=9000):
