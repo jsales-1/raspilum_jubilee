@@ -187,7 +187,7 @@ A micropipetadora automática é a ferramenta responsável pela manipulação vo
  </p>
 
 <p align="center">
-  <img src="./Imagens%20Readme/ferraenta_pipeta.png" width="300"><br>
+  <img src="./Imagens%20Readme/ferramenta_pipeta.png" width="300"><br>
   <em>Figura 12 – Micropipetaadora vista em diferentes posições.</em>
 </p>
 
