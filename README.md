@@ -106,7 +106,8 @@ Para criar uma interface mais simplificada e acessível, uma placa Raspberry Pi 
 <p align="justify">
 Entre no VSCode e abra a pasta <code>Documentos/IC/raspilum_jubilee</code>. Esse caminho é referente ao repositório que você está acessando agora. Dentro dela, acesse a pasta <code>Controle_jubilee3d</code> e confira os scripts Python que realizam o controle da máquina e das ferramentas, assim como as pastas com testes e experimentos.  
 
-Para fazer um <i>Quick Start</i>, abra o notebook jupyter <code>Exemplo de uso/Operando Jubilee.ipynb</code>, esse arquivo contém exemplos de código para controle da plataforma e ferramenta. 
+Para fazer um <i>Quick Start</i>, abra os notebooks disponíveis em <code>Exemplos de uso/</code>. O arquivo <code>1 - Movimentando Jubilee.ipynb</code> contém exemplos básicos de controle de movimentação da plataforma via envio de comandos e definição de posições. Já o arquivo <code>2 - Utilizando Ferramentas.ipynb</code> apresenta as classes desenvolvidas para o controle das diferentes ferramentas acopláveis, demonstrando como instanciá-las, configurar seus parâmetros e utilizar seus métodos específicos dentro de rotinas experimentais.
+
 
 O arquivo <code>jubilee_controller.py</code> é completamente baseado no arquivo de mesmo nome presente no repositório do Science Jubilee <a href = https://github.com/machineagency/science-jubilee/tree/main>[6]</a>. Esse arquivo é o mais importante para o projeto, pois é responsável por gerar a interface python/G-Code. De forma resumida, o objeto que representa a máquina é criada nesse arquivo e, utilizando de uma comunicação com o servidor local, é possível enviar os comandos G-Code ativando métodos específicos do objeto JubileeController. 
 
@@ -114,25 +115,36 @@ A seguir, você pode ver a árvore de diretórios desse diretório.
 </p>
 
 <pre>
-raspilum_jubilee/
-├── Controle_jubilee3d/           # Scripts e experimentos de controle
-│   ├── Exemplo de uso/               
-│   │   └── Operando Jubilee.ipynb     # Quick Start com exemplos de código
-│   ├── Experimento I - Crescimento Leveduras/    # Experimento realizado
-│   ├── Testes de Ferramentas/                    # Testes de ferramentas
-│   ├── camera.py                                 
+raspilum_jubilee3d/
+├── Controle_jubilee3d/
+│   ├── __pycache__/
+│   ├── Exemplos de uso/
+│   │   ├── 1 - Movimentando Jubilee.ipynb      # Quick Start com exemplos de códigos para movimentação
+│   │   └── 2 - Utilizando Ferramentas.ipynb    # Expicação das classes de ferramentas e seus métodos
+│   ├── Experimento 0 - Perda de Precisão XY/
+│   ├── Experimento 1 - Crescimento Leveduras/
+│   ├── Experimento 2 - Síntese de nanorods de ouro/
+│   ├── Experimento 3 - DipCoating/
+│   ├── Experimento 4 - Síntese de nanopartículas/
+│   ├── Testes de Ferramentas/
 │   ├── camera_circle_detect.py
 │   ├── camera_controller.py
+│   ├── camera.py
+│   ├── gripper_controller.py
 │   ├── image_processing.py
 │   ├── jubilee_controller.py
+│   ├── magnetic_stirrer_control.py
+│   ├── micropipette_controller.py
 │   ├── operacoes_iniciais.ipynb
-│   ├── temperature.py
-│   └── __pycache__/                  
+│   └── temperature.py
 │
-├── Imagens Readme/               # Imagens usadas na documentação
+├── Imagens Readme/
+├── Jubilee Gcode/
+├── Peças stl/
 ├── .gitignore
 └── README.md
 </pre>
+
 
 <h3>2.1. Controlando por interface do servidor local</h3>
 
@@ -165,6 +177,20 @@ O gripper é uma ferramenta de manipulação mecânica, projetada para pegar, tr
   <img src="./Imagens%20Readme/ferramenta_garra.jpg" width="300"><br>
   <em>Figura 11 – Gripper visto de diferentes posições.</em>
 </p>
+
+
+### Micropipetadora Automática
+<p align='justify'>
+A micropipetadora automática é a ferramenta responsável pela manipulação volumétrica de líquidos na plataforma Jubilee RaspIlum. É uma micropipetadora elétrica da Opentrons, a qual foi integrada mecanicamente à estrutura do sistema. Seu acionamento é realizado por meio de um motor de passo conectado a um dos drivers da placa Duet, ele permite controlar eletronicamente o deslocamento do êmbolo e consequentemente os volumes aspirados e dispensados.
+</p>
+
+ </p>
+
+<p align="center">
+  <img src="./Imagens%20Readme/ferraenta_pipeta.png" width="300"><br>
+  <em>Figura 12 – Micropipetaadora vista em diferentes posições.</em>
+</p>
+
 
 
 ## Referências      
