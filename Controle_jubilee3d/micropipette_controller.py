@@ -52,8 +52,8 @@ class Micropipette:
             self.machine.move_xyz_absolute(y=70, velocity=self.move_velocity)
 
             if self.machine.mode_protect_tools:
-                self.machine.protect_tools(on=True)
-                self.machine.gcode("M208 Y80:400")
+                self.machine.protect_tools(on=True,min_xy=[20,90])
+                self.machine.gcode("M208 Z0:320")
 
             self.machine.tool = self.name
             self.installed = True

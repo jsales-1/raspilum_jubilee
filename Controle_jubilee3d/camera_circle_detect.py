@@ -38,7 +38,7 @@ while True:
         minDist=100,
         param1=100,
         param2=30,
-        minRadius=200,
+        minRadius= 150,
         maxRadius=210
     )
 

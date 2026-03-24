@@ -172,10 +172,11 @@ class JubileeMotionController(Inpromptu):
         self.axes_homed[3] = True
 
 
-    def protect_tools(self, on: bool):
+    def protect_tools(self, on: bool,min_xy:list = [0,50]):
         """Ativa ou desativa a proteção das ferramentas."""
         if on:
-            self.gcode("M208 Y50:400")
+            self.gcode(f"M208 X{min_xy[0]}:330")
+            self.gcode(f"M208 Y{min_xy[1]}:400")
             self.mode_protect_tools = True
         else:
             self.gcode("M208 Y0:400")
