@@ -2,4 +2,4 @@ Resumo estatístico por volume teórico:
               Volume experimental (µL)                                   Erro absoluto (µL)                               Erro relativo (%)                              
                                   mean       std         min         max               mean       std       min       max              mean       std       min       max
 Valor teórico                                                                                                                                                            
-120                         120.361083  1.553855  118.355065  122.367101           1.337345  0.651714  0.641926  2.367101          1.114454  0.543095  0.534938  1.972584
+100                         102.808425  2.079884  100.300903  105.315948           2.808425  2.079884  0.300903  5.315948          2.808425  2.079884  0.300903  5.315948
