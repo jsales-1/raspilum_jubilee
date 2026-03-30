@@ -49,9 +49,13 @@ class Gripper:
             # Sequência de acoplamento (coordenadas empíricas)
             self.machine.move_xyz_absolute(y=220, velocity=self.move_velocity)
             self.machine.move_xyz_absolute(x=self.parking_position_x, velocity=self.move_velocity)
-            self.machine.gcode("G0 U70")
+            self.machine.gcode("G91 G1 U10 F600 G90")  
+            self.machine.gcode("G91 G1 H1 U300 F3000 G90")  
             self.machine.move_xyz_absolute(y=self.parking_position_y, velocity=self.move_velocity)
-            self.machine.gcode("G0 U0")
+            self.machine.gcode("G92 U20")  
+            self.machine.gcode("G91 G1 U-10 F600 G90")  
+            self.machine.gcode("G91 G1 H1 U-300 F3000 G90")
+            self.machine.gcode("G92 U0") 
             self.machine.move_xyz_absolute(y=70, velocity=self.move_velocity)
 
             # Reativa proteção de ferramentas, se necessário
@@ -84,9 +88,14 @@ class Gripper:
             self.machine.move_xyz_absolute(y=90, velocity=v)
             self.machine.move_xyz_absolute(x=self.parking_position_x, velocity=v)
             self.machine.move_xyz_absolute(y=self.parking_position_y, velocity=v)
-            self.machine.gcode("G0 U70")
-            self.machine.move_xyz_absolute(y=70, velocity=v)
-            self.machine.gcode("G0 U0")
+            self.machine.gcode("G91 G1 U10 F600 G90")  
+            self.machine.gcode("G91 G1 H1 U300 F3000 G90")  
+            self.machine.move_xyz_absolute(y=70, velocity=self.move_velocity)
+            self.machine.move_xyz_absolute(x=50, y=120, velocity=self.move_velocity)
+            self.machine.gcode("G92 U20")  
+            self.machine.gcode("G91 G1 U-10 F600 G90")  
+            self.machine.gcode("G91 G1 H1 U-300 F3000 G90")
+            self.machine.gcode("G92 U0") 
 
             # Reativa proteção de ferramentas
             if self.machine.mode_protect_tools:
