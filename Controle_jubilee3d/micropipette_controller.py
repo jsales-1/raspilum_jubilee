@@ -57,7 +57,7 @@ class Micropipette:
 
             if self.machine.mode_protect_tools:
                 self.machine.protect_tools(on=True,min_xy=[20,90])
-                self.machine.gcode("M208 Z0:320")
+                self.machine.gcode("M208 Z150:320")
 
             self.machine.tool = self.name
             self.installed = True
