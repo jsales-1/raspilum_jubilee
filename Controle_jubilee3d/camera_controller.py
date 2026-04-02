@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 
-class camera_tool:
+class Camera:
     """ Classe para controle de uma ferramenta de câmera em um sistema Jubilee ou similar.
 
     Esta classe encapsula os comandos necessários para instalar, desinstalar
