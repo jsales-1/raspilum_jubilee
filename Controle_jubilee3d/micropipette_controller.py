@@ -7,7 +7,7 @@ class Micropipette:
     incluindo controle de estado, nome, e verificação de ferramenta atual.
     """
 
-    def __init__(self, machine, parking_position_xy=(138, 18), move_velocity=3000,linear_coeficientes_ab=(3.49009,12.82974)):
+    def __init__(self, machine, parking_position_xy=(138, 16), move_velocity=3000,linear_coeficientes_ab=(3.49009,12.82974)):
         """
         Inicializa a micropipeta e posiciona o eixo Z em uma altura segura.
 
