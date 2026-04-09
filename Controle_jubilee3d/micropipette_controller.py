@@ -24,8 +24,9 @@ class Micropipette:
         self.linear_coeficientes_ab=linear_coeficientes_ab
         self.liquid_ul = 0
         self.installed = False
-
+        self.tip = False
         self.machine.gcode('M98 P"/sys/homev.g"')
+
 
     def install(self):
         """
@@ -34,10 +35,12 @@ class Micropipette:
         Move o cabeçote até as coordenadas específicas necessárias
         para acoplar a micropipeta ao sistema.
         """
-        
     
         if self.machine.tool is None:
-            self.machine.gcode("M208 Z150:300")
+            if self.tip:
+                self.machine.gcode("M208 Z165:300")
+            else:
+                self.machine.gcode("M208 Z150:300")
             
 
             if self.machine.position[2] < 150:
@@ -101,7 +104,6 @@ class Micropipette:
             print(f"[{self.name}] Nenhuma micropipeta instalada ou outra ferramenta ativa.")
 
 
-
     def press(self, ul):
         """
         Pressiona o êmbolo da micropipeta para definir o volume a ser aspirado.
@@ -110,16 +112,20 @@ class Micropipette:
             ul (float): Volume em microlitros (µL) que se deseja aspirar.
                         O valor máximo permitido é 1200 µL.
         """
-        if ul > 1200:
-            print(f"[{self.name}] Não tente pipetar mais que 1200 µL.")
-            return
+        if self.tip:
+            if ul > 1200:
+                print(f"[{self.name}] Não tente pipetar mais que 1200 µL.")
+                return
 
-        if self.liquid_ul > 0:
-            self.machine.gcode("G0 V350 F10000")
-            self.liquid_ul = 0
+            if self.liquid_ul > 0:
+                self.machine.gcode("G0 V350 F10000")
+                self.liquid_ul = 0
 
-        next_position = round(((ul + self.linear_coeficientes_ab[1])/self.linear_coeficientes_ab[0]),2)
-        self.machine.gcode(f"G0 V{next_position} F10000")
+            next_position = round(((ul + self.linear_coeficientes_ab[1])/self.linear_coeficientes_ab[0]),2)
+            self.machine.gcode(f"G0 V{next_position} F10000")
+
+        else:
+            print("Acople a ponteira")
 
 
     def press_step(self, give_step):
@@ -173,3 +179,51 @@ class Micropipette:
         self.machine.gcode(f"G0 V450 F{velocity}")
         self.liquid_ul = 0
         self.machine.gcode(f"G0 V0 F{velocity}")
+        self.tip = False
+        self.machine.gcode("M208 Z150:320")
+
+
+    def attach_tip(self,tip_box_position,safe_height=320,move_velocity=3000):
+        self.machine.move_xyz_absolute(z=safe_height,velocity=1800)
+        self.machine.move_xyz_absolute(tip_box_position[0], tip_box_position[1], velocity=move_velocity)
+        self.machine.move_xyz_absolute(z=tip_box_position[2], velocity=500)
+        self.machine.move_xyz_absolute(z=safe_height)
+        tip_box_position[0] -= 10
+        self.tip = True
+        self.machine.gcode("M208 Z165:320")
+        
+
+    def discart_tip(self,discart_position:list,safe_height=320,move_velocity=3000):
+        self.machine =1
+        self.machine.move_xyz_absolute(z=safe_height,velocity=1600)
+        self.machine.move_xyz_absolute(discart_position[0], discart_position[1], velocity=move_velocity)
+        self.machine.move_xyz_absolute(z=discart_position[2], velocity=1000)
+        self.eject_tip()
+
+    
+    def pipette_liquid(self,start_position_xyz, end_position, volume_ul, safe_height = 320, velocidade_dispensacao=300, move_velocity=3000):
+        ciclos = int(volume_ul // 1000)
+        remaining = volume_ul % 1000
+
+        if self.tip:
+
+            def transfer(volume):
+                self.machine.move_xyz_absolute(z=safe_height,velocity=1600)
+                self.press(volume)
+                self.machine.move_xyz_absolute(start_position_xyz[0], start_position_xyz[1], velocity=move_velocity)
+                self.machine.move_xyz_absolute(z=start_position_xyz[2], velocity=600)
+                self.aspirate()
+                self.machine.move_xyz_absolute(z=safe_height)
+                self.machine.move_xyz_absolute(end_position[0], end_position[1], velocity=move_velocity)
+                self.machine.move_xyz_absolute(z=end_position[2],velocity=600)
+                self.dispense(velocity=velocidade_dispensacao)
+                self.machine.move_xyz_absolute(z=safe_height)
+
+            for _ in range(ciclos):
+                transfer(1000)
+
+            if remaining > 0:
+                transfer(remaining)
+        
+        else:
+            print("Acople uma ponteira antes")
