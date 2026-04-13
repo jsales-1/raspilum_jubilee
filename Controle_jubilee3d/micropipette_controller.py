@@ -38,7 +38,7 @@ class Micropipette:
     
         if self.machine.tool is None:
             if self.tip:
-                self.machine.gcode("M208 Z165:300")
+                self.machine.gcode("M208 Z160:300")
             else:
                 self.machine.gcode("M208 Z150:300")
             
@@ -190,7 +190,7 @@ class Micropipette:
         self.machine.move_xyz_absolute(z=safe_height)
         tip_box_position[0] -= 10
         self.tip = True
-        self.machine.gcode("M208 Z165:320")
+        self.machine.gcode("M208 Z160:320")
         
 
     def discart_tip(self,discart_position:list,safe_height=320,move_velocity=3000):
