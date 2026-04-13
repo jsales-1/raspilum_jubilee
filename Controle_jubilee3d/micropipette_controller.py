@@ -194,7 +194,6 @@ class Micropipette:
         
 
     def discart_tip(self,discart_position:list,safe_height=320,move_velocity=3000):
-        self.machine =1
         self.machine.move_xyz_absolute(z=safe_height,velocity=1600)
         self.machine.move_xyz_absolute(discart_position[0], discart_position[1], velocity=move_velocity)
         self.machine.move_xyz_absolute(z=discart_position[2], velocity=1000)
@@ -217,7 +216,7 @@ class Micropipette:
                 self.machine.move_xyz_absolute(end_position[0], end_position[1], velocity=move_velocity)
                 self.machine.move_xyz_absolute(z=end_position[2],velocity=600)
                 self.dispense(velocity=velocidade_dispensacao)
-                self.machine.move_xyz_absolute(z=safe_height)
+                self.machine.move_xyz_absolute(z=safe_height,velocity=1600)
 
             for _ in range(ciclos):
                 transfer(1000)
