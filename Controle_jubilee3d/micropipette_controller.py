@@ -1,3 +1,5 @@
+from jubilee_controller import JubileeMotionController
+
 class Micropipette:
     """
     Classe para controle de uma micropipeta automatizada integrada
@@ -7,7 +9,7 @@ class Micropipette:
     incluindo controle de estado, nome, e verificação de ferramenta atual.
     """
 
-    def __init__(self, machine, parking_position_xy=(138, 16), move_velocity=3000,linear_coeficientes_ab=(3.49009,12.82974)):
+    def __init__(self, machine:JubileeMotionController, parking_position_xy:list=[138, 16], move_velocity:int=3000,linear_coeficientes_ab:list=[3.49009,12.82974]):
         """
         Inicializa a micropipeta e posiciona o eixo Z em uma altura segura.
 
@@ -85,7 +87,8 @@ class Micropipette:
             self.machine.move_xyz_absolute(x=self.parking_position_x, velocity=v)
             self.machine.move_xyz_absolute(y=self.parking_position_y, velocity=v)
             self.machine.gcode("G91 G1 U10 F600 G90")  
-            self.machine.gcode("G91 G1 H1 U300 F3000 G90")  
+            self.machine.gcode("G91 G1 H1 U300 F3000 G90")
+            self.machine.move_xyz_relative(y=12, velocity=v)
             self.machine.move_xyz_absolute(y=70, velocity=self.move_velocity)
             self.machine.move_xyz_absolute(x=50, y=120, velocity=self.move_velocity)
             self.machine.gcode("G92 U20")  
@@ -104,7 +107,7 @@ class Micropipette:
             print(f"[{self.name}] Nenhuma micropipeta instalada ou outra ferramenta ativa.")
 
 
-    def press(self, ul):
+    def press(self, ul:int):
         """
         Pressiona o êmbolo da micropipeta para definir o volume a ser aspirado.
 
@@ -128,7 +131,7 @@ class Micropipette:
             print("Acople a ponteira")
 
 
-    def press_step(self, give_step):
+    def press_step(self, give_step:float):
         """Pressiona o êmbolo diretamente em um valor de passo."""
         if give_step > 300:
             print(f"[{self.name}] Limite máximo de curso atingido.")
@@ -158,7 +161,7 @@ class Micropipette:
         self.machine.gcode("G0 V0 F4000")
 
 
-    def dispense(self,velocity=None):
+    def dispense(self,velocity:int=None):
         """
         Dispensa o líquido atualmente aspirado.
         """
@@ -172,7 +175,7 @@ class Micropipette:
         self.machine.gcode("G0 V175 F10000")
 
 
-    def eject_tip(self,velocity=9000):
+    def eject_tip(self,velocity:int=9000):
         """
         Ejeta a ponteira da micropipeta.
         """
@@ -183,7 +186,18 @@ class Micropipette:
         self.machine.gcode("M208 Z150:320")
 
 
-    def attach_tip(self,tip_box_position,safe_height=320,move_velocity=3000):
+    def attach_tip(self,tip_box_position:list,safe_height:float=320,move_velocity:int=3000):
+        """
+        Acopla automaticamente uma ponteira (tip) na micropipeta.
+
+        Move o cabeçote até a posição da caixa de ponteiras, desce até a altura
+        definida para encaixe e retorna para uma altura segura após o acoplamento.
+
+        Args:
+            tip_box_position (list ou tuple): Coordenadas (X, Y, Z) da ponteira na caixa.
+            safe_height (float, optional): Altura segura para movimentação no eixo Z. Default é 320.
+            move_velocity (int, optional): Velocidade de movimentação no plano XY (mm/min).
+        """
         self.machine.move_xyz_absolute(z=safe_height,velocity=1800)
         self.machine.move_xyz_absolute(tip_box_position[0], tip_box_position[1], velocity=move_velocity)
         self.machine.move_xyz_absolute(z=tip_box_position[2], velocity=500)
@@ -193,14 +207,49 @@ class Micropipette:
         self.machine.gcode("M208 Z160:320")
         
 
-    def discart_tip(self,discart_position:list,safe_height=320,move_velocity=3000):
+    def discart_tip(self,discart_position:list,safe_height:int=320,move_velocity:int=3000):
+        """
+        Descarta a ponteira atual da micropipeta em um local específico.
+
+        Move o cabeçote até a posição de descarte, desce até a altura definida
+        e executa a ejeção da ponteira.
+
+        Args:
+            discart_position (list): Coordenadas (X, Y, Z) do local de descarte.
+            safe_height (float, optional): Altura segura para movimentação no eixo Z. Default é 320.
+            move_velocity (int, optional): Velocidade de movimentação no plano XY (mm/min).
+
+        """
         self.machine.move_xyz_absolute(z=safe_height,velocity=1600)
         self.machine.move_xyz_absolute(discart_position[0], discart_position[1], velocity=move_velocity)
         self.machine.move_xyz_absolute(z=discart_position[2], velocity=1000)
         self.eject_tip()
 
     
-    def pipette_liquid(self,start_position_xyz, end_position, volume_ul, safe_height = 320, velocidade_dispensacao=300, move_velocity=3000):
+    def pipette_liquid(self,start_position_xyz:list, end_position:list, volume_ul:int, safe_height:int = 320, velocidade_dispensacao:int=300, move_velocity:int=3000):
+        """
+        Realiza a transferência automática de líquido entre dois pontos.
+
+        Divide o volume total em múltiplos ciclos (máx. 1000 µL por ciclo),
+        executando aspiração e dispensação sequenciais.
+
+        Args:
+            start_position_xyz (tuple): Coordenadas (X, Y, Z) da origem do líquido.
+            end_position (tuple): Coordenadas (X, Y, Z) do destino do líquido.
+            volume_ul (float): Volume total a ser transferido em microlitros (µL).
+            safe_height (float, optional): Altura segura para movimentação no eixo Z. Default é 320.
+            velocidade_dispensacao (float, optional): Velocidade de dispensação em µL/s.
+            move_velocity (int, optional): Velocidade de movimentação no plano XY (mm/min).
+
+        Requisitos:
+            - A micropipeta deve estar com uma ponteira acoplada (`tip = True`).
+
+        Comportamento:
+            - Divide o volume em ciclos de até 1000 µL.
+            - Executa múltiplas transferências automaticamente.
+            - Garante movimentos seguros entre aspiração e dispensação.
+        """
+        
         ciclos = int(volume_ul // 1000)
         remaining = volume_ul % 1000
 
