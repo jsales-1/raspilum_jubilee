@@ -1,86 +1,101 @@
 import lgpio
 import time
 
-
+#roxo s3
 class GY31:
-    def __init__(self, gpio_out=17, s2=27, s3=22, chip=0):
-        self.GPIO_OUT = gpio_out
+    def __init__(self, s2=20, s3=21, out=16):
         self.S2 = s2
         self.S3 = s3
+        self.OUT = out
 
-        self.h = lgpio.gpiochip_open(chip)
+        # abre gpiochip
+        self.h = lgpio.gpiochip_open(0)
 
+        # configura GPIO
         lgpio.gpio_claim_output(self.h, self.S2)
         lgpio.gpio_claim_output(self.h, self.S3)
-        lgpio.gpio_claim_input(self.h, self.GPIO_OUT)
+        lgpio.gpio_claim_input(self.h, self.OUT)
 
-        self._pulse_count = 0
-
-        self._cb = lgpio.callback(
-            self.h,
-            self.GPIO_OUT,
-            lgpio.RISING_EDGE,
-            self._pulse_callback
-        )
-
-    def _pulse_callback(self, chip, gpio, level, tick):
-        self._pulse_count += 1
-
-    def _set_filter(self, s2, s3):
-        lgpio.gpio_write(self.h, self.S2, s2)
-        lgpio.gpio_write(self.h, self.S3, s3)
-        time.sleep(0.01)
-
-    def _measure_frequency(self, duration=0.1):
-        self._pulse_count = 0
+    def _read_frequency(self, duration=0.1):
         start = time.time()
+        count = 0
 
-        time.sleep(duration)
+        last = lgpio.gpio_read(self.h, self.OUT)
 
-        elapsed = time.time() - start
-        return self._pulse_count / elapsed
+        while time.time() - start < duration:
+            current = lgpio.gpio_read(self.h, self.OUT)
 
-    def read_color(self, color):
-        if color == "red":
-            self._set_filter(0, 0)
-        elif color == "blue":
-            self._set_filter(0, 1)
-        elif color == "green":
-            self._set_filter(1, 1)
-        else:
-            raise ValueError("Cor inválida")
+            # borda de descida
+            if last == 1 and current == 0:
+                count += 1
 
-        return self._measure_frequency()
+            last = current
 
-    def read_rgb(self):
+        return count
+
+    def read_color(self):
+        # RED
+        lgpio.gpio_write(self.h, self.S2, 0)
+        lgpio.gpio_write(self.h, self.S3, 0)
+        time.sleep(0.02)
+        red = self._read_frequency()
+
+        # BLUE
+        lgpio.gpio_write(self.h, self.S2, 0)
+        lgpio.gpio_write(self.h, self.S3, 1)
+        time.sleep(0.02)
+        blue = self._read_frequency()
+
+        # GREEN
+        lgpio.gpio_write(self.h, self.S2, 1)
+        lgpio.gpio_write(self.h, self.S3, 1)
+        time.sleep(0.02)
+        green = self._read_frequency()
+
         return {
-            "red": self.read_color("red"),
-            "green": self.read_color("green"),
-            "blue": self.read_color("blue")
+            "red": red,
+            "green": green,
+            "blue": blue
         }
 
-    def save_samples_to_file(self, filename, n=10, interval=0.02):
+    def save_readings(
+        self,
+        filename="leituras.txt",
+        n=100,
+        interval=0.05
+    ):
         """
-        Faz N leituras e salva no arquivo TXT
-
-        filename: nome do arquivo (ex: 'dados.txt')
-        n: número de amostras
-        interval: tempo entre leituras
+        Faz N leituras e salva em TXT
         """
 
         with open(filename, "w") as f:
-            f.write("index,red,green,blue\n")
+
+            # cabeçalho
+            f.write("timestamp,red,green,blue\n")
 
             for i in range(n):
-                rgb = self.read_rgb()
 
-                line = f"{i},{rgb['red']:.2f},{rgb['green']:.2f},{rgb['blue']:.2f}\n"
+                data = self.read_color()
+
+                timestamp = time.time()
+
+                line = (
+                    f"{timestamp},"
+                    f"{data['red']},"
+                    f"{data['green']},"
+                    f"{data['blue']}\n"
+                )
+
                 f.write(line)
+
+                print(
+                    f"[{i+1}/{n}] "
+                    f"R={data['red']} "
+                    f"G={data['green']} "
+                    f"B={data['blue']}"
+                )
 
                 time.sleep(interval)
 
-        print(f"Arquivo '{filename}' salvo com {n} leituras.")
-
     def close(self):
-        self._cb.cancel()
         lgpio.gpiochip_close(self.h)
