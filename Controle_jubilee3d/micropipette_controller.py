@@ -9,14 +9,14 @@ class Micropipette:
     incluindo controle de estado, nome, e verificação de ferramenta atual.
     """
 
-    def __init__(self, machine:JubileeMotionController, parking_position_xy:list=[138, 16], move_velocity:int=3000,linear_coeficientes_ab:list=[3.49009,12.82974]):
+    def __init__(self, machine:JubileeMotionController, parking_position_xy:list=[122, 16], move_velocity:int=3000,linear_coeficientes_ab:list=[3.49009,12.82974]):
         """
         Inicializa a micropipeta e posiciona o eixo Z em uma altura segura.
 
         Args:
             machine: Instância de controle da máquina Jubilee.
             parking_position_xy (tuple, optional): Coordenadas (X, Y) para 
-                estacionamento da micropipeta. Default é (138, 18).
+                estacionamento da micropipeta. Default é (122, 18).
             move_velocity (int, optional): Velocidade padrão de movimentação (mm/min).
         """
         self.name = "Micropipeta"
@@ -151,7 +151,7 @@ class Micropipette:
         Atualiza o atributo `liquid_ul` com o volume atualmente aspirado.
         """
         positions = self.machine.gcode("M114")
-        valor_v = float(positions.split("V:")[1].split("E:")[0].strip())
+        valor_v = float(positions.split("V:")[1].split("W:")[0].strip())
 
         if valor_v == 0:
             print(f"[{self.name}] Use o método 'press' antes de aspirar.")
