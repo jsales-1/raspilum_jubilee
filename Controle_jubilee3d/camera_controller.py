@@ -19,7 +19,7 @@ class Camera:
     move_velocity : int
         Velocidade padrão para movimentação do cabeçote durante instalação/desinstalação."""
 
-    def __init__(self, machine,parking_position_xy=(302,20),move_velocity = 3000):
+    def __init__(self, machine,parking_position_xy=(277,20),move_velocity = 3000):
         """
         Inicializa a ferramenta da câmera.
 
@@ -59,6 +59,7 @@ class Camera:
 
             if self.machine.mode_protect_tools:
                 self.machine.protect_tools(on=True,min_xy=[0,90])
+                self.machine.gcode("M208 Z40:320")
             
             self.machine.tool = self.name
         
@@ -95,7 +96,7 @@ class Camera:
             
             self.machine.tool = None
 
-    def photo(self, filename='captura.jpg', video_index=0):
+    def photo(self, filename='captura.jpg', video_index=0,focus_value = None):
         """
         Captura uma imagem usando a câmera conectada.
 
@@ -122,6 +123,12 @@ class Camera:
         if not ret:
             cap.release()
             return
-
-        cv2.imwrite(filename, frame)
+        if focus_value != None:
+            cap.set(cv2.CAP_PROP_FOCUS, focus_value)
+            ret, frame = cap.read()
+            cv2.imwrite(filename, frame)
+        else:
+            ret, frame = cap.read()
+            cv2.imwrite(filename, frame)
+            
         cap.release()
