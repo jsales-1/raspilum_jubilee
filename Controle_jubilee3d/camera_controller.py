@@ -19,7 +19,7 @@ class Camera:
     move_velocity : int
         Velocidade padrão para movimentação do cabeçote durante instalação/desinstalação."""
 
-    def __init__(self, machine,parking_position_xy=(277,20),move_velocity = 3000):
+    def __init__(self, machine,parking_position_xy=(297,20),move_velocity = 3000):
         """
         Inicializa a ferramenta da câmera.
 
@@ -58,7 +58,7 @@ class Camera:
             self.machine.move_xyz_absolute(x=50, y=120, velocity=self.move_velocity)
 
             if self.machine.mode_protect_tools:
-                self.machine.protect_tools(on=True,min_xy=[0,90])
+                self.machine.protect_tools(on=True,min_xy=[50,90])
                 self.machine.gcode("M208 Z40:320")
             
             self.machine.tool = self.name
@@ -95,40 +95,42 @@ class Camera:
                 self.machine.protect_tools(on=True)
             
             self.machine.tool = None
-
-    def photo(self, filename='captura.jpg', video_index=0,focus_value = None):
+                
+    def photo(self, filename='captura.jpg', video_index=0, focus_value=None):
         """
         Captura uma imagem usando a câmera conectada.
 
-        Este método abre um dispositivo de captura de vídeo via OpenCV,
-        obtém um frame e salva como arquivo de imagem.
-
         Parâmetros
         ----------
-        filename : str, opcional
-            Nome do arquivo de saída da imagem capturada (padrão: 'captura.jpg').
-        video_index : int, opcional
-            Índice do dispositivo de captura de vídeo (padrão: 0).
-
-        Retorna
-        -------
-        None
-            Não há retorno. Se a captura falhar, o método apenas encerra silenciosamente.
+        filename : str
+            Nome do arquivo de saída.
+        video_index : int
+            Índice da câmera.
+        focus_value : int ou None
+            Valor do foco manual. Se None, mantém a configuração atual.
         """
+
         cap = cv2.VideoCapture(video_index)
+
         if not cap.isOpened():
             return
 
-        ret, frame = cap.read()
-        if not ret:
-            cap.release()
-            return
-        if focus_value != None:
+        cap.set(cv2.CAP_PROP_AUTOFOCUS, 0)
+
+        if focus_value is not None:
             cap.set(cv2.CAP_PROP_FOCUS, focus_value)
+
+        for _ in range(20):
             ret, frame = cap.read()
+            if not ret:
+                cap.release()
+                return
+
+        ret, frame = cap.read()
+
+        if ret:
             cv2.imwrite(filename, frame)
-        else:
-            ret, frame = cap.read()
-            cv2.imwrite(filename, frame)
-            
+
         cap.release()
+
+        
