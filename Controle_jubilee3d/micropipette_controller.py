@@ -40,9 +40,9 @@ class Micropipette:
     
         if self.machine.tool is None:
             if self.tip:
-                self.machine.gcode("M208 Z160:300")
+                self.machine.gcode("M208 Z160:320")
             else:
-                self.machine.gcode("M208 Z150:300")
+                self.machine.gcode("M208 Z150:320")
             
 
             if self.machine.position[2] < 150:
